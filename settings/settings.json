@@ -1,4 +1,4 @@
 { 
 "inputfile":"/data/lastfm1k/userid-timestamp-artid-artname-traid-traname.tsv",
-"inputfileTest":"data/lastfm1k/test2.tsv" 
+"inputfileTest":"data/lastfm1k/test.tsv" 
 }
