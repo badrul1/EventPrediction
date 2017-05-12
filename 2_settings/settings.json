@@ -1,0 +1,6 @@
+{ 
+"inputfile":"/3_data/lastfm1k/userid-timestamp-artid-artname-traid-traname.tsv",
+"inputfile_sml":"/3_data/lastfm1k/userid-timestamp-artid-artname-traid-traname_sml.tsv", 
+"inputfile_verysml":"/3_data/lastfm1k/userid-timestamp-artid-artname-traid-traname_verysml.tsv",
+"dbPath":"/3_data/inputDB.db"
+}
