@@ -31,6 +31,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 import os
 import sys
 import sqlite3
+import pandas as pd
 
 
 def sanitize(tag):
@@ -75,36 +76,6 @@ def getTracksForTag(dbPath, tag):
     return [d[0] for d in data]
 
 
-
-def getSimilariity(dbPath,tid):
-    # Get all similar songs (with value) to tid
-
-    # sanity check
-    if not os.path.isfile(dbPath):
-        print ('ERROR: db file %s does not exist?' % dbPath)
-        exit
-
-    # open connection
-    conn = sqlite3.connect(dbPath)
-
-    sql = "SELECT target FROM similars_src WHERE tid='%s'" % tid
-    res = conn.execute(sql)
-    data = res.fetchone()[0]   # This line must be to deal with potential duplicates I imagine
-    conn.close
-
-    data_unpacked = []
-    for idx, d in enumerate(data.split(',')):
-        if idx % 2 == 0:
-            # If this is the string portion
-            pair = [d]
-        else:
-            # If this is the score
-            pair.append(float(d))
-            data_unpacked.append(pair)
-    # sort
-    data_unpacked = sorted(data_unpacked, key=lambda x: x[1], reverse=True)
-    return data_unpacked
-
 def getSimilarity_Dest(dbPath,tid):
     # Get all songs which consider tid as similar to itself
     sql = "SELECT target FROM similars_dest WHERE tid='%s'" % tid
@@ -124,3 +95,86 @@ def getSimilarity_Dest(dbPath,tid):
     # sort
     data_unpacked = sorted(data_unpacked, key=lambda x: x[1], reverse=True)
     return data_unpacked
+
+def getSimilariity (dbPath,tid, threshold):
+    # Get all similar songs (with value) to tid and where similarity score is above threshold
+
+    # sanity check
+    if not os.path.isfile(dbPath):
+        print ('ERROR: db file %s does not exist?' % dbPath)
+        exit
+
+    # open connection
+    conn = sqlite3.connect(dbPath)
+
+    sql = "SELECT target FROM similars_src WHERE tid='%s'" % tid
+    res = conn.execute(sql)
+    data = res.fetchone()[0]   # This line must be to deal with potential duplicates I imagine
+    conn.close
+
+    aboveThreshold = False
+    data_unpacked = []
+    for idx, d in enumerate(data.split(',')):
+        if idx % 2 == 0:
+            # If this is the string portion
+            pair = [d]
+        else:
+            # If this is the score
+            if (float(d) >= threshold):
+                pair.append(float(d))
+                data_unpacked.append(pair)
+
+    # sort
+    data_unpacked = sorted(data_unpacked, key=lambda x: x[1], reverse=True)
+    return data_unpacked
+
+def getSimilariityAll (dbPath, threshold):
+    # Get all similar songs (with value) to tid and where similarity score is above threshold
+
+    # sanity check
+    if not os.path.isfile(dbPath):
+        print ('ERROR: db file %s does not exist?' % dbPath)
+        exit
+
+    # open connection
+    conn = sqlite3.connect(dbPath)
+
+    sql = "SELECT tid, target FROM similars_src"
+    res = conn.execute(sql)
+    data = res.fetchall()
+    conn.close
+
+    r=[]
+    for row in data:
+
+        s = [row[0]] # this is the main tid
+        flag = False
+        for idx, d in enumerate(row[1].split(',')):
+
+            if idx % 2 == 0:
+            # If this is the string portion
+                u = d
+            else:
+                # If this is the score
+                if (float(d) >= threshold):
+                    s.extend([u])
+                    flag=True
+
+        if flag:
+            r.extend([s])
+
+
+    return r
+
+
+def convertTrackIDTo(dbPath, tids, convertTo):
+    con = sqlite3.connect(dbPath)
+    sqlStr = "SELECT track_id, {0} from songs".format(convertTo)
+
+    # Load into Pandas
+    res = pd.read_sql_query(sqlStr, con)
+    con.close()
+    res = res.set_index('track_id')
+
+    s = pd.Series(tids).map(res[convertTo]).tolist()
+    return s
