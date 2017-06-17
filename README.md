@@ -1,2 +1,0 @@
-# MusicRecommendation
-MSc Dissertation Project
