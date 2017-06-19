@@ -1,0 +1,9 @@
+{ 
+"inputfile":"/3_data/lastfm1k/userid-timestamp-artid-artname-traid-traname.tsv",
+"inputfile_sml":"/3_data/lastfm1k/userid-timestamp-artid-artname-traid-traname_sml.tsv", 
+"inputfile_verysml":"/3_data/lastfm1k/userid-timestamp-artid-artname-traid-traname_verysml.tsv",
+"mainDbPath":"/3_data/main.db",
+"fmSimilarDbPath":"/3_data/lastfmSimilar/lastfmSimilar.db",
+"fmTagsDbPath":"/3_data/lastfmtags/lastfmTags.db",
+"trackmetadata":"/3_data/trackmetadata/trackmetadata.db"
+}
