@@ -38,3 +38,18 @@ def _ensurePathExists(fPath):
     path.parent.mkdir(parents=True, exist_ok=True)
 
 
+def dropCreateTable(dbCursor,tblName, tblSelect):
+    sqlStr= 'DROP TABLE IF EXISTS {}'.format(tblName)
+    dbCursor.execute(sqlStr)
+
+    sqlStr ="CREATE TABLE {}".format(tblName) + " AS " + tblSelect
+    dbCursor.execute(sqlStr)
+
+def createDateTimeRange(startDT,endDT, minsToAdd):
+    DTArray = [startDT]
+    dt = startDT
+
+    while  dt < endDT:
+        dt=dt + pd.Timedelta(minutes=minsToAdd)
+        DTArray.append(dt)
+    return DTArray
