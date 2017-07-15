@@ -1,0 +1,1 @@
+SELECT userID, date(PlayedTimestamp),count(*) as NumOfPlays, count(Distinct trackID) as NumOfTracks from tblInputData group by userID, date(PlayedTimestamp)

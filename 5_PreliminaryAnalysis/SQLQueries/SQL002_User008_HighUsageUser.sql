@@ -1,0 +1,1 @@
+Select * from tblInputData where userID = 'user_000008' and date(PlayedTimeStamp) = '2009-02-28' order By PlayedTimeStamp
