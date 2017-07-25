@@ -1,8 +1,6 @@
 #!/bin/bash
 
-cd ~/git
-git clone https://github.com/BadrulAlom/EventPrediction.git
-cd EventPrediction
+cd ~\git\EventPrediction
 mkdir 3_Data
 cd 3_Data
 wget http://mtg.upf.edu/static/datasets/last.fm/lastfm-dataset-1K.tar.gz
