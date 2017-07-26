@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.25)  26 JUL 2017 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.25)  26 JUL 2017 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1468,7 +1468,8 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (./main.aux
-(./Chapters/Chapter1.aux) (./Appendices/AppendixA.aux))
+(./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux)
+(./Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
@@ -1717,90 +1718,29 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 --------------------
  Declaration of Authorship
 --------------------
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 148.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 151.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 148.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 1: section
 [3] [4
 
-] [5] [6
-
 ]
 --------------------
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 179.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 172.
 1: section
-[7] [8
-
-]
---------------------
- Acknowledgements
---------------------
-1: section
-[9] [10
-
-]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 197.
- (./main.toc
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 20.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 20.
-)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
-1: section
-[11] [12
-
-] (./main.lof)
-\tf@lof=\write6
-\openout6 = `main.lof'.
-
-
-1: section
-[13] [14
-
-] (./main.lot)
-\tf@lot=\write7
-\openout7 = `main.lot'.
-
-
-1: section
-[15] [16
-
-]
-1: section
-[17] [18
-
-]
-1: section
-[19] [20
-
-]
-1: section
-[21] [22
-
-]
---------------------
- Dedicatory
---------------------
-1: section
-[23] [24
+[5] [6
 
 ]
 1: section
@@ -1810,137 +1750,117 @@ LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 18.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 28.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 28.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 28.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 32.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 32.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <8> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 32.
+)
 1: section
 [1
 
 
 ]
-Overfull \hbox (22.73018pt too wide) in paragraph at lines 45--48
-\T1/ppl/m/n/10.95 Guide for L[]T[]X^^Q. It can be found on-line here: [][]$\T1/
-pcr/m/n/10.95 http : / / www . ams . org / tex / amslatex .
- []
+\openout2 = `Chapters/Chapter2.aux'.
 
-[2]
-Overfull \hbox (0.51039pt too wide) in paragraph at lines 79--80
-[]\T1/ppl/m/n/10.95 Sunil's tem-plate was made avail-able through [][]$\T1/pcr/
-m/n/10.95 http : / / www . LaTeXTemplates .
- []
-
-[3]
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 137.
-
-Overfull \hbox (4.4566pt too wide) in paragraph at lines 143--144
-\T1/ppl/m/n/10.95 for this. If you don't want these to be linked, sim-ply re-mo
-ve the []\T1/pcr/m/n/10.95 \href{url}{name}
- []
-
-[4]
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10.95> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 169.
- [5]
-Overfull \hbox (24.70317pt too wide) in paragraph at lines 181--182
-\T1/ppl/m/n/10.95 sided print-ing is as sim-ple as un-com-ment-ing the \T1/pcr/
-m/sl/10.95 oneside \T1/ppl/m/n/10.95 op-tion of the \T1/pcr/m/n/10.95 documentc
-lass
- []
-
-[6]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 197.
-
-Overfull \hbox (21.97092pt too wide) in paragraph at lines 226--226
-[]\T1/pcr/m/n/10 \caption{The effects of treatments X and Y on the four groups 
-studied.}[] 
- []
-
-[7] <Figures/Electron.pdf, id=354, 398.3386pt x 284.52756pt>
-File: Figures/Electron.pdf Graphic file (type pdf)
-
-<use Figures/Electron.pdf>
-Package pdftex.def Info: Figures/Electron.pdf used on input line 263.
-(pdftex.def)             Requested size: 398.33762pt x 284.52686pt.
- [8]
-Overfull \hbox (19.1404pt too wide) in paragraph at lines 309--310
-\T1/ppl/m/n/10.95 au-to-mat-i-cally builds a ta-ble of Con-tents by look-ing at
- all the []\T1/pcr/m/n/10.95 \chapter{}\T1/ppl/m/n/10.95 , []\T1/pcr/m/n/10.95 
-\section{}
- []
+ (./Chapters/Chapter2.tex [2
 
 
-Overfull \hbox (8.65474pt too wide) in paragraph at lines 311--312
-[]\T1/ppl/m/n/10.95 The Ta-ble of Con-tents should only list the sec-tions to t
-hree (3) lev-els. A []\T1/pcr/m/n/10.95 chapter{}
- []
 
-[9 <./Figures/Electron.pdf>]) [10]
+]
+Chapter 2.
+<Figures/fig001.jpg, id=128, 420.57124pt x 528.97626pt>
+File: Figures/fig001.jpg Graphic file (type jpg)
+
+<use Figures/fig001.jpg>
+Package pdftex.def Info: Figures/fig001.jpg used on input line 21.
+(pdftex.def)             Requested size: 404.02908pt x 508.17465pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+1: section
+[3] [4 <./Figures/fig001.jpg>]) [5]
+\openout2 = `Chapters/Chapter3.aux'.
+
+ (./Chapters/Chapter3.tex [6
+
+
+
+]
+Chapter 3.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
+<Figures/fig002.jpg, id=153, 399.4925pt x 249.93375pt>
+File: Figures/fig002.jpg Graphic file (type jpg)
+
+<use Figures/fig002.jpg>
+Package pdftex.def Info: Figures/fig002.jpg used on input line 34.
+(pdftex.def)             Requested size: 199.16928pt x 124.60808pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
+1: section
+[7] [8 <./Figures/fig002.jpg>]
 \openout2 = `Appendices/AppendixA.aux'.
 
  (./Appendices/AppendixA.tex
 Appendix A.
-)
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
 1: section
-[11
+[9
 
 
 
-] [12
+] [10
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 216.
 
 1: section
-[13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
- (./main.aux (./Chapters/Chapter1.aux) (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
+[11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 216.
+ (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
+(./Chapters/Chapter3.aux) (./Appendices/AppendixA.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 216.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 216.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 45EFB75D30402DEC44D1990EE8196ADA;5063.
+(rerunfilecheck)             Checksum: 836C3D8BB0E3C392EB325AF3A879BFCB;2722.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  )
 (\end occurred when \iftrue on line 90 was incomplete) 
 Here is how much of TeX's memory you used:
- 30621 strings out of 494910
- 615327 string characters out of 6179836
- 717704 words of memory out of 5000000
- 33512 multiletter control sequences out of 15000+600000
- 62240 words of font info for 114 fonts, out of 8000000 for 9000
+ 30512 strings out of 494910
+ 614398 string characters out of 6179836
+ 715815 words of memory out of 5000000
+ 33461 multiletter control sequences out of 15000+600000
+ 47833 words of font info for 78 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 56i,20n,82p,10377b,1745s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,77p,10377b,1739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf
 -dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/t
+blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
-atino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (37 pages, 219896 bytes).
+dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
+atino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8
+a.pfb>
+Output written on main.pdf (17 pages, 211254 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 451 compressed objects within 5 object streams
- 86 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
