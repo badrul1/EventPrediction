@@ -4,7 +4,7 @@
 
 \label{Chapter3} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-The methodology employed is typical of that within the data science community, and as see in online Kaggle competitions. Namely to start with preliminary analysis that will help understand the data better, then devise a test and training datasets that can be used across multiple models, with the main performance criteria beiong on how well the models perform on test data.
+The methodology employed is typical of that within the data science community, and as seen in online Kaggle competitions. Namely to start with preliminary analysis that will help understand the data better, then devise a test and training datasets that can be used across multiple models, with the main performance criteria beiong on how well the models perform on test data.
 
 Python, via Jupyter notebooks was the primary source of analysis with some SQL as the data was manipualated and stored in a SqlLite3 database first.
 
@@ -18,7 +18,7 @@ Let us first consider the real-world aspect of the data we have - the timestamps
 
 We can also assume that the song plays are not i.i.d, in that the probability of a play event at time t+1 is significantly higher if there was an event at time t. 
 
-\subsection{Basic stats} 
+\subsection{Basic statistics} 
 
 We start with some basic information about the raw data file that was recieved. 
 Num. of rows: 7,500,000
@@ -27,7 +27,7 @@ Num. of unique timestamps: 7,226,934
 earliest timestamp: 2005-02-14 00:02:10
 latest timestamp: 2009-06-19 17:37:23
 
-What does this tell us? Well we can deduce there are approximately 19.6k timestamps per user on average. This feels like a high number.
+What does this tell us? Well we can deduce there are approximately 19.6k timestamps per user on average. This feels like a high number. Fig \ref{fig:fig1}
 
 \begin{figure}[h!]
 	\centering
@@ -42,4 +42,18 @@ What does this tell us? Well we can deduce there are approximately 19.6k timesta
 
 \section{Bayesian Inference}
 
-Here we apply a counting process 
+Here we apply a counting process
+
+
+\section{How to cite references in Latex}
+\parencite{Reference1}
+
+\medskip
+
+This document is an example of \texttt{thebibliography} environment using 
+in bibliography management. Three items are cited: \textit{The \LaTeX\ Companion} 
+book \cite{latexcompanion}, the Einstein journal paper \cite{einstein}, and the 
+Donald Knuth's website \cite{knuthwebsite}. The \LaTeX\ related items are
+\cite{latexcompanion,knuthwebsite}. 
+
+\medskip

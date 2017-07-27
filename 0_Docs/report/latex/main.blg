@@ -3,6 +3,9 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: biblatex.bst
 A level-1 auxiliary file: Chapters/Chapter1.aux
+A level-1 auxiliary file: Chapters/Chapter2.aux
+A level-1 auxiliary file: Chapters/Chapter3.aux
+A level-1 auxiliary file: Chapters/ChapterTemplate.aux
 A level-1 auxiliary file: Appendices/AppendixA.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -16,48 +19,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: main-blx.bib
-Database file #2: example.bib
+Database file #2: bibliography.bib
+Warning--I didn't find a database entry for "latexcompanion"
+Warning--I didn't find a database entry for "einstein"
+Warning--I didn't find a database entry for "knuthwebsite"
 Biblatex version: 3.3
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 4 entries,
+You've used 3 entries,
             6047 wiz_defined-function locations,
-            1160 strings with 10141 characters,
-and the built_in function-call counts, 11630 in all, are:
-= -- 380
-> -- 435
-< -- 97
-+ -- 152
-- -- 179
-* -- 1016
-:= -- 920
+            1152 strings with 8990 characters,
+and the built_in function-call counts, 7357 in all, are:
+= -- 251
+> -- 288
+< -- 63
++ -- 104
+- -- 117
+* -- 518
+:= -- 658
 add.period$ -- 0
-call.type$ -- 4
-change.case$ -- 33
-chr.to.int$ -- 46
-cite$ -- 6
-duplicate$ -- 1186
-empty$ -- 1188
-format.name$ -- 243
-if$ -- 2573
+call.type$ -- 3
+change.case$ -- 18
+chr.to.int$ -- 40
+cite$ -- 4
+duplicate$ -- 698
+empty$ -- 735
+format.name$ -- 138
+if$ -- 1654
 int.to.chr$ -- 0
-int.to.str$ -- 6
+int.to.str$ -- 4
 missing$ -- 0
-newline$ -- 134
-num.names$ -- 123
-pop$ -- 1005
+newline$ -- 75
+num.names$ -- 82
+pop$ -- 687
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 24
 quote$ -- 0
-skip$ -- 625
+skip$ -- 430
 stack$ -- 0
-substring$ -- 261
-swap$ -- 465
-text.length$ -- 114
-text.prefix$ -- 3
+substring$ -- 184
+swap$ -- 236
+text.length$ -- 78
+text.prefix$ -- 2
 top$ -- 1
-type$ -- 140
+type$ -- 102
 warning$ -- 0
-while$ -- 120
+while$ -- 91
 width$ -- 0
-write$ -- 129
+write$ -- 71
+(There were 3 warnings)
