@@ -16,46 +16,183 @@
   {}
 \endgroup
 
-\entry{Reference1}{article}{}
+\entry{DaleyJones}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Daley}{D.}%
+     {DJ}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vere-Jones}{V.-J.}%
+     {D}{D}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DDVJD1}
+  \strng{fullhash}{DDVJD1}
+  \field{sortinit}{D}
+  \field{title}{An introduction to the theory of point processes}
+  \field{year}{2003}
+\endentry
+
+\entry{DuWang}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Du}{D.}%
+     {Nan}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Yichen}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {He}{H.}%
+     {Naio}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Song}{S.}%
+     {}{}%
+     {le}{l.}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {NIPS}%
+  }
+  \strng{namehash}{DN+1}
+  \strng{fullhash}{DNWYHNSl1}
+  \field{sortinit}{D}
+  \field{booktitle}{Advances in Neural Information Processing}
+  \field{title}{Time-sensitive recommendations from recurrent user activities}
+  \field{year}{2015}
+\endentry
+
+\entry{EngleRusell}{thesis}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Engle}{E.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Russell}{R.}%
+     {Jeffrey~R.}{J.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ProQuest Dissertations Publishing}%
+  }
+  \strng{namehash}{ERRJR1}
+  \strng{fullhash}{ERRJR1}
+  \field{sortinit}{E}
+  \field{title}{Autoregressive Conditional Duration: A New Model for
+  Irregularly Spaced Transaction Data}
+  \list{institution}{1}{%
+    {University of California}%
+  }
+  \field{type}{phdthesis}
+  \field{year}{1996}
+\endentry
+
+\entry{ImageNet}{inproceedings}{}
   \name{author}{3}{}{%
     {{}%
-     {Hawthorn}{H.}%
-     {C.~J.}{C.~J.}%
+     {Krizhevsky}{K.}%
+     {Alex}{A.}%
      {}{}%
      {}{}}%
     {{}%
-     {Weber}{W.}%
-     {K.~P.}{K.~P.}%
+     {Sutskever}{S.}%
+     {Ilya}{I.}%
      {}{}%
      {}{}}%
     {{}%
-     {Scholten}{S.}%
-     {R.~E.}{R.~E.}%
+     {Hinton}{H.}%
+     {Geoffrey~E.}{G.~E.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{HCJWKPSRE1}
-  \strng{fullhash}{HCJWKPSRE1}
-  \field{sortinit}{H}
+  \list{organization}{1}{%
+    {NIPS}%
+  }
+  \strng{namehash}{KASIHGE1}
+  \strng{fullhash}{KASIHGE1}
+  \field{sortinit}{K}
+  \field{booktitle}{Advances in Neural Information Processing}
+  \field{title}{ImageNet Classification with Deep Convolutional Neural
+  Networks}
+  \field{year}{2012}
+\endentry
+
+\entry{DL}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {LeCun}{L.}%
+     {Yann}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bengio}{B.}%
+     {Yoshua}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hinton}{H.}%
+     {Geoffrey}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LYBYHG1}
+  \strng{fullhash}{LYBYHG1}
+  \field{sortinit}{L}
   \field{abstract}{%
-  We have developed an enhanced Littrow configuration extended cavity diode
-  laser (ECDL) that can be tuned without changing the direction of the output
-  beam. The output of a conventional Littrow ECDL is reflected from a plane
-  mirror fixed parallel to the tuning diffraction grating. Using a free-space
-  Michelson wavemeter to measure the laser wavelength, we can tune the laser
-  over a range greater than 10 nm without any alteration of alignment.%
+  Deep learning allows computational models that are composed of multiple
+  processing layers to learn representations of data with multiple levels of
+  abstraction. These methods have dramatically improved the state-of-the-art in
+  speech rec- ognition, visual object recognition, object detection and many
+  other domains such as drug discovery and genomics. Deep learning discovers
+  intricate structure in large data sets by using the backpropagation algorithm
+  to indicate how a machine should change its internal parameters that are used
+  to compute the representation in each layer from the representation in the
+  previous layer.%
   }
-  \field{number}{12}
-  \field{pages}{4477\bibrangedash 4479}
-  \field{title}{Littrow Configuration Tunable External Cavity Diode Laser with
-  Fixed Direction Output Beam}
-  \verb{url}
-  \verb http://link.aip.org/link/?RSI/72/4477/1
-  \endverb
-  \field{volume}{72}
-  \field{journaltitle}{Review of Scientific Instruments}
-  \field{month}{12}
-  \field{year}{2001}
+  \field{title}{Deep Learning}
+  \field{volume}{521}
+  \field{journaltitle}{Nature}
+  \field{month}{05}
+  \field{year}{2015}
+\endentry
+
+\entry{Lena}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Lena}{L.}%
+     {Pietro~Di}{P.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nagata}{N.}%
+     {Ken}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Baldi}{B.}%
+     {Pierre}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LPDNKBP1}
+  \strng{fullhash}{LPDNKBP1}
+  \field{sortinit}{L}
+  \field{issue}{19}
+  \field{title}{Deep architectures for protein contact map prediction}
+  \field{volume}{28}
+  \field{journaltitle}{Bioinformatics}
+  \field{month}{10}
 \endentry
 
 \entry{Olly}{misc}{}
@@ -73,6 +210,117 @@
   \verb{url}
   \verb https://www.heyolly.com/
   \endverb
+\endentry
+
+\entry{WassGAN}{thesis}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Martin~Arjovsky}{M.~A.}%
+     {Léon~Bottou}{L.~B.}%
+     {}{}%
+     {Soumith~Chintala}{S.~C.}}%
+  }
+  \list{publisher}{1}{%
+    {arXiv:1701.07875}%
+  }
+  \strng{namehash}{MASCLB1}
+  \strng{fullhash}{MASCLB1}
+  \field{sortinit}{M}
+  \field{title}{Wasserstein GAN}
+  \list{institution}{1}{%
+    {Facebook AI Research}%
+  }
+  \field{type}{phdthesis}
+  \field{year}{2017}
+\endentry
+
+\entry{Socher}{inproceedings}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Socher}{S.}%
+     {Richard}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Perelygin}{P.}%
+     {Alex}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wu}{W.}%
+     {Jean}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chuang}{C.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Manning}{M.}%
+     {Christopher~D.}{C.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ng}{N.}%
+     {Andrew~Y.}{A.~Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Potts}{P.}%
+     {Christopher}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Association for Computational Linguistics}%
+  }
+  \strng{namehash}{SR+1}
+  \strng{fullhash}{SRPAWJCJMCDNAYPC1}
+  \field{sortinit}{S}
+  \field{booktitle}{Proceedings of the 2013 Conference on {E}mpirical {M}ethods
+  in {N}atural {L}anguage {P}rocessing}
+  \field{pages}{1631\bibrangedash 1642}
+  \field{title}{Recursive Deep Models for Semantic Compositionality Over a
+  Sentiment Treebank}
+  \list{location}{1}{%
+    {Seattle, WA}%
+  }
+  \field{year}{2013}
+  \warn{\item Can't use 'location' + 'address' \item Invalid format of field
+  'month'}
+\endentry
+
+\entry{Wass}{thesis}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Xiao}{X.}%
+     {Shuai}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Farajtabar}{F.}%
+     {Mehrdad}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ye}{Y.}%
+     {Xiaojing}{X.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {arXiv:1705.08051}%
+  }
+  \strng{namehash}{XSFMYX1}
+  \strng{fullhash}{XSFMYX1}
+  \field{sortinit}{X}
+  \field{title}{Wasserstein Learning of Deep Generative Point Process Models}
+  \list{institution}{1}{%
+    {Georgia Institute of Technology}%
+  }
+  \field{type}{phdthesis}
+  \field{year}{2017}
 \endentry
 
 \lossort

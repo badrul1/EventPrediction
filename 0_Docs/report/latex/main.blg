@@ -20,51 +20,57 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
+I was expecting a `,' or a `}'---line 57 of file bibliography.bib
+ :  
+ :  Year = {2012}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Reference1"
 Warning--I didn't find a database entry for "latexcompanion"
 Warning--I didn't find a database entry for "einstein"
 Warning--I didn't find a database entry for "knuthwebsite"
 Biblatex version: 3.3
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 3 entries,
+You've used 11 entries,
             6047 wiz_defined-function locations,
-            1152 strings with 8990 characters,
-and the built_in function-call counts, 7357 in all, are:
-= -- 251
-> -- 288
-< -- 63
-+ -- 104
-- -- 117
-* -- 518
-:= -- 658
+            1206 strings with 10440 characters,
+and the built_in function-call counts, 39378 in all, are:
+= -- 1797
+> -- 1447
+< -- 499
++ -- 578
+- -- 506
+* -- 2793
+:= -- 2413
 add.period$ -- 0
-call.type$ -- 3
-change.case$ -- 18
-chr.to.int$ -- 40
-cite$ -- 4
-duplicate$ -- 698
-empty$ -- 735
-format.name$ -- 138
-if$ -- 1654
+call.type$ -- 11
+change.case$ -- 295
+chr.to.int$ -- 44
+cite$ -- 20
+duplicate$ -- 4243
+empty$ -- 3749
+format.name$ -- 808
+if$ -- 9057
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 30
 missing$ -- 0
-newline$ -- 75
-num.names$ -- 82
-pop$ -- 687
+newline$ -- 316
+num.names$ -- 635
+pop$ -- 3326
 preamble$ -- 1
-purify$ -- 24
+purify$ -- 334
 quote$ -- 0
-skip$ -- 430
+skip$ -- 2475
 stack$ -- 0
-substring$ -- 184
-swap$ -- 236
-text.length$ -- 78
-text.prefix$ -- 2
+substring$ -- 1312
+swap$ -- 1404
+text.length$ -- 335
+text.prefix$ -- 11
 top$ -- 1
-type$ -- 102
+type$ -- 401
 warning$ -- 0
-while$ -- 91
+while$ -- 233
 width$ -- 0
-write$ -- 71
-(There were 3 warnings)
+write$ -- 304
+(There was 1 error message)
