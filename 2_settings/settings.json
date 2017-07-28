@@ -6,5 +6,6 @@
 "mainDbPath":"/3_Data/main.db",
 "fmSimilarDbPath":"/3_data/lastfmSimilar/lastfmSimilar.db",
 "fmTagsDbPath":"/3_Data/lastfmtags/lastfmTags.db",
-"trackmetadata":"/3_Data/trackmetadata/trackmetadata.db"
+"trackmetadata":"/3_Data/trackmetadata/trackmetadata.db",
+"periodGranularity":"30"
 }
