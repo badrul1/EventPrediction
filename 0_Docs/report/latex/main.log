@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.25)  27 JUL 2017 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.25)  29 JUL 2017 13:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1775,7 +1775,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
  (./Chapters/Chapter2.tex
 Chapter 2.
-<Figures/fig001.jpg, id=156, 420.57124pt x 528.97626pt>
+<Figures/fig001.jpg, id=189, 420.57124pt x 528.97626pt>
 File: Figures/fig001.jpg Graphic file (type jpg)
 
 <use Figures/fig001.jpg>
@@ -1797,71 +1797,74 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
  (./Chapters/Chapter3.tex
 Chapter 3.
-<Figures/fig002.jpg, id=192, 399.4925pt x 249.93375pt>
-File: Figures/fig002.jpg Graphic file (type jpg)
 
-<use Figures/fig002.jpg>
-Package pdftex.def Info: Figures/fig002.jpg used on input line 34.
-(pdftex.def)             Requested size: 199.16928pt x 124.60808pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Citation 'Reference1' on page 5 undefined on input line 49.
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 18.
 
 1: section
 [5
 
 
 
-]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 53.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+] <Figures/fig002.jpg, id=228, 399.4925pt x 249.93375pt>
+File: Figures/fig002.jpg Graphic file (type jpg)
+
+<use Figures/fig002.jpg>
+Package pdftex.def Info: Figures/fig002.jpg used on input line 76.
+(pdftex.def)             Requested size: 199.16928pt x 124.60808pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation 'Reference1' on page 6 undefined on input line 91.
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 95.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
-LaTeX Warning: Citation 'latexcompanion' on page 6 undefined on input line 55.
+LaTeX Warning: Citation 'latexcompanion' on page 6 undefined on input line 97.
 
 
-LaTeX Warning: Citation 'einstein' on page 6 undefined on input line 55.
+LaTeX Warning: Citation 'einstein' on page 6 undefined on input line 97.
 
 
-LaTeX Warning: Citation 'knuthwebsite' on page 6 undefined on input line 56.
+LaTeX Warning: Citation 'knuthwebsite' on page 6 undefined on input line 98.
 
 
-LaTeX Warning: Citation 'latexcompanion' on page 6 undefined on input line 57.
+LaTeX Warning: Citation 'latexcompanion' on page 6 undefined on input line 99.
 
 
-LaTeX Warning: Citation 'knuthwebsite' on page 6 undefined on input line 57.
+LaTeX Warning: Citation 'knuthwebsite' on page 6 undefined on input line 99.
 
 
-Overfull \hbox (26.55095pt too wide) in paragraph at lines 53--58
+Overfull \hbox (26.55095pt too wide) in paragraph at lines 95--100
 \T1/ppl/m/n/10.95 og-ra-phy man-age-ment. Three items are cited: \T1/ppl/m/it/1
 0.95 The L[]T[]X Com-pan-ion \T1/ppl/m/n/10.95 book [[]],
  []
 
 
-Overfull \hbox (9.12083pt too wide) in paragraph at lines 53--58
+Overfull \hbox (9.12083pt too wide) in paragraph at lines 95--100
 \T1/ppl/m/n/10.95 the Ein-stein jour-nal pa-per [[]], and the Don-ald Knuth's w
 eb-site [[]].
  []
 
-) [6 <./Figures/fig002.jpg>]
+[6]) [7 <./Figures/fig002.jpg>]
 \openout2 = `Chapters/ChapterTemplate.aux'.
 
- (./Chapters/ChapterTemplate.tex
-Chapter 4.
-)
-1: section
-[7
+ (./Chapters/ChapterTemplate.tex [8
 
 
 
 ]
+Chapter 4.
+)
+1: section
+[9]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [8
+ (./Appendices/AppendixA.tex [10
 
 
 
@@ -1869,14 +1872,14 @@ Chapter 4.
 Appendix A.
 )
 1: section
-[9] [10
+[11] [12
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
 
 1: section
-[11]
+[13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/ChapterTemplate.aux)
@@ -1884,7 +1887,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 095C73294A6E37FCAB4DD3AB99C5FFEB;3762.
+(rerunfilecheck)             Checksum: 4B560EEE788410F64CD6F8CCC34FD832;5143.
 
 
 LaTeX Warning: There were undefined references.
@@ -1900,13 +1903,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  )
 (\end occurred when \iftrue on line 90 was incomplete) 
 Here is how much of TeX's memory you used:
- 30555 strings out of 494910
- 615101 string characters out of 6179836
+ 30573 strings out of 494910
+ 615339 string characters out of 6179836
  713446 words of memory out of 5000000
- 33483 multiletter control sequences out of 15000+600000
+ 33491 multiletter control sequences out of 15000+600000
  48455 words of font info for 79 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 52i,19n,76p,10377b,1741s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,19n,76p,10377b,1739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf
 -dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
@@ -1920,10 +1923,10 @@ texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/u
 plr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (17 pages, 228440 bytes).
+Output written on main.pdf (19 pages, 233836 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 248 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 327 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 
