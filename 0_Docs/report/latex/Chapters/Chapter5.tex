@@ -1,0 +1,29 @@
+% Chapter 5
+
+\chapter{Evaluation} % Methodology
+
+\label{Chapter5} % For referencing the chapter elsewhere, use \ref{Chapter5} 
+
+In this chapter we present the results of the evaluation starting with the best result obtained from each model from different hyper-parameter testing.
+
+The performance of each model is then discussed further in the sections that follow. 
+
+\section{Results summary}
+
+As, within the context of a home audio decide, the cost of mistakenly suggesting a user wants to listen to music is higher than the cost of not suggesting at all, we focus our results on the predictions where a 'play' event was predicted by the model.
+
+The table below provides the precision and recall score on both the hidden periods test set and the new users test set. 
+
+We see that the RNN model performed the best overall but that all models had a weak recall rate, meaning that they could only guess 'play' events in very clear cut cases. 
+
+Logistic regression however also performed very well with only the recall rate rate hidden users being weaker than an RNN model.
+
+All models required a number of runs to try and determine the best hyper-parameters, as dicusssed in the next few chapters, and it may be the case that hyper-parameter settings exist for each model that would provide a boost in performance.
+
+\section{Adaptability to new users}
+
+\section{Beta-Binomial model}
+
+\section{Logistic Regression}
+
+\section{RNN1}

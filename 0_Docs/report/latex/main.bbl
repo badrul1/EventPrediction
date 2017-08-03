@@ -193,6 +193,7 @@
   \field{volume}{28}
   \field{journaltitle}{Bioinformatics}
   \field{month}{10}
+  \field{year}{2012}
 \endentry
 
 \entry{Olly}{misc}{}
@@ -231,6 +232,46 @@
     {Facebook AI Research}%
   }
   \field{type}{phdthesis}
+  \field{year}{2017}
+\endentry
+
+\entry{TFCookbook}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Mclure}{M.}%
+     {Nick}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Packt}%
+  }
+  \strng{namehash}{MN1}
+  \strng{fullhash}{MN1}
+  \field{sortinit}{M}
+  \field{title}{Tensorflow Cookbook}
+  \verb{url}
+  \verb https://github.com/nfmcclure/tensorflow_cookbook/blob/master/04_Support
+  \verb _Vector_Machines/04_Working_with_Kernels/04_svm_kernels.ipynb
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{Olah}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Olah}{O.}%
+     {Christopher}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{OC1}
+  \strng{fullhash}{OC1}
+  \field{sortinit}{O}
+  \field{title}{Understanding LSTMs}
+  \verb{url}
+  \verb http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+  \endverb
   \field{year}{2017}
 \endentry
 
@@ -289,6 +330,21 @@
   \field{year}{2013}
   \warn{\item Can't use 'location' + 'address' \item Invalid format of field
   'month'}
+\endentry
+
+\entry{Vapnik}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Vapnik}{V.}%
+     {Vladimir~N.}{V.~N.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{VVN1}
+  \strng{fullhash}{VVN1}
+  \field{sortinit}{V}
+  \field{title}{The nature of statistical learning theory}
+  \field{year}{1995}
 \endentry
 
 \entry{Wass}{thesis}{}

@@ -5,6 +5,8 @@ The style file: biblatex.bst
 A level-1 auxiliary file: Chapters/Chapter1.aux
 A level-1 auxiliary file: Chapters/Chapter2.aux
 A level-1 auxiliary file: Chapters/Chapter3.aux
+A level-1 auxiliary file: Chapters/Chapter4.aux
+A level-1 auxiliary file: Chapters/Chapter5.aux
 A level-1 auxiliary file: Chapters/ChapterTemplate.aux
 A level-1 auxiliary file: Appendices/AppendixA.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -20,57 +22,53 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
-I was expecting a `,' or a `}'---line 57 of file bibliography.bib
+I was expecting a `,' or a `}'---line 11 of file bibliography.bib
  :  
- :  Year = {2012}}
+ :  publisher   ={Springer-Verlag}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Reference1"
-Warning--I didn't find a database entry for "latexcompanion"
-Warning--I didn't find a database entry for "einstein"
-Warning--I didn't find a database entry for "knuthwebsite"
 Biblatex version: 3.3
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 11 entries,
+You've used 14 entries,
             6047 wiz_defined-function locations,
-            1206 strings with 10440 characters,
-and the built_in function-call counts, 39378 in all, are:
-= -- 1797
-> -- 1447
-< -- 499
-+ -- 578
-- -- 506
-* -- 2793
-:= -- 2413
+            1220 strings with 10794 characters,
+and the built_in function-call counts, 47117 in all, are:
+= -- 2068
+> -- 1687
+< -- 576
++ -- 628
+- -- 584
+* -- 3267
+:= -- 2841
 add.period$ -- 0
-call.type$ -- 11
-change.case$ -- 295
+call.type$ -- 14
+change.case$ -- 329
 chr.to.int$ -- 44
-cite$ -- 20
-duplicate$ -- 4243
-empty$ -- 3749
-format.name$ -- 808
-if$ -- 9057
+cite$ -- 26
+duplicate$ -- 5172
+empty$ -- 4646
+format.name$ -- 953
+if$ -- 10847
 int.to.chr$ -- 0
-int.to.str$ -- 30
+int.to.str$ -- 37
 missing$ -- 0
-newline$ -- 316
-num.names$ -- 635
-pop$ -- 3326
+newline$ -- 372
+num.names$ -- 766
+pop$ -- 4283
 preamble$ -- 1
-purify$ -- 334
+purify$ -- 371
 quote$ -- 0
-skip$ -- 2475
+skip$ -- 2963
 stack$ -- 0
-substring$ -- 1312
-swap$ -- 1404
-text.length$ -- 335
-text.prefix$ -- 11
+substring$ -- 1386
+swap$ -- 1678
+text.length$ -- 407
+text.prefix$ -- 14
 top$ -- 1
-type$ -- 401
+type$ -- 515
 warning$ -- 0
-while$ -- 233
+while$ -- 284
 width$ -- 0
-write$ -- 304
+write$ -- 357
 (There was 1 error message)
