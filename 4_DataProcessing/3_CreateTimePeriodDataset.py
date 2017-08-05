@@ -1,6 +1,24 @@
+
+# coding: utf-8
+
+# <h1 align="center" style="background-color:#616161;color:white">Create Time Period Dataset</h1>
+
+# <div style="background-color:white; color:#008000; font-family: 'Courier New, Monospace;font-weight: bold">Input Parameters</div>
+
+# In[9]:
+
+
 # Root path
 #root = "C:/DS/Github/MusicRecommendation"  # BA, Windows
-root = "/home/badrul/git/EventPrediction"  # BA, Linux
+#root = "/home/badrul/git/EventPrediction"  # BA, Linux
+root = "/home/ubuntu/EventPrediction"  # BA, Aws
+
+
+# <div style="background-color:white; color:#008000; font-family: 'Courier New, Monospace;font-weight: bold">Import Libraries</div>
+
+# <code>Standard code used in every page. Not all of these libraries are used here.</code>
+
+# In[10]:
 
 
 # Core
@@ -25,7 +43,7 @@ import datetime
 # Visualization
 #from ggplot import *                        # Preferred vis tool
 import matplotlib.pyplot as plt             # Quick viz tool
-#get_ipython().magic('matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 # Data science (comment out if not needed)
 #from sklearn.manifold import TSNE
@@ -46,12 +64,42 @@ import coreCode as cc
 import lastfmCode as fm
 
 
+# <div style="background-color:#white; color:#008000; font-family: 'Courier New, Monospace;font-weight: bold">Declare Functions</div>
+
+# In[11]:
+
+
+# Function definition
+
+### Not in use ###
+#def toTimeSlot(dt, PeriodGranularity):
+#    # If you change this, be sure to changne it further down too
+#    return str(int(dt.strftime('%w'))+1) +dt.strftime('-%H-') + str(int((int(dt.strftime('%M'))/PeriodGranularity+1)))
+
+
+# <div style="background-color:#white; color:#008000; font-family: 'Courier New, Monospace;font-weight: bold">Load settings</div>
+
+# In[12]:
+
+
 settingsDict =  cc.loadSettings()
 dbPath = root + settingsDict['mainDbPath']
 fmSimilarDbPath = root + settingsDict['fmSimilarDbPath']
 fmTagsDbPath = root + settingsDict['fmTagsDbPath']
 trackMetaDbPath = root + settingsDict['trackmetadata']
 periodGranularity = int(settingsDict['periodGranularity'])
+
+
+# <h3 style="background-color:#616161;color:white">1. Convert data into a more usable form</h3>
+# 
+# Here were "fill in the blanks" - for every period where the user did not listen to data a row of data is inserted.
+# 
+# As part of start and end dates for every period, at the granularity level specified above, is setup.
+# 
+
+# <div style="background-color:#white; color:#008000; font-family: 'Courier New, Monospace;font-weight: bold">Populate tblPeriod</div>
+
+# In[13]:
 
 
 con = sqlite3.connect(dbPath)
@@ -76,10 +124,18 @@ for idx, dt in enumerate(dtArray):
 
 con.commit()
 con.close()
-print('Insert into tbl period... Ok')
+print('Ok')
+
+
+# <div style="background-color:#white; color:#008000; font-family: 'Courier New, Monospace;font-weight: bold">Read in  tblPeriod, tblMain, and tblUser.</div>
+
+# In[14]:
+
 
 con = sqlite3.connect(dbPath)
 cur = con.cursor()
+
+### Read tblPeriod, tblMain, and tblUser. These will be re-used later too.
 
 # tblPeriod
 SQLStr = "Select * from tblPeriod"
@@ -109,7 +165,13 @@ tblMain['PeriodID'] = idx
 tblMain=tblMain.groupby(['UserID','PeriodID']).count().reset_index()
 
 con.close()
-print('TblMain...Ok')
+print('Ok')
+
+
+# <div style="background-color:#white; color:#008000; font-family: 'Courier New, Monospace;font-weight: bold">Create a table that has both the original 'plays' + 'non-plays', utilizing the periods defined previously</div>
+
+# In[ ]:
+
 
 con = sqlite3.connect(dbPath)
 cur = con.cursor()
@@ -117,8 +179,10 @@ cur = con.cursor()
 SqlStr = "Delete from tblMain2"
 cur.execute(SqlStr)
 con.commit()
-
+i=1
 for row in tblUser.itertuples():
+    print("Processing user {} out of {}".format(i,len(tblUser))
+    i+=1
     m = tblMain[tblMain.UserID == row.UserID]
     for pid in range (row.FirstPlayPeriodID,row.LastPlayPeriodID):
         # Check if the user listened to music in this period
@@ -127,9 +191,25 @@ for row in tblUser.itertuples():
         SqlStr="Insert into tblMain2 (UserID, PeriodID, PlayedMusic) Values ({},{},{})".format(row.UserID, pid,playedMusic)
         cur.execute(SqlStr)    
 
+
+## Use this if you wish to test for just one user instead
+#row = tblUser.iloc[0]
+#m = tblMain[tblMain.UserID == row.UserID]
+#for pid in range (row.FirstPlayPeriodID,row.LastPlayPeriodID):
+    # Check if the user listened to music in this period
+#    playedMusic = m[m.PeriodID == pid]
+#    playedMusic = (len(playedMusic) > 0) *1
+#    SqlStr="Insert into tblMain2 (UserID, PeriodID, PlayedMusic) Values ({},{},{})".format(row.UserID, pid,playedMusic)
+#    cur.execute(SqlStr)    
+
 con.commit()
 con.close()
 print('Ok')
+
+
+# <div style="background-color:#white; color:#008000; font-family: 'Courier New, Monospace;font-weight: bold">Manual/offline checks have to be done but here we do a quick plot</div>
+
+# In[ ]:
 
 
 # Some quick checks
@@ -141,8 +221,19 @@ con.close()
 tblMain2.head(20)
 
 
+# In[ ]:
+
+
 a=tblMain2[0:336].plot.scatter('PeriodID', 'PlayedMusic')
 a.set_title('1 week period')
+
+
+# <h3 style="background-color:#616161;color:white">2. Create monthly time-series data</h3>
+
+# In[17]:
+
+
+# Good for report: Select strftime('%H',PlayedTimestamp) as H, count(*) as C from tblMain group by H order by C
 
 con = sqlite3.connect(dbPath)
 c = con.cursor()
@@ -202,4 +293,19 @@ for row in tblUser.itertuples():
 
 con.commit()
 con.close()
-print('Completed')
+print('Ok')
+
+
+# In[ ]:
+
+
+con.commit()
+con.close()
+print('Ok')
+
+
+# In[ ]:
+
+
+
+
