@@ -82,7 +82,7 @@ def getUsers(dbPath):
     con.close()
     return users
 
-def _getTrainTestData(dbPath,fieldList, userIDs=None, periodGranularity =30,displayWarnings = True):
+def _getTrainTestData(dbPath,tblName, fieldList, userIDs=None, periodGranularity =30,displayWarnings = True):
     # Returns data as a Pandas dataframe
     # fieldList is a comma separated string and specifies the fields to bring back in field1, field2 ... format
     # If userIDs is not provided, then returns all data
@@ -100,7 +100,7 @@ def _getTrainTestData(dbPath,fieldList, userIDs=None, periodGranularity =30,disp
 
     for u in userIDs:
         # Get training dataset
-        SqlStr = "SELECT {} from tblTimeSeriesData where UserID = {}".format(fieldList, u)
+        SqlStr = "SELECT {} from {} where UserID = {}".format(fieldList, tblName, u)
         df = pd.read_sql_query(SqlStr, con)
 
         if len(df) > int(periodsInAMonth * 3):  # user must have at least 3 months worth of data
@@ -123,11 +123,11 @@ def _getTrainTestData(dbPath,fieldList, userIDs=None, periodGranularity =30,disp
     return trainDf, testDf
 
 
-def getHiddenPeriodsData(dbPath, fieldList, oneHot, userIDs=None,periodGranularity =30):
-    trainDf, testDf = _getTrainTestData(dbPath, fieldList, userIDs, periodGranularity)
+def getHiddenPeriodsData(dbPath, tblName, fieldList, oneHot, userIDs=None,periodGranularity =30):
+    trainDf, testDf = _getTrainTestData(dbPath, tblName, fieldList, userIDs, periodGranularity)
     if trainDf.shape[0] == 0:
         # No rows
-        return None, None
+        return None, None, None, None
 
     ### Train data
     xTrain = trainDf.drop(['t', 'UserID'], 1).values
@@ -148,7 +148,7 @@ def getHiddenPeriodsData(dbPath, fieldList, oneHot, userIDs=None,periodGranulari
         return xTrain, yTrain, xTest,yTest
 
 
-def _getHiddenUsersDataDf(dbPath, fieldList, periodGranularity=30, firstNPerc=1.0):
+def _getHiddenUsersDataDf(dbPath, tblName, fieldList, periodGranularity=30, firstNPerc=1.0):
     con = sqlite3.connect(dbPath)
     c = con.cursor()
 
@@ -164,7 +164,7 @@ def _getHiddenUsersDataDf(dbPath, fieldList, periodGranularity=30, firstNPerc=1.
     for user in users.itertuples():
         # Get training dataset
 
-        SqlStr = "SELECT {} from tblTimeSeriesData where UserID = {}".format(fieldList + ",PeriodID", user.userID)
+        SqlStr = "SELECT {} from {} where UserID = {}".format(fieldList + ",PeriodID", tblName, user.userID)
         df = pd.read_sql_query(SqlStr, con)
         df["PeriodID"] = df["PeriodID"].astype(int)
         df.sort_values(['PeriodID'])
@@ -180,8 +180,8 @@ def _getHiddenUsersDataDf(dbPath, fieldList, periodGranularity=30, firstNPerc=1.
     return testDf
 
 
-def getHiddenUsersData(dbPath, fieldList, oneHot,firstNPerc=0.5, periodGranularity = 30):
-    testDf2 = _getHiddenUsersDataDf(dbPath,fieldList, periodGranularity,firstNPerc)  # Get the first half of everyones history
+def getHiddenUsersData(dbPath, tblName, fieldList, oneHot,firstNPerc=0.5, periodGranularity = 30):
+    testDf2 = _getHiddenUsersDataDf(dbPath, tblName, fieldList, periodGranularity,firstNPerc)  # Get the first half of everyones history
 
     # Get hidden users data
     xTest2 = testDf2.drop(['t', 'UserID', 'PeriodID'], 1).values

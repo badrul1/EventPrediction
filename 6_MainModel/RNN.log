@@ -1390,3 +1390,136 @@ INFO:root:Now on pos 30000 of 70795 (42.38%)
 INFO:root:Now on pos 60000 of 70795 (84.75%)
 INFO:root:Now on pos 30000 of 70795 (42.38%)
 INFO:root:Now on pos 60000 of 70795 (84.75%)
+INFO:root:Now testing 70795 rows
+INFO:root:Now on pos 20000 of 71130 (28.12%)
+INFO:root:Now on pos 40000 of 71130 (56.24%)
+INFO:root:Now on pos 60000 of 71130 (84.35%)
+INFO:root:Now testing 4810 rows
+INFO:root:Now testing 217230 rows
+INFO:root:Now on pos 20000 of 217565 (9.19%)
+INFO:root:Now on pos 40000 of 217565 (18.39%)
+INFO:root:Now on pos 60000 of 217565 (27.58%)
+INFO:root:Now on pos 80000 of 217565 (36.77%)
+INFO:root:Now on pos 100000 of 217565 (45.96%)
+INFO:root:Now on pos 120000 of 217565 (55.16%)
+INFO:root:Now on pos 140000 of 217565 (64.35%)
+INFO:root:Now on pos 160000 of 217565 (73.54%)
+INFO:root:Now on pos 180000 of 217565 (82.73%)
+INFO:root:Now on pos 200000 of 217565 (91.93%)
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 118
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 190
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 18
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 193
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 284
+INFO:root:Now on pos 30000 of 42984 (69.79%)
+INFO:root:Now testing 42984 rows
+INFO:root:Now testing 42984 rows
+INFO:root:Now on pos 20000 of 43319 (46.17%)
+INFO:root:Now on pos 40000 of 43319 (92.34%)
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 2
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 84
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 97
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 58
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 83
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 20
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 63
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 62
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 96
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 16
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 95
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 50
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 63
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 15
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 86
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 36
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 60
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 90
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 48
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 63
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 49
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 96
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 90
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 90
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 18
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 37
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 84
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 93
+INFO:root:2017-08-07 10:54:33.318471 Now processing sample 0
+INFO:root:2017-08-07 10:54:33.322760 Now processing User 89
+INFO:root:2017-08-07 10:55:31.072932 Now processing sample 0
+INFO:root:2017-08-07 10:55:31.078753 Now processing User 46
+INFO:root:2017-08-07 10:56:50.690424 Now processing sample 0
+INFO:root:2017-08-07 10:56:50.694993 Now processing User 57
+INFO:root:2017-08-07 10:56:53.737156 Now processing User 39
+INFO:root:2017-08-07 10:56:54.591490 Now on pos 1680 of 46903 (3.58%)
+INFO:root:2017-08-07 10:57:12.564552 Now on pos 1684 of 46903 (3.59%)
+INFO:root:2017-08-07 10:57:31.291017 Now on pos 1688 of 46903 (3.6%)
+INFO:root:2017-08-07 10:57:54.189333 Now on pos 1692 of 46903 (3.61%)
+INFO:root:2017-08-07 10:58:17.619678 Now on pos 1696 of 46903 (3.62%)
+INFO:root:2017-08-07 10:58:40.704648 Now on pos 1700 of 46903 (3.62%)
+INFO:root:2017-08-07 10:59:06.367263 Now on pos 1704 of 46903 (3.63%)
+INFO:root:2017-08-07 10:59:33.913416 Now on pos 1708 of 46903 (3.64%)
+INFO:root:2017-08-07 11:02:39.387255 Now processing sample 0
+INFO:root:2017-08-07 11:02:39.393652 Now processing User 49
+INFO:root:2017-08-07 11:10:55.570549 Now processing sample 0
+INFO:root:2017-08-07 11:10:55.579348 Now processing User 12
+INFO:root:2017-08-07 11:16:13.434414 Now processing sample 0
+INFO:root:2017-08-07 11:16:13.439862 Now processing User 11
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now on pos 1700 of 61433 (2.77%)
+INFO:root:Now on pos 1800 of 61433 (2.93%)
+INFO:root:Now on pos 1900 of 61433 (3.09%)
+INFO:root:Now on pos 2000 of 61433 (3.26%)
+INFO:root:Now on pos 2100 of 61433 (3.42%)
+INFO:root:Now on pos 2200 of 61433 (3.58%)
+INFO:root:Now on pos 2300 of 61433 (3.74%)
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:Now testing 61433 rows
+INFO:root:2017-08-07 13:48:05.322386 Now processing sample 0
+INFO:root:2017-08-07 13:48:05.327788 Now processing User 92
+INFO:root:Now testing 58058 rows
