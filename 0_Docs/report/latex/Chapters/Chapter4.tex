@@ -63,8 +63,6 @@ F1 is defined as the harmonic mean of precision and recall.
 
 $$F1 = 2\frac{P \times R}{P+R}$$
 
-\chapter{Methodology} % Methodology
-
 Several models were evaluated. As the goal of the research was to evaluate the effectiveness of different methods, extensive feature engineering beyond what has been described was not performed. 
 
 Random salection of test periods was perormed each time any of the results were run, while test users were selected at the outset and kept fixed throughout.
@@ -92,14 +90,14 @@ Finally we convert the probabilites into a binary outcome by optimizing for a th
 
 The remaining models adopted a time-series approach. Let $E = 1$ represent a Play event, and $E = 0$ a non-play event. $t$ is the half-hourly time period we are predicting for, and $h$ represent the half-hourly history. We therefore seek to calculate the probability of an event in the currenty time period, given the history of events, $p(E_t \mid E_h)$, for each individual user. 
 
-\subsection{Binary Logistic Regression (LogReg)}
+\section{Binary Logistic Regression (LogReg)}
 
 Here our model is:
 $p(E_t = 1 | E_h) =  \sigma(w'x + b)$
 
 where $w'$ is a weight matrix transpose, and x is our input features, and b is a constant. 
 
-\subsection{Linear SVM Regression}
+\section{Linear SVM Regression}
 
 A linear SVM regression model is characterized by the Epsilon Intesive loss function \parencite{Vapnik}. By modifying the loss function to ignore errors that are within a certain margin, $\epsilon$m helps prevent overfitting.
 
@@ -108,7 +106,7 @@ Our objective becomes to minimize:
 $$max(0,\left\| (y_i - w_i x_i - b) - \epsilon \right\|)$$
 
 
-\subsection{Non-Linear RBF Regression}
+\section{Non-Linear RBF Regression}
 
 Here we extend a regression model to include a Gaussian RBF kernel:
 
@@ -122,25 +120,19 @@ Note that the actual implementation in Tesnorflow made use of the fast computati
 
 The Kernel allows us to solve for non-linear problems by transforming our x values to a high dimensional space. Note that performing such calculations is computationally intensive and as such mini-batch training will be performed with a batch size of 2000 and 5 iterations of the dataset. (Rows of more than 5000 tended to cause memory errors, and iterations beyond 5 showed minimal or no decrease in loss)
 
-\subsection{Feature engineering and Regularization}
+\section{Feature engineering and Regularization}
 
 Feature engineering is the process of constructing and selecting what one considers to be useful predictors in from a dataset. A high level of feature engineering can lead to muchh faster model traning times as uncessary features have been man manually pruned ahead of time. Regularization is the idea of letting the modle learn the which features are important through addin a penalty term to the cosrt function which coerces the optimziation process to favour fewer stronger weights than many weak ones. In this dataset we have discussed some feature engineering performed in the data preparation stage in addition to employing regularization. In the logistic regression model, L2 regulzarization is used.
 
 
-
-
-
-
 \hfill \break
 \hfill \break
 \hfill \break
 \hfill \break
 
+\section{Recurrent Neural Networks}
 
-
-
-
-\subsection{Recurrent Neural Networks}
+Setting up an RNN model in Tensorflow requires careful attention to how shapes are fed i
 
 Recurrent nets are a type of artificial neural network designed to recognize patterns in sequences of data, such as text, genomes, handwriting, the spoken word, or numerical times series data emanating from sensors, stock markets and government agencies. Whereas a Feed-Forward network has input nodes, hidden layers, and an output layer, with data flowing in one direction only; RNNs allow for the hidden state from timestep of the neural net to be an input into the next.
 
@@ -159,3 +151,5 @@ An LSTM is an extension of an RNN model in which the hidden layer which is trans
 	\caption{LSTM}
 	\label{fig:fig8}
 \end{figure} 
+
+Setting up an RNN model in Tensorflow requires careful attention to how shapes are fed i

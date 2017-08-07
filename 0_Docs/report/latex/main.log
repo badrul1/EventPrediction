@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.25)  1 AUG 2017 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.25)  5 AUG 2017 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1776,7 +1776,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
  (./Chapters/Chapter2.tex
 Chapter 2.
-<Figures/fig001.jpg, id=225, 420.57124pt x 528.97626pt>
+<Figures/fig001.jpg, id=221, 420.57124pt x 528.97626pt>
 File: Figures/fig001.jpg Graphic file (type jpg)
 
 <use Figures/fig001.jpg>
@@ -1802,19 +1802,19 @@ Chapter 3.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 9.
 
-<Figures/fig004.jpg, id=259, 397.485pt x 263.98625pt>
+<Figures/fig004.jpg, id=255, 397.485pt x 263.98625pt>
 File: Figures/fig004.jpg Graphic file (type jpg)
  <use Figures/fig004.jpg>
 Package pdftex.def Info: Figures/fig004.jpg used on input line 20.
 (pdftex.def)             Requested size: 199.16928pt x 132.27878pt.
 
-<Figures/fig005.jpg, id=260, 625.33624pt x 221.82875pt>
+<Figures/fig005.jpg, id=256, 625.33624pt x 221.82875pt>
 File: Figures/fig005.jpg Graphic file (type jpg)
 
 <use Figures/fig005.jpg>
 Package pdftex.def Info: Figures/fig005.jpg used on input line 31.
 (pdftex.def)             Requested size: 199.16928pt x 70.65154pt.
- <Figures/fig006.jpg, id=261, 902.37125pt x 469.755pt>
+ <Figures/fig006.jpg, id=257, 902.37125pt x 469.755pt>
 File: Figures/fig006.jpg Graphic file (type jpg)
 
 <use Figures/fig006.jpg>
@@ -1830,14 +1830,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
  <./Figures/fig004.jpg> <./Figures/fig005.jpg>]
-<Figures/fig003.jpg, id=268, 418.56375pt x 283.0575pt>
+<Figures/fig003.jpg, id=264, 418.56375pt x 283.0575pt>
 File: Figures/fig003.jpg Graphic file (type jpg)
 
 <use Figures/fig003.jpg>
 Package pdftex.def Info: Figures/fig003.jpg used on input line 52.
 (pdftex.def)             Requested size: 199.16928pt x 134.68694pt.
 
-<Figures/fig002.jpg, id=269, 399.4925pt x 249.93375pt>
+<Figures/fig002.jpg, id=265, 399.4925pt x 249.93375pt>
 File: Figures/fig002.jpg Graphic file (type jpg)
 
 <use Figures/fig002.jpg>
@@ -1867,39 +1867,37 @@ T1/cmr/m/n/10.95 1]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 [1\OML/cmm/m/it/10.
 Chapter 5.
 1: section
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 129--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--133
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
-<Figures/fig007.jpg, id=309, 361.35pt x 337.26pt>
+[14] <Figures/fig007.jpg, id=312, 361.35pt x 337.26pt>
 File: Figures/fig007.jpg Graphic file (type jpg)
- <use Figures/fig007.jpg>
-Package pdftex.def Info: Figures/fig007.jpg used on input line 144.
+
+<use Figures/fig007.jpg>
+Package pdftex.def Info: Figures/fig007.jpg used on input line 149.
 (pdftex.def)             Requested size: 85.35826pt x 79.6678pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14] <Figures/fig008.png, id=318, 806.89455pt x 303.17265pt>
+<Figures/fig008.png, id=314, 806.89455pt x 303.17265pt>
 File: Figures/fig008.png Graphic file (type png)
 
 <use Figures/fig008.png>
-Package pdftex.def Info: Figures/fig008.png used on input line 153.
+Package pdftex.def Info: Figures/fig008.png used on input line 158.
 (pdftex.def)             Requested size: 142.26378pt x 53.44922pt.
 ) [15 <./Figures/fig007.jpg> <./Figures/fig008.png>]
 \openout2 = `Chapters/Chapter5.aux'.
@@ -1911,11 +1909,63 @@ Package pdftex.def Info: Figures/fig008.png used on input line 153.
 
 ]
 Chapter 6.
+<Figures/fig008a.jpg, id=329, 808.01875pt x 262.9825pt>
+File: Figures/fig008a.jpg Graphic file (type jpg)
+
+<use Figures/fig008a.jpg>
+Package pdftex.def Info: Figures/fig008a.jpg used on input line 29.
+(pdftex.def)             Requested size: 199.16928pt x 64.82251pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/fig008b.jpg, id=330, 825.0825pt x 250.9375pt>
+File: Figures/fig008b.jpg Graphic file (type jpg)
+
+<use Figures/fig008b.jpg>
+Package pdftex.def Info: Figures/fig008b.jpg used on input line 36.
+(pdftex.def)             Requested size: 199.16928pt x 60.57466pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/fig008c.jpg, id=331, 831.105pt x 252.945pt>
+File: Figures/fig008c.jpg Graphic file (type jpg)
+ <use Figures/fig008c.jpg>
+Package pdftex.def Info: Figures/fig008c.jpg used on input line 43.
+(pdftex.def)             Requested size: 199.16928pt x 60.6154pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/fig008d.jpg, id=332, 806.01125pt x 257.96375pt>
+File: Figures/fig008d.jpg Graphic file (type jpg)
+
+<use Figures/fig008d.jpg>
+Package pdftex.def Info: Figures/fig008d.jpg used on input line 50.
+(pdftex.def)             Requested size: 199.16928pt x 63.74289pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/fig008e.jpg, id=333, 828.09375pt x 268.00125pt>
+File: Figures/fig008e.jpg Graphic file (type jpg)
+
+<use Figures/fig008e.jpg>
+Package pdftex.def Info: Figures/fig008e.jpg used on input line 57.
+(pdftex.def)             Requested size: 199.16928pt x 64.45656pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
 1: section
-[17]) [18]
+[17] [18 <./Figures/fig008a.jpg> <./Figures/fig008b.jpg> <./Figures/fig008c.jpg
+> <./Figures/fig008d.jpg> <./Figures/fig008e.jpg>]
 \openout2 = `Chapters/ChapterTemplate.aux'.
 
- (./Chapters/ChapterTemplate.tex
+
+(./Chapters/ChapterTemplate.tex
 Chapter 7.
 )
 1: section
@@ -1970,20 +2020,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 215.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 215.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 953120D07417DB6C903F179DA5B9B302;6612.
+(rerunfilecheck)             Checksum: C3E49FFDFFC5C1E528809448581F9FD0;6257.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  )
 (\end occurred when \iftrue on line 90 was incomplete) 
 Here is how much of TeX's memory you used:
- 30677 strings out of 494910
- 617037 string characters out of 6179836
+ 30710 strings out of 494910
+ 617655 string characters out of 6179836
  713446 words of memory out of 5000000
- 33544 multiletter control sequences out of 15000+600000
+ 33568 multiletter control sequences out of 15000+600000
  46900 words of font info for 79 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 57i,20n,76p,10377b,1739s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,19n,76p,10377b,1739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf
 -dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
@@ -1998,10 +2048,10 @@ dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (29 pages, 612781 bytes).
+Output written on main.pdf (29 pages, 806512 bytes).
 PDF statistics:
- 439 PDF objects out of 1000 (max. 8388607)
- 381 compressed objects within 4 object streams
- 94 named destinations out of 1000 (max. 500000)
- 385 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 446 PDF objects out of 1000 (max. 8388607)
+ 383 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 402 words of extra memory for PDF output out of 10000 (max. 10000000)
 

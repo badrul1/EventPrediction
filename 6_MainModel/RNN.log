@@ -1,0 +1,1392 @@
+INFO:root:Now processing sample 0
+INFO:root:Now processing User Pandas(Index=261, userID=272)
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 83353 (12.0%)
+INFO:root:Now on pos 20000 of 83353 (23.99%)
+INFO:root:Now on pos 30000 of 83353 (35.99%)
+INFO:root:Now on pos 40000 of 83353 (47.99%)
+INFO:root:Now on pos 50000 of 83353 (59.99%)
+INFO:root:Now on pos 60000 of 83353 (71.98%)
+INFO:root:Now on pos 70000 of 83353 (83.98%)
+INFO:root:Now on pos 80000 of 83353 (95.98%)
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now on pos 0 of 6719 (0.0%)
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 1344 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 217230 rows
+INFO:root:Now testing 5376 rows
+INFO:root:Now testing 217230 rows
+INFO:root:Now on pos 10000 of 217231 (4.6%)
+INFO:root:Now on pos 20000 of 217231 (9.21%)
+INFO:root:Now on pos 30000 of 217231 (13.81%)
+INFO:root:Now on pos 40000 of 217231 (18.41%)
+INFO:root:Now on pos 50000 of 217231 (23.02%)
+INFO:root:Now on pos 60000 of 217231 (27.62%)
+INFO:root:Now on pos 70000 of 217231 (32.22%)
+INFO:root:Now on pos 80000 of 217231 (36.83%)
+INFO:root:Now on pos 90000 of 217231 (41.43%)
+INFO:root:Now on pos 100000 of 217231 (46.03%)
+INFO:root:Now on pos 110000 of 217231 (50.64%)
+INFO:root:Now on pos 120000 of 217231 (55.24%)
+INFO:root:Now on pos 130000 of 217231 (59.84%)
+INFO:root:Now on pos 140000 of 217231 (64.45%)
+INFO:root:Now on pos 150000 of 217231 (69.05%)
+INFO:root:Now on pos 160000 of 217231 (73.65%)
+INFO:root:Now on pos 170000 of 217231 (78.26%)
+INFO:root:Now on pos 180000 of 217231 (82.86%)
+INFO:root:Now on pos 190000 of 217231 (87.46%)
+INFO:root:Now on pos 200000 of 217231 (92.07%)
+INFO:root:Now on pos 210000 of 217231 (96.67%)
+INFO:root:Now processing sample 0
+INFO:root:Now processing User Pandas(Index=255, userID=266)
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 115049 (8.69%)
+INFO:root:Now processing sample 0
+INFO:root:Now processing User Pandas(Index=140, userID=151)
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 178
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 267
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 143
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 218
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 246
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 82
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 112
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 130
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 95
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 309
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 43
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 162
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing sample 1
+INFO:root:Now processing User 90
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 185
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 345
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 120
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 77
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 76
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 67
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 47
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 322
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now processing User 159
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 10000 of 42634 (23.46%)
+INFO:root:Now on pos 20000 of 42634 (46.91%)
+INFO:root:Now on pos 30000 of 42634 (70.37%)
+INFO:root:Now on pos 40000 of 42634 (93.82%)
+INFO:root:Now testing 2688 rows
+INFO:root:Now testing 217230 rows
+INFO:root:Now on pos 20000 of 217231 (9.21%)
+INFO:root:Now on pos 40000 of 217231 (18.41%)
+INFO:root:Now on pos 60000 of 217231 (27.62%)
+INFO:root:Now on pos 80000 of 217231 (36.83%)
+INFO:root:Now on pos 100000 of 217231 (46.03%)
+INFO:root:Now on pos 120000 of 217231 (55.24%)
+INFO:root:Now on pos 140000 of 217231 (64.45%)
+INFO:root:Now on pos 160000 of 217231 (73.65%)
+INFO:root:Now on pos 180000 of 217231 (82.86%)
+INFO:root:Now on pos 200000 of 217231 (92.07%)
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 96
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 114
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 35448 (28.21%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 10000 of 35448 (28.21%)
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 350
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 22593 (44.26%)
+INFO:root:Now on iteration 1
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 175
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 45733 (21.87%)
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 56
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 10000 of 53640 (18.64%)
+INFO:root:Now on pos 40000 of 53640 (74.57%)
+INFO:root:Now on iteration 1
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 277
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 261
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 348
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 178
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 308
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 198
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 2
+INFO:root:Now on iteration 3
+INFO:root:Now on iteration 4
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 2
+INFO:root:Now on iteration 3
+INFO:root:Now on iteration 4
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 2
+INFO:root:Now on iteration 3
+INFO:root:Now on iteration 4
+INFO:root:Now testing 1000 rows
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 2
+INFO:root:Now on iteration 3
+INFO:root:Now on iteration 4
+INFO:root:Now testing 1000 rows
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 76
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 239
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 127
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 59
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 182
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 84
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 19
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 179
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 2
+INFO:root:Now on iteration 3
+INFO:root:Now on iteration 4
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 2
+INFO:root:Now on iteration 3
+INFO:root:Now on iteration 4
+INFO:root:Now testing 2000 rows
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 2
+INFO:root:Now on iteration 3
+INFO:root:Now on iteration 4
+INFO:root:Now on iteration 5
+INFO:root:Now on iteration 6
+INFO:root:Now on iteration 7
+INFO:root:Now on iteration 8
+INFO:root:Now on iteration 9
+INFO:root:Now testing 2000 rows
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 2
+INFO:root:Now on iteration 3
+INFO:root:Now on iteration 4
+INFO:root:Now on iteration 5
+INFO:root:Now on iteration 6
+INFO:root:Now on iteration 7
+INFO:root:Now on iteration 8
+INFO:root:Now on iteration 9
+INFO:root:Now testing 2000 rows
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 2
+INFO:root:Now on iteration 3
+INFO:root:Now on iteration 4
+INFO:root:Now on iteration 5
+INFO:root:Now on iteration 6
+INFO:root:Now on iteration 7
+INFO:root:Now on iteration 8
+INFO:root:Now on iteration 9
+INFO:root:Now on iteration 10
+INFO:root:Now on iteration 11
+INFO:root:Now on iteration 12
+INFO:root:Now on iteration 13
+INFO:root:Now on iteration 14
+INFO:root:Now on iteration 15
+INFO:root:Now on iteration 16
+INFO:root:Now on iteration 17
+INFO:root:Now on iteration 18
+INFO:root:Now on iteration 19
+INFO:root:Now on iteration 20
+INFO:root:Now on iteration 21
+INFO:root:Now on iteration 22
+INFO:root:Now on iteration 23
+INFO:root:Now on iteration 24
+INFO:root:Now on iteration 25
+INFO:root:Now on iteration 26
+INFO:root:Now on iteration 27
+INFO:root:Now on iteration 28
+INFO:root:Now on iteration 29
+INFO:root:Now on iteration 30
+INFO:root:Now on iteration 31
+INFO:root:Now on iteration 32
+INFO:root:Now on iteration 33
+INFO:root:Now on iteration 34
+INFO:root:Now on iteration 35
+INFO:root:Now on iteration 36
+INFO:root:Now on iteration 37
+INFO:root:Now on iteration 38
+INFO:root:Now on iteration 39
+INFO:root:Now on iteration 40
+INFO:root:Now on iteration 41
+INFO:root:Now on iteration 42
+INFO:root:Now on iteration 43
+INFO:root:Now on iteration 44
+INFO:root:Now on iteration 45
+INFO:root:Now on iteration 46
+INFO:root:Now on iteration 47
+INFO:root:Now on iteration 48
+INFO:root:Now on iteration 49
+INFO:root:Now on iteration 50
+INFO:root:Now on iteration 51
+INFO:root:Now on iteration 52
+INFO:root:Now on iteration 53
+INFO:root:Now on iteration 54
+INFO:root:Now on iteration 55
+INFO:root:Now on iteration 56
+INFO:root:Now on iteration 57
+INFO:root:Now on iteration 58
+INFO:root:Now on iteration 59
+INFO:root:Now on iteration 60
+INFO:root:Now on iteration 61
+INFO:root:Now on iteration 62
+INFO:root:Now on iteration 63
+INFO:root:Now on iteration 64
+INFO:root:Now on iteration 65
+INFO:root:Now on iteration 66
+INFO:root:Now on iteration 67
+INFO:root:Now on iteration 68
+INFO:root:Now on iteration 69
+INFO:root:Now on iteration 70
+INFO:root:Now on iteration 71
+INFO:root:Now on iteration 72
+INFO:root:Now on iteration 73
+INFO:root:Now on iteration 74
+INFO:root:Now on iteration 75
+INFO:root:Now on iteration 76
+INFO:root:Now on iteration 77
+INFO:root:Now on iteration 78
+INFO:root:Now on iteration 79
+INFO:root:Now on iteration 80
+INFO:root:Now on iteration 81
+INFO:root:Now on iteration 82
+INFO:root:Now on iteration 83
+INFO:root:Now on iteration 84
+INFO:root:Now on iteration 85
+INFO:root:Now on iteration 86
+INFO:root:Now on iteration 87
+INFO:root:Now on iteration 88
+INFO:root:Now on iteration 89
+INFO:root:Now on iteration 90
+INFO:root:Now on iteration 91
+INFO:root:Now on iteration 92
+INFO:root:Now on iteration 93
+INFO:root:Now on iteration 94
+INFO:root:Now on iteration 95
+INFO:root:Now on iteration 96
+INFO:root:Now on iteration 97
+INFO:root:Now on iteration 98
+INFO:root:Now on iteration 99
+INFO:root:Now testing 2000 rows
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 2
+INFO:root:Now on iteration 3
+INFO:root:Now on iteration 4
+INFO:root:Now on iteration 5
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 108
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 0
+INFO:root:Now on iteration 1
+INFO:root:Now on iteration 2
+INFO:root:Now on iteration 3
+INFO:root:Now on iteration 4
+INFO:root:Now on iteration 5
+INFO:root:Now on iteration 6
+INFO:root:Now on iteration 7
+INFO:root:Now on iteration 8
+INFO:root:Now on iteration 9
+INFO:root:Now on iteration 10
+INFO:root:Now on iteration 11
+INFO:root:Now on iteration 12
+INFO:root:Now on iteration 13
+INFO:root:Now on iteration 14
+INFO:root:Now on iteration 15
+INFO:root:Now on iteration 16
+INFO:root:Now on iteration 17
+INFO:root:Now on iteration 18
+INFO:root:Now on iteration 19
+INFO:root:Now on iteration 20
+INFO:root:Now on iteration 21
+INFO:root:Now on iteration 22
+INFO:root:Now on iteration 23
+INFO:root:Now on iteration 24
+INFO:root:Now on iteration 25
+INFO:root:Now on iteration 26
+INFO:root:Now on iteration 27
+INFO:root:Now on iteration 28
+INFO:root:Now on iteration 29
+INFO:root:Now on iteration 30
+INFO:root:Now on iteration 31
+INFO:root:Now on iteration 32
+INFO:root:Now on iteration 33
+INFO:root:Now on iteration 34
+INFO:root:Now on iteration 35
+INFO:root:Now on iteration 36
+INFO:root:Now on iteration 37
+INFO:root:Now on iteration 38
+INFO:root:Now on iteration 39
+INFO:root:Now on iteration 40
+INFO:root:Now on iteration 41
+INFO:root:Now on iteration 42
+INFO:root:Now on iteration 43
+INFO:root:Now on iteration 44
+INFO:root:Now on iteration 45
+INFO:root:Now on iteration 46
+INFO:root:Now on iteration 47
+INFO:root:Now on iteration 48
+INFO:root:Now on iteration 49
+INFO:root:Now on iteration 50
+INFO:root:Now on iteration 51
+INFO:root:Now on iteration 52
+INFO:root:Now on iteration 53
+INFO:root:Now on iteration 54
+INFO:root:Now on iteration 55
+INFO:root:Now on iteration 56
+INFO:root:Now on iteration 57
+INFO:root:Now on iteration 58
+INFO:root:Now on iteration 59
+INFO:root:Now on iteration 60
+INFO:root:Now on iteration 61
+INFO:root:Now on iteration 62
+INFO:root:Now on iteration 63
+INFO:root:Now on iteration 64
+INFO:root:Now on iteration 65
+INFO:root:Now on iteration 66
+INFO:root:Now on iteration 67
+INFO:root:Now on iteration 68
+INFO:root:Now on iteration 69
+INFO:root:Now on iteration 70
+INFO:root:Now on iteration 71
+INFO:root:Now on iteration 72
+INFO:root:Now on iteration 73
+INFO:root:Now on iteration 74
+INFO:root:Now on iteration 75
+INFO:root:Now on iteration 76
+INFO:root:Now on iteration 77
+INFO:root:Now on iteration 78
+INFO:root:Now on iteration 79
+INFO:root:Now on iteration 80
+INFO:root:Now on iteration 81
+INFO:root:Now on iteration 82
+INFO:root:Now on iteration 83
+INFO:root:Now on iteration 84
+INFO:root:Now on iteration 85
+INFO:root:Now on iteration 86
+INFO:root:Now on iteration 87
+INFO:root:Now on iteration 88
+INFO:root:Now on iteration 89
+INFO:root:Now on iteration 90
+INFO:root:Now on iteration 91
+INFO:root:Now on iteration 92
+INFO:root:Now on iteration 93
+INFO:root:Now on iteration 94
+INFO:root:Now on iteration 95
+INFO:root:Now on iteration 96
+INFO:root:Now on iteration 97
+INFO:root:Now on iteration 98
+INFO:root:Now on iteration 99
+INFO:root:Now testing 4499 rows
+INFO:root:Now testing 4499 rows
+INFO:root:Now testing 4499 rows
+INFO:root:Now testing 4499 rows
+INFO:root:Now testing 4499 rows
+INFO:root:Now testing 4499 rows
+INFO:root:Now testing 4499 rows
+INFO:root:Now testing 4499 rows
+INFO:root:Now testing 4499 rows
+INFO:root:Now testing 4499 rows
+INFO:root:Now testing 4499 rows
+INFO:root:Now testing 4499 rows
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 55
+INFO:root:Now on iteration 0
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 166
+INFO:root:Now on iteration 0
+INFO:root:Now on pos 20000 of 40512 (49.37%)
+INFO:root:Now on iteration 1
+INFO:root:Now on pos 20000 of 40512 (49.37%)
+INFO:root:Now on iteration 2
+INFO:root:Now on pos 20000 of 40512 (49.37%)
+INFO:root:Now on iteration 3
+INFO:root:Now on pos 20000 of 40512 (49.37%)
+INFO:root:Now on iteration 4
+INFO:root:Now on pos 20000 of 40512 (49.37%)
+INFO:root:Now on iteration 5
+INFO:root:Now on pos 20000 of 40512 (49.37%)
+INFO:root:Now on iteration 6
+INFO:root:Now on pos 20000 of 40512 (49.37%)
+INFO:root:Now on iteration 7
+INFO:root:Now on pos 20000 of 40512 (49.37%)
+INFO:root:Now on iteration 8
+INFO:root:Now on pos 20000 of 40512 (49.37%)
+INFO:root:Now on iteration 9
+INFO:root:Now on pos 20000 of 40512 (49.37%)
+INFO:root:Now testing 40512 rows
+INFO:root:Now on pos 20000 of 40531 (49.34%)
+INFO:root:Now on pos 40000 of 40531 (98.69%)
+INFO:root:Now testing 2688 rows
+INFO:root:Now testing 40512 rows
+INFO:root:Now testing 40512 rows
+INFO:root:Now on pos 20000 of 40531 (49.34%)
+INFO:root:Now on pos 40000 of 40531 (98.69%)
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 70
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now on pos 20000 of 30175 (66.28%)
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 2
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 136
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 280
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now on pos 50000 of 59290 (84.33%)
+INFO:root:Now on pos 20000 of 59290 (33.73%)
+INFO:root:Now testing 59290 rows
+INFO:root:Now on pos 20000 of 59309 (33.72%)
+INFO:root:Now on pos 40000 of 59309 (67.44%)
+INFO:root:Now testing 2688 rows
+INFO:root:Now testing 2688 rows
+INFO:root:Now testing 217230 rows
+INFO:root:Now on pos 20000 of 217249 (9.21%)
+INFO:root:Now on pos 40000 of 217249 (18.41%)
+INFO:root:Now on pos 60000 of 217249 (27.62%)
+INFO:root:Now on pos 80000 of 217249 (36.82%)
+INFO:root:Now on pos 100000 of 217249 (46.03%)
+INFO:root:Now on pos 120000 of 217249 (55.24%)
+INFO:root:Now on pos 140000 of 217249 (64.44%)
+INFO:root:Now on pos 160000 of 217249 (73.65%)
+INFO:root:Now on pos 180000 of 217249 (82.85%)
+INFO:root:Now on pos 200000 of 217249 (92.06%)
+INFO:root:Now processing sample 0
+INFO:root:Now processing User 36
+INFO:root:Now processing User 6
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now on pos 30000 of 47851 (62.69%)
+INFO:root:Now processing User 203
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now on pos 30000 of 50707 (59.16%)
+INFO:root:Now processing User 360
+INFO:root:Now processing User 91
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now on pos 30000 of 33828 (88.68%)
+INFO:root:Now processing User 166
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now on pos 30000 of 40512 (74.05%)
+INFO:root:Now processing User 140
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now on pos 30000 of 53849 (55.71%)
+INFO:root:Now processing User 309
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now on pos 30000 of 56851 (52.77%)
+INFO:root:Now processing User 213
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now on pos 30000 of 36919 (81.26%)
+INFO:root:Now processing User 142
+INFO:root:Now on pos 30000 of 70795 (42.38%)
+INFO:root:Now on pos 60000 of 70795 (84.75%)
+INFO:root:Now on pos 30000 of 70795 (42.38%)
+INFO:root:Now on pos 60000 of 70795 (84.75%)
+INFO:root:Now on pos 30000 of 70795 (42.38%)
+INFO:root:Now on pos 60000 of 70795 (84.75%)
