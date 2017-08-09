@@ -2,18 +2,13 @@
 
 \chapter{Data Exploration} % Main chapter title
 
-Before we discuss methodology it is useful to first ground ourselves in what the data looks like. Here we provide some preliminary analysis that was performed that helped shape the design decisions in the next chapter.
+Before discussing the methods it is useful to first ground ourselves in the data. Here we provide some preliminary analysis that was performed that helped shape the design decisions in the next chapter.
 
 \label{Chapter3}
 
-\subsection{Basic Statistics}
-
-Due to technical and time constraints the analysis was carried out on apprixmately 10 percent of the full LastFM 1k dataset.
-
-
 \subsection{Daily play patterns}
 
-When we count the track plays by hour of the day we observe a clear daily pattern with usage hitting the peak at around 5pm and a trough at around 6am. 
+Track plays by hour of the day demonstrate a clear daily pattern with usage hitting the peak at around 5pm and a trough at around 6am. 
 
 \begin{figure}[h!]
 	\centering
@@ -22,7 +17,7 @@ When we count the track plays by hour of the day we observe a clear daily patter
 	\label{fig:fig4}
 \end{figure} 
 
-While the peak of 5pm is easily explained by 9-5 workers finishing their jobs, it is strange that the pre-work hours of 6-8am has the lowest listening time out of the entire 24hr day.
+The peak of 5pm is easily explained by 9-5 workers finishing their jobs, however decline during pre-work hours of 6-8am was unexpected and may be a product of how the data was gathered.
 
 Zooming out to view the pattern across an entire week we see that the daily pattern is occurs across every day of the week
 

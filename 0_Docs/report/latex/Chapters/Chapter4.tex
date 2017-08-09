@@ -4,7 +4,7 @@
 
 \label{Chapter4} % 
 
-From our preliminary analysis we have seen that listening habits, at an aggregate level, follow a strong daily usage pattern. However at an individual user level these patterns are not as strong. In this section we discuss the different methods , of increasing complexity, that were evaluated.
+From our preliminary analysis we have seen that listening habits, at an aggregate level, follow a strong daily usage pattern. However at an individual user level these patterns are not as strong. In this section we discuss different methods of increasing complexity, that we wish to asses.
 
 The methods are:
 
@@ -21,15 +21,14 @@ We start with discussing the data preparation that was performed in order to per
 
 The analysis was carried out in Python (via Jupyter notebooks) running on Ubuntu. The raw data consisted of timestamp of when a song was played and a user ID. These were loaded as-is into a SqlLite3 database. The methods themselves utilized a mixture of scikit learn, Tensorflow, and GPFlow.
 
-UserIDs were then converted to integer (e.g. 'User0005' became '5') and a period table was defined of n minute intervals to which all timestamps could be mapped to. n was chosen to be 30 although it is possible to re-run the analysis for other levels of granularity.
+UserIDs were then converted to integer (e.g. 'User0005' became '5') and a period lookup table was created at n minute intervals, to which all timestamps in our main dataset could be mapped to. n was chosen to be 30 although it is possible to re-run the analysis for other levels of granularity.
 
-More significantly the data, which contained entries for the times at which each user listened to music, was supplemented with all the times they did \emph{not} listen to music, between their date of their first and last play. As can be imagiend this increased the size of the dataset signifciantly from <> rows to <> rows.
+More significantly the data, which contained entries for the times at which each user listened to music, was supplemented with all the times they did \emph{not} listen to music, between their date of their first and last play. 
+This was required in order to generate a sequence of play and non-play events. 
 
-This was necessary in order to evaluate the success of the models in predicting when users would like to listen to music vs. when they would not. From here the data was modelled in two different ways. 
+The data was then transformed into time series data with the following features generated: PeriodID, UserID, HrsFrom5pm, isSun, isMon, isTue, isWed, isThu, isFri, isSat, t, t1, t2, t3, t4, t5, t10, t12hrs, t24hrs, t1wk, t2wks, t3wks, t4wks.
 
-THe second method of modeling the data retains the temporal aspect and is inline with times-series approaches. The data was structure into the following features: PeriodID, UserID, HrsFrom5pm, isSun, isMon, isTue, isWed, isThu, isFri, isSat, t, t1, t2, t3, t4, t5, t10, t12hrs, t24hrs, t1wk, t2wks, t3wks, t4wks.
-
-The first two are self-explanatory. HrsFrom65m was chosen as based on the preliminary analysis 6pm appeared to be the peak listening time for the population as whole (see next chapter) and was calcuated as the absolute number of hours, in either direction, from 6pm. Days of the week were codified into a one-hot vector notation, and t ... t4wks represent whether or not a user listened to music in the current period, in t minus 1 period, ... t minus 12 hours ago, all the way through to t minus 4 weeks ago.
+HrsFrom5pm was chosen as based on the preliminary analysis 5pm appeared to be the peak listening time for the population as whole (see next chapter) and was calcuated as the absolute number of hours, in either direction, from 6pm. Days of the week were codified into a one-hot vector notation, and t ... t4wks represent whether or not a user listened to music in the current period, in t minus 1 period, ... t minus 12 hours ago, all the way through to t minus 4 weeks ago.
 
 In this way, for each play or non-play we capture a snapshot of the history up to that point. 4 weeks was chosen as the history length as it was felt to be an adequate amount of time to capture the signals that would help predict a play event.
 

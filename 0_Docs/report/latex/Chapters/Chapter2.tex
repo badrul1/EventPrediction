@@ -4,10 +4,14 @@
 
 \label{Chapter2} % 
 
-Within literature the most common way of tackling the problem is through Point Processes. More recently both Gaussian Processes and Deep Learning have been applied.
+Event prediction is alternatively referred to in literature as sequence predictions and temporal point processes. The problem can be defined mathematically as determining:
+
+$$p(x_t | x_h)  $$
+where h is the event history sequence, ${t-n ... t-1}$.
 
 \section{Point Processes}
-A temporal point process \parencite{DaleyJones} is a way of modeling events data with $t$ being a sequence of a fixed period interval with $t_i \epsilon R + and i \epsilon Z+$. 
+
+This is one of the most widely used method for modeling event sequences. A temporal point process \parencite{DaleyJones} is a way of modeling events data with $t$ being a sequence of a fixed period interval with $t_i \epsilon R + and i \epsilon Z+$. 
 
 It can be modelled as a series of inter-event times (time until next event) or the number of events occurring in the interval. Examples of point processes are the times between financial transactions \parencite{EngleRusell}, and the times at which a customer makes a purchase from an online retailer *** insert ref***.
 
@@ -26,17 +30,19 @@ There are different ways of representing point process data as shown in figure \
 	\label{fig:fig1}
 \end{figure}
 
+\subsection{Time-series analysis}
+
 
 \subsection{Conditional Intensity Function}
 
-A conditional intensity function is the most popular method for modeling point processes \parencite{DuWang}. In this method the probability of an event $\lambda(t)$ is derived from a stochastic model such as the Poisson process. 
+A conditional intensity function is the key part of modeling point processes \parencite{DuWang}. In this method the probability of an event $\lambda(t)$ is derived from a stochastic model such as the Poisson process. 
 
 Conditional intensity functions can be inhomogenous such as with a Gaussian Kernel $\lambda(t) = \sum^k_{i=1}\alpha(2\pi \sigma^2_i)^{-1/2}exp(-(t-c_i)^2/\sigma^2_i)$
 , for $t \epsilon [0,T]$ where $c_i$ and $\sigma$ are fixed center and standard deviations, respectively, and $\alpha_i$ is the weight for kernel i.
 
-Or they can vary in intensity such as with the self-exciting (Hawkes) process where the intensity is determined by previous events through the parametric form $\lambda(t) = \mu + \beta \sum_{t_i<t}g(t-t_i) where g is some non-negative kernel function.$
+Or they can vary in intensity, such as with the self-exciting (Hawkes) process where the intensity is determined by previous events through the parametric form $\lambda(t) = \mu + \beta \sum_{t_i<t}g(t-t_i) where g is some non-negative kernel function.$
 
-However, as noted by Wass et. al \parencite{Wass}, conventional point process models often make unrealistic assumptions about the generative processes of the event sequences. The conditional intensity function make various parametric assumptions about the latent dynamics governing the generation of the observed point patterns. As a consequence, model misspecification can cause significantly degraded
+As noted by Wass et. al \parencite{Wass}, conventional point process models often make unrealistic assumptions about the generative processes of the event sequences. The conditional intensity function make various parametric assumptions about the latent dynamics governing the generation of the observed point patterns. As a consequence, model misspecification can cause significantly degraded
 performance using point process models.
 
 \section{Deep RNN Point Process Models}

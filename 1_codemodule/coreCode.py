@@ -73,12 +73,12 @@ def padRows(X,Y,batch_size, reverse=False):
 
 
 #### Disseration specific code ###
-def getUsers(dbPath):
+def getUsers(dbPath, testUserEquals = 0):
     con = sqlite3.connect(dbPath)
     c = con.cursor()
 
     # Get list of UserIDs
-    users = pd.read_sql_query("Select UserID from tblUsers Where tblUsers.TestUser = 0",con)
+    users = pd.read_sql_query("Select UserID from tblUsers Where tblUsers.TestUser = {}".format(testUserEquals),con)
     con.close()
     return users
 

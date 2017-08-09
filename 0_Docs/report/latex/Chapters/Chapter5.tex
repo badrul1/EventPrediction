@@ -1,18 +1,12 @@
 % Chapter 5
 
-\chapter{Evaluation} % Methodology
+\chapter{Experiments} % Methodology
 
 \label{Chapter5} % For referencing the chapter elsewhere, use \ref{Chapter5} 
 
-In this chapter we present the results of the evaluation starting with the best result obtained from each model from different hyper-parameter testing.
-
-The performance of each model is then discussed further in the sections that follow. 
+In this chapter we present the results of the experiments conducted and discus the refinements made to the models as a result of the experiments. We start with a summary of the best results obtained by each method before going into a more in-depth evaluation in the subsequent sections.
 
 \section{Results summary}
-
-Within the context of a home audio decide, the cost of mistakenly suggesting a user wants to listen to music is higher than the cost of not suggesting at all. We therefore focus our results on the predictions where a 'play' event was predicted by the model and examine both the precision and recall scores for both the hidden periods for existing users as well as new users.
-
-All models required a number of runs to try and determine the best hyper-parameters, as dicusssed in the next few chapters, and it may be the case that hyper-parameter settings exist for each model that would provide a boost in performance.
 
 Looking at the F1-score we see that the RNN model performed the best overall with the logistic regression model close behind. Looking solely at new users we can say that the RNN model makes correct guesses 72\% of the time, and being well balanced between being right its guesses (precision), and guessing all of the time right events (recall). 
 
@@ -63,5 +57,19 @@ In theory an LSTM ought to be able to learn such features by itself based on its
 
 \section{Logistic Regression}
 
-\section{RNN}
+\section{RNN-LSTM}
+
+Of all the models, the RNN required the most effort to set up correctly. We provide details here to help others implementing a similar model.
+
+\subsection{Input Shape}
+
+In order to utilize the learning capabilities of an LSTM in Tensorflow, the input, x, must be of shape (rows,depth, cols) where rows are separate rows of training data, the depth is the time-steps that will be unrolled by the RNN, and cols are the number of features. It is important to note that when the data is unrolled, time step t for all batches are processed in one block, before t-1 , t-2 etc.
+
+Constructung the 3-d shape often requires building them up in slices. It is highly advisable to pre-allocate the 3d array when doing this rather than extending the array on each iteration.
+
+\subsection{Imbalanced data}
+
+The experiments looked at the difference between feeding the RNN data rows with time lag features (t-1 .. t-5, and t-24) explictly provided, vs. excluding them and expecting the model to determine the optimal time lags for itself. A significant decrease in performance was found whehn they were excluded with recall for play events being extremely low. Further analysis indicated the recall decreases the more it is trained suggesting that the model was learnig to priotize the non-play events at the expense of play-events due to the imbalance in the data (non-play events make up ~90% of the datasete).
+
+A weighted cost function was used to emphase play events as seen below, which led to some improvement.
 
