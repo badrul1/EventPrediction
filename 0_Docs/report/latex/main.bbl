@@ -16,6 +16,26 @@
   {}
 \endgroup
 
+\entry{Brownlee}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Brownlee}{B.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BJ1}
+  \strng{fullhash}{BJ1}
+  \field{sortinit}{B}
+  \field{title}{8 tactics to combat imbalanced classes in your machine learning
+  dataset}
+  \verb{url}
+  \verb http://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-
+  \verb in-your-machine-learning-dataset/
+  \endverb
+  \field{year}{2015}
+\endentry
+
 \entry{DaleyJones}{book}{}
   \name{author}{2}{}{%
     {{}%
@@ -273,6 +293,41 @@
   \verb http://colah.github.io/posts/2015-08-Understanding-LSTMs/
   \endverb
   \field{year}{2017}
+\endentry
+
+\entry{MLP}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Rumelhart}{R.}%
+     {D.~E.}{D.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hinton}{H.}%
+     {G.~E.}{G.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Williams}{W.}%
+     {R.~J.}{R.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Association for Computational Linguistics}%
+  }
+  \strng{namehash}{RDEHGEWRJ1}
+  \strng{fullhash}{RDEHGEWRJ1}
+  \field{sortinit}{R}
+  \field{booktitle}{Parallel distributed processing: explorations in the
+  microstructure of cognition}
+  \field{pages}{1631\bibrangedash 1642}
+  \field{title}{Learning internal representations by error propagation}
+  \list{location}{1}{%
+    {Cambridge, MA}%
+  }
+  \field{year}{1986}
+  \warn{\item Can't use 'location' + 'address'}
 \endentry
 
 \entry{Socher}{inproceedings}{}

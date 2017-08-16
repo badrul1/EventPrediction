@@ -2,12 +2,11 @@ This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: biblatex.bst
-A level-1 auxiliary file: Chapters/Chapter1.aux
-A level-1 auxiliary file: Chapters/Chapter2.aux
-A level-1 auxiliary file: Chapters/Chapter3.aux
-A level-1 auxiliary file: Chapters/Chapter4.aux
-A level-1 auxiliary file: Chapters/Chapter5.aux
-A level-1 auxiliary file: Chapters/ChapterTemplate.aux
+A level-1 auxiliary file: Chapters/Intro.aux
+A level-1 auxiliary file: Chapters/LitReview.aux
+A level-1 auxiliary file: Chapters/Design.aux
+A level-1 auxiliary file: Chapters/Results.aux
+A level-1 auxiliary file: Chapters/Summary.aux
 A level-1 auxiliary file: Appendices/AppendixA.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -27,48 +26,49 @@ I was expecting a `,' or a `}'---line 11 of file bibliography.bib
  :  publisher   ={Springer-Verlag}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "NegLog"
 Biblatex version: 3.3
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 14 entries,
+You've used 16 entries,
             6047 wiz_defined-function locations,
-            1220 strings with 10794 characters,
-and the built_in function-call counts, 47117 in all, are:
-= -- 2068
-> -- 1687
-< -- 576
-+ -- 628
-- -- 584
-* -- 3267
-:= -- 2841
+            1233 strings with 11185 characters,
+and the built_in function-call counts, 54968 in all, are:
+= -- 2471
+> -- 1960
+< -- 687
++ -- 739
+- -- 674
+* -- 3773
+:= -- 3261
 add.period$ -- 0
-call.type$ -- 14
-change.case$ -- 329
+call.type$ -- 16
+change.case$ -- 402
 chr.to.int$ -- 44
-cite$ -- 26
-duplicate$ -- 5172
-empty$ -- 4646
-format.name$ -- 953
-if$ -- 10847
+cite$ -- 30
+duplicate$ -- 6017
+empty$ -- 5397
+format.name$ -- 1093
+if$ -- 12690
 int.to.chr$ -- 0
-int.to.str$ -- 37
+int.to.str$ -- 43
 missing$ -- 0
-newline$ -- 372
-num.names$ -- 766
-pop$ -- 4283
+newline$ -- 425
+num.names$ -- 907
+pop$ -- 4929
 preamble$ -- 1
-purify$ -- 371
+purify$ -- 450
 quote$ -- 0
-skip$ -- 2963
+skip$ -- 3477
 stack$ -- 0
-substring$ -- 1386
-swap$ -- 1678
-text.length$ -- 407
-text.prefix$ -- 14
+substring$ -- 1718
+swap$ -- 1960
+text.length$ -- 467
+text.prefix$ -- 16
 top$ -- 1
-type$ -- 515
+type$ -- 591
 warning$ -- 0
-while$ -- 284
+while$ -- 321
 width$ -- 0
-write$ -- 357
+write$ -- 408
 (There was 1 error message)

@@ -73,25 +73,30 @@ def padRows(X,Y,batch_size, reverse=False):
 
 
 #### Disseration specific code ###
-def getUsers(dbPath, testUserEquals = 0):
+def getUsers(dbPath, testUserFlag = 0, _sample=None):
     con = sqlite3.connect(dbPath)
     c = con.cursor()
 
     # Get list of UserIDs
-    users = pd.read_sql_query("Select UserID from tblUsers Where tblUsers.TestUser = {}".format(testUserEquals),con)
+    users = pd.read_sql_query("Select UserID from tblUsers Where tblUsers.TestUser = {} and totalPlays > 336".format(testUserFlag),con)
     con.close()
-    return users
+    if _sample is None:
+        return users.values
+    else:
+        return users.sample(_sample, replace=False)
 
 def _getTrainTestData(dbPath,tblName, fieldList, userIDs=None, periodGranularity =30,displayWarnings = True):
     # Returns data as a Pandas dataframe
+    # UserIDs is a list of user IDs
     # fieldList is a comma separated string and specifies the fields to bring back in field1, field2 ... format
     # If userIDs is not provided, then returns all data
 
     con = sqlite3.connect(dbPath)
     c = con.cursor()
 
-    df = pd.read_sql_query("Select UserID from tblUsers Where tblUsers.TestUser = 0", con)
-    if userIDs is None: userIDs = df.userID.values  # If Not provided assume all users
+    if userIDs is None:
+        df = pd.read_sql_query("Select UserID from tblUsers Where tblUsers.TestUser = 0", con)
+        userIDs = df.userID.values  # If Not provided assume ALL users
 
     trainDf = pd.DataFrame(columns=[fieldList])  # Create an empty df
     testDf = pd.DataFrame(columns=[fieldList])  # Create an empty df
@@ -123,7 +128,7 @@ def _getTrainTestData(dbPath,tblName, fieldList, userIDs=None, periodGranularity
     return trainDf, testDf
 
 
-def getHiddenPeriodsData(dbPath, tblName, fieldList, oneHot, userIDs=None,periodGranularity =30):
+def SelectUserData_TrainTest(dbPath, tblName, fieldList, oneHot, userIDs,periodGranularity =30):
     trainDf, testDf = _getTrainTestData(dbPath, tblName, fieldList, userIDs, periodGranularity)
     if trainDf.shape[0] == 0:
         # No rows
@@ -148,12 +153,9 @@ def getHiddenPeriodsData(dbPath, tblName, fieldList, oneHot, userIDs=None,period
         return xTrain, yTrain, xTest,yTest
 
 
-def _getHiddenUsersDataDf(dbPath, tblName, fieldList, periodGranularity=30, firstNPerc=1.0):
+def _getHiddenUsersDataDf(dbPath, tblName, fieldList, userIDs, periodGranularity=30, firstNPerc=1.0):
     con = sqlite3.connect(dbPath)
     c = con.cursor()
-
-    # Get list of UserIDs
-    users = pd.read_sql_query("Select UserID from tblUsers Where tblUsers.TestUser = 1", con)
 
     # fieldList="t, PeriodID, UserID, HrsFrom6pm, isSun,isMon,isTue,isWed,isThu,isFri,isSat,t1,t2,t3,t4,t5,t10,t12hrs,t24hrs,t1wk,t2wks,t3wks,t4wks"
     testDf = pd.DataFrame(columns=[fieldList])  # Create an emmpty df
@@ -161,10 +163,10 @@ def _getHiddenUsersDataDf(dbPath, tblName, fieldList, periodGranularity=30, firs
 
     totalRows = 0
 
-    for user in users.itertuples():
+    for u in userIDs:
         # Get training dataset
 
-        SqlStr = "SELECT {} from {} where UserID = {}".format(fieldList + ",PeriodID", tblName, user.userID)
+        SqlStr = "SELECT {} from {} where UserID = {}".format(fieldList + ",PeriodID", tblName, u)
         df = pd.read_sql_query(SqlStr, con)
         df["PeriodID"] = df["PeriodID"].astype(int)
         df.sort_values(['PeriodID'])
@@ -180,17 +182,17 @@ def _getHiddenUsersDataDf(dbPath, tblName, fieldList, periodGranularity=30, firs
     return testDf
 
 
-def getHiddenUsersData(dbPath, tblName, fieldList, oneHot,firstNPerc=0.5, periodGranularity = 30):
-    testDf2 = _getHiddenUsersDataDf(dbPath, tblName, fieldList, periodGranularity,firstNPerc)  # Get the first half of everyones history
+def SelectTestUserData(dbPath, tblName, fieldList, userIDs, oneHot,firstNPerc=1, periodGranularity = 30):
+    testDf = _getHiddenUsersDataDf(dbPath, tblName, fieldList, userIDs, periodGranularity,firstNPerc)
 
     # Get hidden users data
-    xTest2 = testDf2.drop(['t', 'UserID', 'PeriodID'], 1).values
-    yTest2 = testDf2['t'].values.astype(int)
-    yTest2 = yTest2.reshape(-1, 1)
+    xTest = testDf.drop(['t', 'UserID', 'PeriodID'], 1).values
+    yTest = testDf['t'].values.astype(int)
+    yTest = yTest.reshape(-1, 1)
 
     if oneHot:
         # One-Hot version
-        yTest2_onehot = pd.get_dummies(testDf2['t']).values.astype(float)
-        return xTest2, yTest2_onehot,testDf2
+        yTest_onehot = pd.get_dummies(testDf['t']).values.astype(float)
+        return xTest, yTest_onehot
     else:
-        return xTest2, yTest2,testDf2
+        return xTest, yTest
