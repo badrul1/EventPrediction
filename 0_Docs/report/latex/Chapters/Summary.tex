@@ -6,5 +6,17 @@
 
 \section{Conclusion}
 
-The research set out to evaluate the effectiveness of Neural Networks to learn temporal patterns, partciularly without explicit encoding of time-lagged features.
+Predicting the propensity of a user to listen to music at a certain time, based on their recent listening history can be applied to a range of other areas such as the propensity to purchase, electricity usage, or the demands on a public transport system. In all these a good modeling of the temporal patterns helps with prediction.
+
+Within the literature modeling the problem as a temporal point process is one of the most common methods and this research did likewise in several of the machine learning algorithms that were evaluted.
+
+As music listening is typically long periods of non-play events, followed by sequential periods of play events, the problem becomes one of a balance between precision and recall. Improving recall requires predicting the start and end of a sequence while precision favours restricting predictions to when $t-1 = 1$. This effect is seen in our baseline model which scored 79\% on precision and 13\% on recall after 5-fold cross validation.
+
+It is also seen in the linear SVM models which is less impacted by cases that fall close to the decision boundary as the start of and end of a sequence are likely to be.
+
+When it comes to predicting the start and end of a play sequence, non-linear models outperform linear ones with an RBF model achieving a 76\% recall score (while maintaining a high 77\% precision score), and the an RNN-LSTM model achiving 69\% and 70\% respectively.
+
+From a practical perspective, it is models that are accurate on the first and last periods that were are most intrested in. Additional research was performed to assess the performance of Logistic regression and SVM models in these areas by setting all other periods to a non-play event. ***TBC...
+
+\section{Further investigation}
 

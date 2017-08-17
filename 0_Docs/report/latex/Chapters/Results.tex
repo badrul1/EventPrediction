@@ -107,19 +107,8 @@ Further analysis showed one user in particular with very high amount of plays, w
 
 \section{Main results} % Methodology
 
-We will now present the results of the experiments conducted. We start with a summary of the results obtained through 5-fold cross validation then discuss our results in more depth.
+Fig. \ref{fig13a} shows the results from our experiments. We see how our baseline model scores highly on accuracy but low on recall. In other words as a sequencce of plays often appear together in batches, assuming $t = t-1$ is often correct, but it fails to pick up the start and end points of a song.
 
-Fig. \ref{fig13a} shows the overall results from 5-fold cross validation. From this it would appear that almost all models outperformed the baseline model. However these results disguise the true picture. The precision and recall are the average across both plays and non-plays.  We can instead look at 'first play' events only (fig. \ref{fig13b}) by defining 'first play' as any plays where there were no plays in the previous 4 perids (i.e.2 hours). Here we see a more mixed pattern with SVM models scoring an average 81\% on precision, logistic regression an average of 68\% on recall, and the Baseline and Bayesian models performing significantly worse. 
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=8cm, keepaspectratio,]{fig013a.jpg}
-	\caption{}
-	\label{fig13a}
-\end{figure} 
-
- 
- 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=8cm, keepaspectratio,]{fig013b.jpg}
@@ -128,32 +117,31 @@ Fig. \ref{fig13a} shows the overall results from 5-fold cross validation. From t
 \end{figure}  
 
 
+The Bayesian Inference model performs poorly on both measures. This would suggest that the difference between the population patterns and what is observed at an individual level is too large.
 
-\section{RNN-LSTM}
+Our remaining models exhibit the tension between achieving a good accuracy and achieving a good recall.
+The Logistic regression model performs below average on precision but is second highest on recall. The Linear SVM and RMF regression models are on par with one another with the former achieving the highest score on prevision, and the latter on recall. 
 
-The RNN model required a lot more effort to set up and get meaningful results from. While some of this was down to how Tensorflow operates, some of it is also a feature of deep leanting itself. In the quest to find a model that worked the following tweak were made to the starting model.
+The Linear SVM model ignores probabilities that fall within a margin of the decision boundary during its optimization process. That this translates into performing well on precision may be due to placing lesser emphasis on ad-hoc play events that aren't indicative of a users general behaviour, as these probablities would likely fall near the decision boundary. Alternatively it could be better at dealing with the first play of a sequence whereby if often, but not always occurs at the same time each day; again leading to probabilities nearer the decision boundary.
 
-\textit{Computational efficiency}
+The RBF model generally performs well on both metrics. Note that the RBF classifciation was restricted to 100k rows of training data as it was found the computational cost of 500k rows was too high so it had less training data to work with than the Linear SVM. The high recall rate of 68\% indicates that inputs have a non-linear relationship to the output and that this is especially helpful to predicting the start and end of a play sequence as seen by the high recall score. 
+ 
+The RNN models were trained on 50k rows of data due to the computational cost of evaluating a large number of hyperparameters. Given the much smaller training set the results we obsertve are better than expected.  The final parameters for the models were a 250 units, 4 LSTM layers, and a class-weghting of 2.0 for play events.
 
-RNN's require the construction of a 3-dimensional tensor in which the second dimension is unstacked to create a list of timesteps. Using pre-allocated arrays than appending to arrays was found to provide a significan speed boost in shaping the data in theis way.
+\section{Important features}
+The advantage of logistic regression and linesr SVM models are that it is easy to interpret the co-efficients used. The coefficients in a lgostic regression modle are an indicator of the strength of that feature in determining the output, while the coefficient in a linear SVM are an indicator of that feature in determining the decision boundary.
 
-\textit{Data Sampling}
+Fig XXX shows the co-efficients from both models. We see that t-1 was by far the most important feature. This is expcted and it's importance crowds out the other features. Re-running both models with only T1 gave us 
 
-It is well known that deep learning requires a large amount of data from which to learn from. In order to provide it within enough varied data the following hierarchy of iteration was set up up:
+\section{RNN Hyper parameter tuning}
 
-\begin{enumerate}
-	\item Sampling iteration (s)
-	\item Period iteration (p)
-	\item Batch iteration (n) and Batch size (z)
-\end{enumerate}
+The advantage of the RNN model is that it determines the features by itself. However this comes at a prices with many more hyperparamters to tune, requiring a lot more time.
 
-The highest level of iteration was a sampling iteration, S. Each sampling iteration selects a user at random.  For each random user p random periods were selected. For each period selected z preceding periods were selected to form a single batch of training data. This model was then fed this batch n times.
+For our research the dataset was reduced in order to perform the desired number of hyperparameter tests. The number of hidden layers, units, timeteps, samples, and iterations all played a singificant part in impacting the time of a single run. 
 
-Further traning parameters was the number of hidden notes, h, in the RNN; and the number of timesteps, selected for each row of the batch.
+Fig XXX shows the results of some of the other tests that were performed.
 
-It was oberved that a variery of training data, particularly from different users, was more beneficial than  high amount of iteraions or a deeper network.
-
-Figure <TBC> shows the performance across different parameter settings, with the best result across all models shown in <TBC>
+From this we see that XXX
 
 \begin{figure}[h!]
 	\centering
@@ -163,58 +151,3 @@ Figure <TBC> shows the performance across different parameter settings, with the
 \end{figure} 
 
 
-\section{Overall results summary}
-
-The best scores per model are shown in figure \ref{fig9}.
-Looking at the F1-score we see that the Logistic regression model performs the best. It was also found to be consistent across different runs of the model.
-
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=12cm, keepaspectratio,]{fig009_Results.jpg}
-	\caption{Summary of best scores}
-	\label{fig9}
-\end{figure} 
-
-TO BE COMPLETED
-
-\section{Adaptability to new users}
-
-One of our areas of interest was how accurate such models are when it comes to learning the patterns of new users. Tie figures below show how the accuracy improved over time for each of the 10 test users. The periods indicate half-hourly intervals with 2-3,000 periods (1.5-2 months) appearing to be the time it takses to learn the habits of a typical user. 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=7cm, keepaspectratio,]{fig008a.jpg}
-	\caption{}
-	\label{fig:fig8a}
-\end{figure} 
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=7cm, keepaspectratio,]{fig008b.jpg}
-	\caption{}
-	\label{fig:fig8b}
-\end{figure} 
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=7cm, keepaspectratio,]{fig008c.jpg}
-	\caption{}
-	\label{fig:fig8c}
-\end{figure} 
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=7cm, keepaspectratio,]{fig008d.jpg}
-	\caption{}
-	\label{fig:fig8d}
-\end{figure} 
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=7cm, keepaspectratio,]{fig008e.jpg}
-	\caption{}
-	\label{fig:fig8e}
-\end{figure} 
-
-
-From these charts it appears that two months worth of data is required to for the model to rget trained up on a new user.
