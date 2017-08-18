@@ -75,18 +75,27 @@ Our baseline model will be to assume $t = t-1$, that is to say a person will lis
 
 We employ a simple Bayesian Inference approach by utilizing the Beta-Binomial model. The Beta-Binomial model is built upon the weekly patterns observed in the preliminary analysis. Conceptually it seeks to build up a users personalized weekly listening profile as observations come in, using a Beta-Binomial probability distribution, with the priors based on the population as a whole. We then assess how effective this profile is at predicting listening events for that user.
 
-We divide a week up into timeslots of half hourly intervals (24*2*7=336 timeslots). The liklihood function which represents the probability of a user listening to music, is defined as a binomial distribution, where $k$ is the number of plays in a given period, $n$ is the sum of plays and non-plays, and $\theta$ is the unknown probability parameter for the binomial distribution.. 
+Prior probabilities were calculated or each half-hourly period in a week (24*2*7=336 timeslots). Fig \ref{fig10b} shows the calculations for the first 2.5 hours of a Sunday (d-hour-hh format). 
+
+The liklihood function which represents the probability of a user listening to music was defined as a binomial distribution, where $k$ is the number of plays in a given period, $n$ is the sum of plays and non-plays, and $\theta$ is the unknown probability parameter for the binomial distribution.
 
 $${n \choose k}\,p^{k}(1-p)^{n-k}$$
 
-Our prior is the Beta distribution of $\theta$:
+As the Beta distribution is a conjugate prior to the Binomial the model can be reduced to: $Beta(\alpha+P, \beta+Q)$ where P is the count of plays and Q is the count of non-plays.
 
-$$p(\theta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}} {B(\alpha,\beta)}$$ where
-$$\mathrm {B} (\alpha ,\beta )={\frac {\Gamma (\alpha )\Gamma (\beta )}{\Gamma (\alpha +\beta )}}$$
+Our parameters for the beta distribution, $\alpha$ and $\beta$, are derived from the training set, with an estimate of the mean for each half-hourly time period as shown in fig \ref{fig10b}. 
 
-As the Beta distribution is a conjugate prior to the Binomial the formula can be reduced to: $Beta(\alpha+P, \beta+Q)$ where P is the count of plays and Q is the count of non-plays.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=4cm, keepaspectratio,]{fig010b.jpg}
+	\caption{}
+	\label{fig10b}
+\end{figure} 
 
-Our parameters for the beta distribution, $\alpha$ and $\beta$, are derived from the training set, with an estimate for each half-hourly time period. 
+We first calculate the probability of a play (total plays in period / count of plays and non-plays) per user, then take the mean and variance across users. $a$ and $b$ are then determined as:
+$a = (\frac{(1- \mu)}{\sigma} - \frac{1}{\mu}) \mu^2$
+and
+$\beta=\alpha\left(\frac{1}{\mu}-1\right)$.
 
 Finally we convert the probabilites into a binary outcome by optimizing for a threshold $\lambda$ at which we predict a play event.
 

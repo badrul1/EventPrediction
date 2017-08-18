@@ -102,7 +102,9 @@ Further analysis showed one user in particular with very high amount of plays, w
 
 \section{Main results} % Methodology
 
-Fig. \ref{fig13a} shows the results from our experiments. We see how our baseline model scores highly on accuracy but low on recall. In other words as a sequence of plays often appear together in batches, assuming $t = t-1$ is often correct, but it fails to pick up the start and end points of a song.
+\subsection{Summary}
+
+Fig. \ref{fig13a} shows the results from our experiments. We see how that the baseline model scores highly on precision but low on recall. In other words given that a sequence of plays often appear together, assuming $t = t-1$ is often quite often correct, but it fails to pick up the start and end points of a sequence of song plays.
 
 \begin{figure}[h!]
 	\centering
@@ -111,11 +113,9 @@ Fig. \ref{fig13a} shows the results from our experiments. We see how our baselin
 	\label{fig13b}
 \end{figure}  
 
-
 The Bayesian Inference model performs poorly on both measures. This would suggest that the difference between the population patterns and what is observed at an individual level is too large.
 
-Our remaining models exhibit the tension between achieving a good accuracy and achieving a good recall.
-The Logistic regression model performs below average on precision but is second highest on recall. The Linear SVM and RMF regression models are on par with one another with the former achieving the highest score on prevision, and the latter on recall. 
+Our remaining models exhibit the tension between achieving a good accuracy and achieving a good recall. The Logistic regression model performs below average on precision but is second highest on recall. The Linear SVM and RMF regression models are on par with one another with the former achieving the highest score on prevision, and the latter on recall. 
 
 The Linear SVM model ignores probabilities that fall within a margin of the decision boundary during its optimization process. That this translates into performing well on precision may be due to placing lesser emphasis on ad-hoc play events that aren't indicative of a users general behaviour, as these probablities would likely fall near the decision boundary. Alternatively it could be better at dealing with the first play of a sequence whereby if often, but not always occurs at the same time each day; again leading to probabilities nearer the decision boundary.
 
@@ -123,3 +123,61 @@ The RBF model generally performs well on both metrics. Note that the RBF classif
  
 The RNN models were trained on 50k rows of data due to the computational cost of evaluating a large number of hyperparameters. Two types of models were tested - one with $t-1$ as the only time-lag information and one with all other time-lags included. Given the much smaller training set the results we obsertve are better than expected.  The final parameters for the models were a 250 units, 4 LSTM layers, and a class-weghting of 2.0 for play events.
 
+\section{Beta-Binomial analysis}
+
+We can plot the prior probability for any given time period as shown in fig \ref{fig10c}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5cm, keepaspectratio,]{fig010c.jpg}
+	\caption{}
+	\label{fig10c}
+\end{figure} 
+
+Here we see that the $\theta$, which represents the prior probability of listening to music in the timeslot, is most likely to be less than 0.1 for this timeslot. Note that this timeslot is for hour 17 (i.e. 5pm) which from our prelinary analysis we  know is the peak listening time. The fact that the probablity is so low suggests that users may often have weeks in which no music was played, and hence the prior probability for a timeslot is dragged down. 
+
+For our posterior function, the threshold at which we determine a Play event was determined by comparing the false positive rates with the true positive rates using a ROC curve (\ref{fig10d}). From this, 0.4 was selected as the optimal threshold at which to determine a Play event across all users.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5cm, keepaspectratio,]{fig010d.jpg}
+	\caption{ROC curve showing 0.4 as the optimal threshold}
+	\label{fig10d}
+\end{figure} 
+
+The results from the model are shown in figure \ref{fig10e}. We see that the recall and precision of play events (as denoted by 1) is very low suggesting that relying on a Bayesian approach centered around a weekly profile of each users habits is not an effective method for predicting a play event for a new time period.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=7cm, keepaspectratio,]{fig010e.jpg}
+	\caption{Beta-Bionmial Model Results}
+	\label{fig10e}
+\end{figure} 
+
+\section{Logistic regression analysis}
+
+An advantage of logistic regression over non-linear models is that the coefficients are easily interpretable. While featuer engoneering was not the focus of this research an examination of these can yield insight into which features may be unecessary. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=4cm, keepaspectratio,]{fig014.jpg}
+	\caption{}
+	\label{fig14}
+\end{figure} 
+
+Fig \ref{fig14} shows that $t-1$ was by far the most important feature. This is expcted and it's importance crowds out the other features. Interestingly the t-24 hour period appears to have a stronger influence than $t-2$ to $t-5$ once $t-1$ has been accounted for. This reflects the daily patterns we observed in the preliminary analysis. The days of the week also pick up on the fact that weekeneds are somewhat different to weekdays thereby offering one area where the model could be simplified. Finally the hours from 5pm have a very small impact, and is likely unecessary if $t-24hrs$ is also used
+
+**** PLOT RESULTS OF LOG REG SCORES AS YOU INTRODUCE MORE FIElDS***
+
+\section{RNN analysis}
+
+For our evaluation of the RNN-LSTM model the dataset was reduced in order to perform the desired number of hyperparameter tests. It was found that the number of hidden layers, units, timeteps, samples, and iterations all played a signficant part in impacting the time it took to train the model. Typical run times were several hours long. 
+
+Fig \ref{fig15} shows the results of some of the other tests that were performed. The improvment in performance comes with an increased in hidden layers, although this also leads to longer training times.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=7cm, keepaspectratio,]{fig015.jpg}
+	\caption{}
+	\label{fig15}
+\end{figure}
