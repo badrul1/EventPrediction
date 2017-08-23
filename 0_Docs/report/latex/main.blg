@@ -26,49 +26,54 @@ I was expecting a `,' or a `}'---line 11 of file bibliography.bib
  :  publisher   ={Springer-Verlag}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 171 of file bibliography.bib
+ :  
+ :  publisher   ={Clarendon Press}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "NegLog"
 Biblatex version: 3.3
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 16 entries,
+You've used 17 entries,
             6047 wiz_defined-function locations,
-            1233 strings with 11185 characters,
-and the built_in function-call counts, 54968 in all, are:
-= -- 2471
-> -- 1960
-< -- 687
-+ -- 739
-- -- 674
-* -- 3773
-:= -- 3261
+            1238 strings with 11236 characters,
+and the built_in function-call counts, 57425 in all, are:
+= -- 2554
+> -- 2038
+< -- 711
++ -- 754
+- -- 698
+* -- 3919
+:= -- 3398
 add.period$ -- 0
-call.type$ -- 16
-change.case$ -- 402
+call.type$ -- 17
+change.case$ -- 411
 chr.to.int$ -- 44
-cite$ -- 30
-duplicate$ -- 6017
-empty$ -- 5397
-format.name$ -- 1093
-if$ -- 12690
+cite$ -- 32
+duplicate$ -- 6314
+empty$ -- 5684
+format.name$ -- 1141
+if$ -- 13261
 int.to.chr$ -- 0
-int.to.str$ -- 43
+int.to.str$ -- 45
 missing$ -- 0
-newline$ -- 425
-num.names$ -- 907
-pop$ -- 4929
+newline$ -- 440
+num.names$ -- 948
+pop$ -- 5251
 preamble$ -- 1
-purify$ -- 450
+purify$ -- 460
 quote$ -- 0
-skip$ -- 3477
+skip$ -- 3634
 stack$ -- 0
-substring$ -- 1718
-swap$ -- 1960
-text.length$ -- 467
-text.prefix$ -- 16
+substring$ -- 1731
+swap$ -- 2042
+text.length$ -- 491
+text.prefix$ -- 17
 top$ -- 1
-type$ -- 591
+type$ -- 629
 warning$ -- 0
-while$ -- 321
+while$ -- 337
 width$ -- 0
-write$ -- 408
-(There was 1 error message)
+write$ -- 422
+(There were 2 error messages)
