@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.25)  17 AUG 2017 12:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.7.25)  22 AUG 2017 19:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1773,7 +1773,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 23.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 21.
 )
 1: section
 [1
@@ -1788,20 +1788,18 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
 ]
 Chapter 2.
-<Figures/fig001.jpg, id=228, 420.57124pt x 528.97626pt>
+<Figures/fig001.jpg, id=223, 420.57124pt x 528.97626pt>
 File: Figures/fig001.jpg Graphic file (type jpg)
 
 <use Figures/fig001.jpg>
-Package pdftex.def Info: Figures/fig001.jpg used on input line 29.
+Package pdftex.def Info: Figures/fig001.jpg used on input line 15.
 (pdftex.def)             Requested size: 199.16928pt x 250.5076pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 34.
 1: section
-[3]) [4 <./Figures/fig001.jpg>] [5]
+[3 <./Figures/fig001.jpg>]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 37.
+ [4]) [5]
 \openout2 = `Chapters/Design.aux'.
 
  (./Chapters/Design.tex [6
@@ -1816,22 +1814,34 @@ Chapter 3.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 52.
 
-[8] [9]
+[8]
+Overfull \hbox (10.6809pt too wide) in paragraph at lines 78--79
+[]\T1/ppl/m/n/10.95 Prior prob-a-bil-i-ties were cal-cu-lated or each half-hour
+ly pe-riod in a week (24*2*7=336
+ []
 
-LaTeX Warning: Citation 'NegLog' on page 10 undefined on input line 104.
+<Figures/fig010b.jpg, id=288, 286.06876pt x 159.59625pt>
+File: Figures/fig010b.jpg Graphic file (type jpg)
 
-[10] <Figures/fig007.jpg, id=301, 361.35pt x 337.26pt>
+<use Figures/fig010b.jpg>
+Package pdftex.def Info: Figures/fig010b.jpg used on input line 90.
+(pdftex.def)             Requested size: 113.81102pt x 63.49399pt.
+ [9 <./Figures/fig010b.jpg>]
+
+LaTeX Warning: Citation 'NegLog' on page 10 undefined on input line 113.
+
+[10] <Figures/fig007.jpg, id=303, 361.35pt x 337.26pt>
 File: Figures/fig007.jpg Graphic file (type jpg)
 
 <use Figures/fig007.jpg>
-Package pdftex.def Info: Figures/fig007.jpg used on input line 145.
+Package pdftex.def Info: Figures/fig007.jpg used on input line 154.
 (pdftex.def)             Requested size: 85.35826pt x 79.6678pt.
 
-<Figures/fig008.png, id=303, 806.89455pt x 303.17265pt>
+<Figures/fig008.png, id=305, 806.89455pt x 303.17265pt>
 File: Figures/fig008.png Graphic file (type png)
 
 <use Figures/fig008.png>
-Package pdftex.def Info: Figures/fig008.png used on input line 154.
+Package pdftex.def Info: Figures/fig008.png used on input line 163.
 (pdftex.def)             Requested size: 142.26378pt x 53.44922pt.
  [11 <./Figures/fig007.jpg> <./Figures/fig008.png>]
 [12]) [13]
@@ -1843,13 +1853,13 @@ Package pdftex.def Info: Figures/fig008.png used on input line 154.
 
 ]
 Chapter 4.
-<Figures/fig004.jpg, id=334, 397.485pt x 263.98625pt>
+<Figures/fig004.jpg, id=336, 397.485pt x 263.98625pt>
 File: Figures/fig004.jpg Graphic file (type jpg)
  <use Figures/fig004.jpg>
 Package pdftex.def Info: Figures/fig004.jpg used on input line 19.
 (pdftex.def)             Requested size: 199.16928pt x 132.27878pt.
 
-<Figures/fig005.jpg, id=336, 625.33624pt x 221.82875pt>
+<Figures/fig005.jpg, id=338, 625.33624pt x 221.82875pt>
 File: Figures/fig005.jpg Graphic file (type jpg)
 
 <use Figures/fig005.jpg>
@@ -1858,19 +1868,19 @@ Package pdftex.def Info: Figures/fig005.jpg used on input line 28.
 
 1: section
 [15 <./Figures/fig004.jpg> <./Figures/fig005.jpg>]
-<Figures/fig006.jpg, id=344, 902.37125pt x 469.755pt>
+<Figures/fig006.jpg, id=346, 902.37125pt x 469.755pt>
 File: Figures/fig006.jpg Graphic file (type jpg)
  <use Figures/fig006.jpg>
 Package pdftex.def Info: Figures/fig006.jpg used on input line 37.
 (pdftex.def)             Requested size: 199.16928pt x 103.6833pt.
 
-<Figures/fig012.jpg, id=347, 500.87125pt x 216.81pt>
+<Figures/fig012.jpg, id=349, 500.87125pt x 216.81pt>
 File: Figures/fig012.jpg Graphic file (type jpg)
  <use Figures/fig012.jpg>
 Package pdftex.def Info: Figures/fig012.jpg used on input line 56.
 (pdftex.def)             Requested size: 199.16928pt x 86.21298pt.
 
-<Figures/fig012b.jpg, id=349, 509.905pt x 163.61125pt>
+<Figures/fig012b.jpg, id=351, 509.905pt x 163.61125pt>
 File: Figures/fig012b.jpg Graphic file (type jpg)
 
 <use Figures/fig012b.jpg>
@@ -1881,45 +1891,82 @@ Package pdftex.def Info: Figures/fig012b.jpg used on input line 67.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16 <./Figures/fig006.jpg> <./Figures/fig012.jpg>]
-<Figures/fig003.jpg, id=358, 418.56375pt x 283.0575pt>
+<Figures/fig003.jpg, id=360, 418.56375pt x 283.0575pt>
 File: Figures/fig003.jpg Graphic file (type jpg)
 
 <use Figures/fig003.jpg>
 Package pdftex.def Info: Figures/fig003.jpg used on input line 82.
 (pdftex.def)             Requested size: 199.16928pt x 134.68694pt.
-
-<Figures/fig002.jpg, id=359, 399.4925pt x 249.93375pt>
+ [17 <./Figures/fig012b.jpg> <./Figures/fig003.jpg>]
+<Figures/fig002.jpg, id=365, 399.4925pt x 249.93375pt>
 File: Figures/fig002.jpg Graphic file (type jpg)
 
 <use Figures/fig002.jpg>
-Package pdftex.def Info: Figures/fig002.jpg used on input line 98.
+Package pdftex.def Info: Figures/fig002.jpg used on input line 97.
 (pdftex.def)             Requested size: 199.16928pt x 124.60808pt.
+
+
+LaTeX Warning: Reference `fig13a' on page 18 undefined on input line 107.
+
+<Figures/fig013b.jpg, id=366, 608.2725pt x 175.65625pt>
+File: Figures/fig013b.jpg Graphic file (type jpg)
+
+<use Figures/fig013b.jpg>
+Package pdftex.def Info: Figures/fig013b.jpg used on input line 111.
+(pdftex.def)             Requested size: 227.62204pt x 65.73155pt.
+ [18 <./Figures/fig002.jpg> <./Figures/fig013b.jpg>]
+<Figures/fig010c.jpg, id=374, 362.35374pt x 259.97125pt>
+File: Figures/fig010c.jpg Graphic file (type jpg)
+
+<use Figures/fig010c.jpg>
+Package pdftex.def Info: Figures/fig010c.jpg used on input line 132.
+(pdftex.def)             Requested size: 142.26378pt x 102.0667pt.
+
+<Figures/fig010d.jpg, id=376, 573.14125pt x 376.40625pt>
+File: Figures/fig010d.jpg Graphic file (type jpg)
+
+<use Figures/fig010d.jpg>
+Package pdftex.def Info: Figures/fig010d.jpg used on input line 143.
+(pdftex.def)             Requested size: 142.26378pt x 93.42934pt.
+ <Figures/fig010e.jpg, id=378, 378.41376pt x 88.33pt>
+File: Figures/fig010e.jpg Graphic file (type jpg)
+
+<use Figures/fig010e.jpg>
+Package pdftex.def Info: Figures/fig010e.jpg used on input line 152.
+(pdftex.def)             Requested size: 199.16928pt x 46.4912pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17 <./Figures/fig012b.jpg> <./Figures/fig003.jpg>]
+[19 <./Figures/fig010c.jpg> <./Figures/fig010d.jpg>]
+<Figures/fig014.jpg, id=387, 236.885pt x 380.42125pt>
+File: Figures/fig014.jpg Graphic file (type jpg)
+ <use Figures/fig014.jpg>
+Package pdftex.def Info: Figures/fig014.jpg used on input line 163.
+(pdftex.def)             Requested size: 113.81102pt x 182.76845pt.
 
-LaTeX Warning: Reference `fig13a' on page 18 undefined on input line 110.
+<Figures/fig016.jpg, id=390, 508.90125pt x 281.05pt>
+File: Figures/fig016.jpg Graphic file (type jpg)
+ <use Figures/fig016.jpg>
+Package pdftex.def Info: Figures/fig016.jpg used on input line 176.
+(pdftex.def)             Requested size: 199.16928pt x 109.99501pt.
 
-<Figures/fig013b.jpg, id=364, 534.99875pt x 198.7425pt>
-File: Figures/fig013b.jpg Graphic file (type jpg)
+[20 <./Figures/fig010e.jpg> <./Figures/fig014.jpg> <./Figures/fig016.jpg>]
+<Figures/fig015.jpg, id=398, 941.5175pt x 287.0725pt>
+File: Figures/fig015.jpg Graphic file (type jpg)
+ <use Figures/fig015.jpg>
+Package pdftex.def Info: Figures/fig015.jpg used on input line 189.
+(pdftex.def)             Requested size: 341.43306pt x 104.10382pt.
 
-<use Figures/fig013b.jpg>
-Package pdftex.def Info: Figures/fig013b.jpg used on input line 114.
-(pdftex.def)             Requested size: 227.62204pt x 84.55693pt.
- [18 <./Figures/fig002.jpg> <./Figures/fig013b.jpg>]
-<Figures/fig011.jpg, id=371, 384.43625pt x 93.34875pt>
-File: Figures/fig011.jpg Graphic file (type jpg)
+Overfull \hbox (0.62874pt too wide) in paragraph at lines 194--195
+[]\T1/ppl/m/n/10.95 We see that the im-prove-ment in pre-ci-sion comes about mo
+st sig-nif-i-cantly through
+ []
 
-<use Figures/fig011.jpg>
-Package pdftex.def Info: Figures/fig011.jpg used on input line 148.
-(pdftex.def)             Requested size: 199.16928pt x 48.36357pt.
-) [19 <./Figures/fig011.jpg>]
+) [21 <./Figures/fig015.jpg>]
 \openout2 = `Chapters/Summary.aux'.
 
- (./Chapters/Summary.tex
-[20
+ (./Chapters/Summary.tex [22
 
 
 
@@ -1927,128 +1974,55 @@ Package pdftex.def Info: Figures/fig011.jpg used on input line 148.
 Chapter 5.
 )
 1: section
-[21]
+[23]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [22
+ (./Appendices/AppendixA.tex [24
 
 
 
 ]
 Appendix A.
-<Figures/fig010b.jpg, id=391, 286.06876pt x 159.59625pt>
-File: Figures/fig010b.jpg Graphic file (type jpg)
-
-<use Figures/fig010b.jpg>
-Package pdftex.def Info: Figures/fig010b.jpg used on input line 18.
-(pdftex.def)             Requested size: 113.81102pt x 63.49399pt.
-
-<Figures/fig010c.jpg, id=393, 348.30125pt x 265.99374pt>
-File: Figures/fig010c.jpg Graphic file (type jpg)
-
-<use Figures/fig010c.jpg>
-Package pdftex.def Info: Figures/fig010c.jpg used on input line 27.
-(pdftex.def)             Requested size: 142.26378pt x 108.64413pt.
-
-<Figures/fig010d.jpg, id=395, 573.14125pt x 376.40625pt>
-File: Figures/fig010d.jpg Graphic file (type jpg)
-
-<use Figures/fig010d.jpg>
-Package pdftex.def Info: Figures/fig010d.jpg used on input line 38.
-(pdftex.def)             Requested size: 142.26378pt x 93.42934pt.
-
+)
 1: section
-[23 <./Figures/fig010b.jpg> <./Figures/fig010c.jpg>]
-<Figures/fig010e.jpg, id=403, 378.41376pt x 88.33pt>
-File: Figures/fig010e.jpg Graphic file (type jpg)
- <use Figures/fig010e.jpg>
-Package pdftex.def Info: Figures/fig010e.jpg used on input line 47.
-(pdftex.def)             Requested size: 199.16928pt x 46.4912pt.
-
-<Figures/fig008a.jpg, id=404, 808.01875pt x 262.9825pt>
-File: Figures/fig008a.jpg Graphic file (type jpg)
-
-<use Figures/fig008a.jpg>
-Package pdftex.def Info: Figures/fig008a.jpg used on input line 57.
-(pdftex.def)             Requested size: 199.16928pt x 64.82251pt.
-
-<Figures/fig008b.jpg, id=405, 825.0825pt x 250.9375pt>
-File: Figures/fig008b.jpg Graphic file (type jpg)
-
-<use Figures/fig008b.jpg>
-Package pdftex.def Info: Figures/fig008b.jpg used on input line 64.
-(pdftex.def)             Requested size: 199.16928pt x 60.57466pt.
- <Figures/fig008c.jpg, id=406, 831.105pt x 252.945pt>
-File: Figures/fig008c.jpg Graphic file (type jpg)
-
-<use Figures/fig008c.jpg>
-Package pdftex.def Info: Figures/fig008c.jpg used on input line 71.
-(pdftex.def)             Requested size: 199.16928pt x 60.6154pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/fig008d.jpg, id=407, 806.01125pt x 257.96375pt>
-File: Figures/fig008d.jpg Graphic file (type jpg)
-
-<use Figures/fig008d.jpg>
-Package pdftex.def Info: Figures/fig008d.jpg used on input line 78.
-(pdftex.def)             Requested size: 199.16928pt x 63.74289pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/fig008e.jpg, id=408, 828.09375pt x 268.00125pt>
-File: Figures/fig008e.jpg Graphic file (type jpg)
-
-<use Figures/fig008e.jpg>
-Package pdftex.def Info: Figures/fig008e.jpg used on input line 85.
-(pdftex.def)             Requested size: 199.16928pt x 64.45656pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[24 <./Figures/fig010d.jpg> <./Figures/fig010e.jpg> <./Figures/fig008a.jpg> <./
-Figures/fig008b.jpg>]) [25 <./Figures/fig008c.jpg> <./Figures/fig008d.jpg> <./F
-igures/fig008e.jpg>] [26
+[25] [26
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 210.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 211.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (27.78543pt too wide) in paragraph at lines 210--210
+Overfull \hbox (27.78543pt too wide) in paragraph at lines 211--211
 []\T1/ppl/m/n/10.95 Nick Mclure. \T1/ppl/m/it/10.95 Ten-sor-flow Cook-book\T1/p
 pl/m/n/10.95 . 2016. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/pcr/m/n
 /10.95 https : / / github . com / nfmcclure /
  []
 
 
-Overfull \hbox (12.79305pt too wide) in paragraph at lines 210--210
+Overfull \hbox (12.79305pt too wide) in paragraph at lines 211--211
 \T1/pcr/m/n/10.95 tensorflow _ cookbook / blob / master / 04 _ Support _ Vector
  _ Machines /
  []
 
 
-Overfull \hbox (4.56036pt too wide) in paragraph at lines 210--210
+Overfull \hbox (4.56036pt too wide) in paragraph at lines 211--211
 []\T1/ppl/m/n/10.95 Christopher Olah. \T1/ppl/m/it/10.95 Un-der-stand-ing LSTMs
 \T1/ppl/m/n/10.95 . 2017. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/pc
 r/m/n/10.95 http : / / colah . github .
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 215.
 1: section
 [27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 215.
  (./main.aux (./Chapters/Intro.aux) (./Chapters/LitReview.aux)
 (./Chapters/Design.aux) (./Chapters/Results.aux) (./Chapters/Summary.aux)
 (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 215.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 215.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7355246B63A7E7F2E3F9EA3731B8A26F;6430.
+(rerunfilecheck)             Checksum: 340627DB9E9C99D9FAA4D9EAC28E1FB6;6273.
 
 
 LaTeX Warning: There were undefined references.
@@ -2067,13 +2041,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  )
 (\end occurred when \iftrue on line 90 was incomplete) 
 Here is how much of TeX's memory you used:
- 30777 strings out of 494910
- 618487 string characters out of 6179836
- 715449 words of memory out of 5000000
- 33609 multiletter control sequences out of 15000+600000
+ 30756 strings out of 494910
+ 618073 string characters out of 6179836
+ 715515 words of memory out of 5000000
+ 33594 multiletter control sequences out of 15000+600000
  46279 words of font info for 77 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 54i,20n,75p,10377b,1812s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,20n,82p,10377b,1741s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf
 -dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
@@ -2088,10 +2062,10 @@ dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (33 pages, 1049700 bytes).
+Output written on main.pdf (33 pages, 1045188 bytes).
 PDF statistics:
- 520 PDF objects out of 1000 (max. 8388607)
- 444 compressed objects within 5 object streams
- 124 named destinations out of 1000 (max. 500000)
- 458 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 443 compressed objects within 5 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 435 words of extra memory for PDF output out of 10000 (max. 10000000)
 

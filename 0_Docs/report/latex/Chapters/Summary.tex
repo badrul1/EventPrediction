@@ -14,9 +14,12 @@ As music listening is typically long periods of non-play events, followed by seq
 
 It is also seen in the linear SVM models which is less impacted by cases that fall close to the decision boundary as the start of and end of a sequence are likely to be.
 
-When it comes to predicting the start and end of a play sequence, non-linear models outperform linear ones with an RBF model achieving a 76\% recall score (while maintaining a high 77\% precision score), and the an RNN-LSTM model achiving 69\% and 70\% respectively.
+From a practical perspective, predicting the start and end of series of events is what is of most interest. In this respect it seems non-linear models may perform better than linear ones with the RBF model achieving a 76\% recall score (while maintaining a high 77\% precision score), and the the RNN-LSTM model achiving 69\% and 70\% respectively.
 
-From a practical perspective, it is models that are accurate on the first and last periods that were are most intrested in. Additional research was performed to assess the performance of Logistic regression and SVM models in these areas by setting all other periods to a non-play event. ***TBC...
+\section{Future research}
 
-\section{Further investigation}
+Future research into the matter temporal point proceses should investigate whether non-linear models are indeed better at detecting both the start of an event process as well as noiser data in which the patterns may not be as obvious.
 
+If non-linear models perform better at these problems, then, given the performance of RNN-LSTM models on a small set of data, they may be prove to perform exceptionally well in learning to model such temporal patterns with larger amounts of data and training. Currently the training time on an average laptop proved to be a bottleneck but with processing speeds constantly improving we may be entering an age where such models become practical in the commercial data science field. 
+
+Finally the research touched upon (see Appndices) but not fully investigated the time it takes for models to adapt to new users. Hybrid models or advanced Bayesian models, that balance the observations coming from the user with wider prior knowlege, may be the key to learning the behaviour of individuals. After all the best predictor for a users behaviour, is observing the user themselves.

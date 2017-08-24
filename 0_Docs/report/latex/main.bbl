@@ -118,6 +118,21 @@
   \field{year}{1996}
 \endentry
 
+\entry{Kingman}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Kingman}{K.}%
+     {J.~F.~C.}{J.~F.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KJFC1}
+  \strng{fullhash}{KJFC1}
+  \field{sortinit}{K}
+  \field{title}{Poisson Processes}
+  \field{year}{1992}
+\endentry
+
 \entry{ImageNet}{inproceedings}{}
   \name{author}{3}{}{%
     {{}%

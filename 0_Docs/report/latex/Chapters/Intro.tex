@@ -16,22 +16,20 @@
 %----------------------------------------------------------
 The modeling of event sequences is useful across industries. For instance the periods in which a customer makes an online purchase can help determine the optimal periods for target marketing. The times at which public transport users tend to travel can help better manage resources to meet demand. The times at which a medical illness re-occurs can help predict future episodes.
  
-In all these cases modeling the temporal behaviour of the system is important in predicting the next event. At an aggregate level, behaviour may appear to be deterministic, such as the times at which peak rush-hour occurs, but such behaviour is often composed of thousands or millions of individual stochastic processes such as the decisions made by individuals as to whether to leave work at 5pm or continue working a little longer.
-
-While the area of product recommendation has received extensive attention in recent years, the area of recommendation timing less so. This research looks at how we can model the temporal behaviour of individuals, and whether deep learning is better able to learn these patterns than other methods.
+In all these cases modeling the temporal behaviour of the system is important in predicting the next event. While the area of product recommendation has received extensive attention in recent years, the area of recommendation timing less so. This research looks at how we can model the temporal behaviour of individuals, in order to predice the probability of an event happening at time $t$.
 
 \section{Context}
 
-We take as our context for this research, the goal of estimating the probability that a user of a home-audio device would like to listen to music right now, based on their listening-event history. One such application of this research would be to allow home audio devices to suggest music toi a user at an ooportune time.
+We take as our context for this research, the goal of estimating the probability that a user of a home-audio device would like to listen to music at a time period $t$, given their play history $h$. One application of this research would be to allow home audio devices to recommend music to a user at an ooportune time. It could then also be extended for other activities.
 
-The goal will be evaluate the effectiveness of several different methods, including an LSTM-RNN. 
-The research was guided by Emotech Ltd., a home audio hardware and software company and the creators of Olly \parencite{Olly}.
+The goal will be evaluate the effectiveness of several different machine learning methods. The research was guided by Emotech Ltd., a home audio hardware and software company and the creators of Olly \parencite{Olly}.
 
 \section{Data}
 
-The dataset being used in this analysis is the LastFM1k dataset, which is freely available oneline and containings the listening history of a thousand LastFM listeners. It consists of a series of timestamps denoting when user started played a song. We wish to learn the temporal patterns of a users behaviour in order to predict the next item in the next item in the sequence - a play or non-play event. 
+The dataset being used in this analysis is the LastFM1k dataset, which is freely available online and contains the listening history of a thousand LastFM listeners. It consists of a series of timestamps denoting when user started played a song. We wish to learn the temporal patterns of a user's behaviour in order to predict the next item in the sequence - a play or non-play event. 
 
-The dataset contains the timestamp, user Id, and track Id of users listening habits over a number of years (2005-2009).
+The dataset contains the timestamp, user ID, and track ID of users listening habits over a number of years (2005-2009).
 
 \section{Structure of the report}
-tbc
+
+We first perform a literature review of 
