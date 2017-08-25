@@ -14,9 +14,11 @@
 \newcommand{\option}[1]{\texttt{\itshape#1}}
 
 %----------------------------------------------------------
-The modeling of event sequences is useful across industries. For instance the periods in which a customer makes an online purchase can help determine the optimal periods for target marketing. The times at which public transport users tend to travel can help better manage resources to meet demand. The times at which a medical illness re-occurs can help predict future episodes.
+The modeling of events is useful across industries. For instance the times at which a customer makes an online purchase can help determine the optimal periods for target marketing. The times at which public transport users tend to travel can help better manage resources to meet demand. The times at which a medical illness re-occurs can help predict future episodes.
  
-In all these cases modeling the temporal behaviour of the system is important in predicting the next event. While the area of product recommendation has received extensive attention in recent years, the area of recommendation timing less so. This research looks at how we can model the temporal behaviour of individuals, in order to predice the probability of an event happening at time $t$.
+In all these cases modeling the temporal behaviour of the system is important in predicting the occurence of the next event. Within the field of recommender systems, the area of predicting \textit{what} a user would be interested in has received extensive attention in recent years, but \textit{when} they would be interested in it, less so. In this research we look at how we can model the temporal behaviour of users, in order to help guage their interest in an event at current time $t$, conditional on their history, $h$. More formally this is known as a temporal point process and we examine the existing methods for modeling such processes as well as recent innovative experimentations with applying deep learning to the problem.
+
+The research indicates that achieving a high precision and recall score on temporal point process problems requires a highly non-linear model, and the issue of whether deep learning can provide breakthroughs in this area is explored. We compare various classicial linear and non-linear techniques with an RNN-LSTM model, and find our results on the applicability of deep learning to be inconclusive though positive enough to indicate the need for further research in the area.
 
 \section{Context}
 

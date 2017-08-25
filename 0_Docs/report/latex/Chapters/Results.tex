@@ -104,7 +104,7 @@ Further analysis showed one user in particular with very high amount of plays, w
 
 \subsection{Summary}
 
-Fig. \ref{fig13a} shows the results from our experiments. We see how that the baseline model scores highly on precision but low on recall. In other words given that a sequence of plays often appear together, assuming $t = t-1$ is often quite often correct, but it fails to pick up the start and end points of a sequence of song plays.
+Fig. \ref{fig13a} shows the results from our experiments. We see how that the baseline model scores highly on precision but low on recall. In other words assuming $t = t-1$ is often quite often correct given that a group of songs are often played consecutively, but it fails to pick up the start and end points of a sequence of song plays, hence the lower recall.
 
 \begin{figure}[h!]
 	\centering
@@ -113,7 +113,7 @@ Fig. \ref{fig13a} shows the results from our experiments. We see how that the ba
 	\label{fig13b}
 \end{figure}  
 
-The Bayesian Inference model performs poorly on both measures. This would suggest that the difference between the population patterns and what is observed at an individual level is too large.
+The Bayesian Inference model performed poorly on both measures. This would suggest that the difference between the population patterns and what is observed at an individual level differs too much for the prior probability to be accurate for any one individual user. However this does not rule necessarily rule out the Bayesian approach. An improvement might be to apply a logistic regression model in which the weights are continually updated with each new observation from the user. However such as an approach was not looked at in this research.
 
 Our remaining models exhibit the tension between achieving a good accuracy and achieving a good recall. The Logistic regression model performs below average on precision but is second highest on recall. The Linear SVM and RMF regression models are on par with one another with the former achieving the highest score on prevision, and the latter on recall. 
 
@@ -121,7 +121,7 @@ The Linear SVM model ignores probabilities that fall within a margin of the deci
 
 The RBF model generally performs well on both metrics. Note that the RBF classifciation was restricted to 100k rows of training data as it was found the computational cost of 500k rows was too high so it had less training data to work with than the Linear SVM. The high recall rate of 68\% indicates that inputs have a non-linear relationship to the output and that this is especially helpful to predicting the start and end of a play sequence as seen by the high recall score. 
  
-The RNN models were trained on 50k rows of data due to the computational cost of evaluating a large number of hyperparameters. Two types of models were tested - one with $t-1$ as the only time-lag information and one with all other time-lags included. Given the much smaller training set the results we obsertve are better than expected.  The final parameters for the models were a 250 units, 4 LSTM layers, and a class-weghting of 2.0 for play events.
+The RNN models were trained on 50k rows of data due to the computational cost of evaluating a large number of hyperparameters. Two types of models were tested - one with $t-1$ as the only time-lag information and one with all other time-lags included. Given the much smaller training set the results we obsertve are better than expected. Howver a strong caveat is that these results were hard to achieve and require a lot of hyper-parameter testing, which we discuss later in this chapter.
 
 \section{Beta-Binomial analysis}
 
@@ -178,11 +178,41 @@ The non-time lag features seem to have very little effect, which was also see in
 	\label{fig16}
 \end{figure} 
 
+\section{SVM analysis}
+
+Of the two SVM models, the RBF model was selected for more in-depth analysis due to its ability to better capture recall without too detrimental a loss in precision. An RBF kernel has two hyper-paramters that can significantly impact the results. The $C$ parameter and the $gamma$. Intuitively, the gamma parameter defines how far the influence of a single training example reaches, with low values meaning ‘far’ and high values meaning ‘close’. The C parameter trades off misclassification of training examples against simplicity of the decision surface. A low C makes the decision surface smooth, while a high C aims at classifying all training examples correctly by giving the model freedom to select more samples as support vectors.
+
+In order to determine optimal gamma and C values, a grid search was carried out with precision and recall of the test dataset plotted on a heatmap. In order to get through the many iterations of the data, the input data was reduced to 30,000 training samples. Fig \ref{fig17b} shows the final heatmap, after multiple iterations to home in on the optimal values, with precision on the left and recall on the right. The optimal values are deemed to be 0.6 for C and 0.76 for Gamma, although as the charts show there is some scope for movement around those values.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=7cm, keepaspectratio,]{fig017b.jpg}
+	\caption{Heatmap of hyper-parameter search. Dark blue shade = better precision and recall}
+	\label{fig17b}
+\end{figure} 
+
+Finally, a note on the computational complexity of the RBF model. We used Scikit Learn's implementation of the RBF kernel which is based on libsvm. The fit time complexity of this approach is more than quadratic with the number of samples, making it hard to scale to datasets with more than a couple of 10,000 samples \parencite{chang2011libsvm}.
+While we managed to get as high as 100,000 samples in our training it was not considered a practical to go any higher thereby limiting the scalability of this approach and our ability to potentially obtain higher scores than what we already had.
+
 \section{RNN analysis}
 
-For our evaluation of the RNN-LSTM model the dataset was reduced in order to perform the desired number of hyperparameter tests. Typical run times were several hours long. The number of hidden layers, units, timeteps, samples, and iterations all played a signficant part in impacting the time it took to train the model. 
+The RNN-LSTM model required a lot of hyper-parameter testing and as such the training dataset ended up being narrowed down to no more than 50k random samples and often as low as 20k. The eventual set of hyper-parameters that was found to work well \textit{with early stopping} were:
 
-Fig \ref{fig15} shows the results of some of the other tests that were performed. The table has been shaded to aid understanding with darker shading considered 'better' whether it be more samples of the data were used, or a bigger graph was constructed.
+\begin{list}{-}{spacing}
+	\item user iteration: 10 (How many random users to select for training)
+	\item samplesPerUser = 20      \# How many mini-batches to select for each user
+	\item batchRows = 50           \# How many random periods to select in each mini-batch (=batch height)
+	\item batch iterations = 10    \# How many iterations to perform on one batch
+	\item steps = 672              \# How many time steps to use (= batch depth)
+	\item learning rate = 0.001    \# Learning rate of backprop algorithm
+	\item Hidden units = 250       \# Number of units per hidden layer
+	\item layers = 4			   \# Number of hidden layers
+	\item class1Weighting = 8      \# Weighting to apply in the cost function for labels that are a play event
+\end{list}
+
+This scored an average precision of 70\% and an average recall of 66.5\% over two separate runs, with 1 run taking approximately 10 hours to complete. The original number of user iterations was 20 but a consisten pattern was that if a model runs for too long, the results swing in favour of all plays, or no plays, depending on the weighting used. Periodic testing during training and early stopping when good performance is achieved is recommended.
+
+Fig \ref{fig15} shows the results of some of the other tests that were performed. The table has been shaded to aid understanding with darker shading what may be considered "better", whether this be more training data samples, a more complex model struture, or a better score.
 
 \begin{figure}[h!]
 	\centering
@@ -191,6 +221,52 @@ Fig \ref{fig15} shows the results of some of the other tests that were performed
 	\label{fig15}
 \end{figure}
 
+Note that not all runs are shown - those that incorporated additional features beyond t-1 have been excluded.
+
+\subsubsection{Hidden Layers}
+
 We see that the improvement in precision comes about most significantly through the use of 4 layers (see run no. 7) although a higher number of iterations of a mini-batch also seems to help improve precision (see run 2 vs. 3). 
 
 Yet too many iterations of a mini-batch adversely impacts recall. Good recall appears to be a product of a higher number of hidden units in a layer, a higher number of time steps being fed into the LSTM, and a higher number of layers. All these supports the idea that the ability to detect the start and end of a play session, requires a highly non-linear solution.
+ 
+\subsection{Declining scores}
+
+We also see a few results that stand out. They are runs 3, 12, and 13. Run 3 shows a reasonable score was achieved with just 1 hidden layer by performing fewer mini-batch iterations than run 2. While runs 12 and 13 showed a score of 0\% by the end of their runs.
+
+Both of these are attributed to an observation that the longer the model is trained the more likely it is to start predicting 'not a play event' for everything. We hypothesized that this is due to the data imbalance, which in over many training iterations leads the model to conclude getting the non-play events correct is more important than getting the play events correct.
+
+
+
+
+
+
+We see this better in fig \ref{fig18a} which shows the precision and recall of every minibatch sample. Note that in this chart, every 50 mini-batches represents the end of a random user, before another one is randomly selected. Fig. \ref{fig18a} shows us both the scores of each mini-batch training data (lighter colored markers), as well as the scores at the end of each random user, using randomly selected test data (darker symbols).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm, keepaspectratio,]{fig018a.jpg}
+	\caption{RNN results over multiple runs. Darker shading means better}
+	\label{fig18a}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=12cm, keepaspectratio,]{fig018a.jpg}
+	\caption{RNN results over multiple runs. First 100 rows.}
+	\label{fig18b}
+\end{figure}
+
+Note that it is generally easier to achieve a high precision score by only guessing play events infrequntly, resulting in a lower recall score; and that in each mini-batch, less than 10\% of rows would be a 'play event'. 
+
+From loking at fig. \ref{fig18a} it is hard to discern whether there are any patterns. For this reason we also include fig. \ref{fig18b} showing just the first 100 rows.
+
+There are two insights we draw from these charts:
+\begin{enumerate}
+	\item It is hard to tell if results are improving with each mini-batch however we do see in fig. \ref{fig18b} that there are fewer scores of 0\% as training goes on.
+	\item After a certain point in training results fall off a cliff edge -- the model predicts 'No play' for every event
+\end{enumerate}
+ 
+
+
+
+Finally, an RNN-LSTM model has a computational complexity of per time-step and weight of O(1) \parencite{gers1999learning}. While training still took some time, with better hardware applying the method to ever larger datasets is not intractable.

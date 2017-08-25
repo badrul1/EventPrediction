@@ -147,42 +147,60 @@ Mini-batching was also performed with a batch size of 2000 and 5 iterations of t
 
 \subsection{Recurrent Neural Networks}
 
-Recurrent nets are a type of artificial neural network designed to recognize patterns in sequences of data, such as text, genomes, handwriting, the spoken word, or numerical times series data emanating from sensors, stock markets and government agencies. Whilst a traditional Feed-Forward network \parencite{MLP} has input nodes, hidden layers, and an output layer, with data flowing in one direction only, RNNs allow for the hidden state from one timestep of the neural net to be an input into the next (see fig. \ref{RNN}).
+The construction of the RNN model requires a number of hyper-paramters that we will discuss in turn. They are:
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=3cm, keepaspectratio,]{fig007.jpg}
-	\caption{RNN with 3 timesteps}
-	\label{RNN}
-\end{figure} 
+\begin{list}{-}{spacing}
+	\item steps: How many time steps to use (= batch depth)
+	\item learning rate: Learning rate of backprop algorithm
+	\item Hidden units: Number of units per hidden layer
+	\item layers: Number of hidden layers
+	\item class1Weighting: Weighting to apply in the cost function for labels that are a play event
+	\item user iteration: How many random users to select for training)
+	\item samplesPerUser: How many mini-batches to select for each user
+	\item batchRows: How many random periods to select in each mini-batch (=batch height)
+	\item batch iterations: How many iterations to perform on one batch
+\end{list}
 
-RNN models can employ different methods the propogration of the hidden state over time. One such well known method is Long Short-Term memory (LSTM) \parencite{Olah}. Here the hidden state is the product of a further four layers that interact in a way as to learn what information to retain and what information to throw away. 
+\subsubsection{Batch shape}
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=5cm, keepaspectratio,]{fig008.png}
-	\caption{LSTM}
-	\label{fig:fig8}
-\end{figure} 
+We provide the RNN model with a sequence of historical data at times $t-1 .. t-n$ with $n >1)$. This is fed into the RNN as separate time steps in forward temporal order (earliest time-steps are processed first). The hidden state would propogate information forward at each time step, until it was used to predict the outcome at time $t$.
 
-
-We could therefore provide the model with a sequence of historical data at times $t-1 .. t-n$ where $n >1)$ which would be fed into the RNN as separate time steps in forward temporal order. The hidden state would propogate information from $t_n$ forward at each time step, until it was used to predict the outcoem a time $t$.
-
-Practically speaking this mean feeding in the data with input shape (batch rows, time-steps, features). Some points of interest to fellow researchers are:
+Practically speaking this meant feeding in the data with input shape (batch rows, time-steps, features). Some points of interest to fellow researchers are:
 
 \begin{enumerate}
-	\item The features dimension here does not need to contain all time-lags as we do in our other time-series models. However it must contain t-1. In this research we experiment with both t1 only and all our timelag features in this research.
+	\item The features dimension here does not need to contain all time-lags as we do in our other time-series models. However it must contain t-1. 
 		
-	\item The time-steps dimension is where the features list in previous time steps will be stored. These are then 'unrolled' within Tensorflow and fed into the LSTM. In this research we experiment with different lengths of time-steps.
+	\item The time-steps are 'unrolled' within Tensorflow and fed into the LSTM. In this research we experiment with different lengths of time-steps, with 48 (half-hour periods ) representing a day, 336 for a week, and 672 for 2 weeks.
 
-	\item When the data is unrolled, time step $t$ for all rows in the batche are processed together as one block, before moving onto the next time-step.
+	\item When the data is unrolled, time step $t$ for all rows in the batches are processed together as one block, before moving onto the next time-step.
 
 	\item Constructing the 3-d shape often requires building them up in slices. A significant speed up was observed in Python when using a pre-allocated array vs. appending to it.
 \end{enumerate}
 
+\subsubsection{Samples and iterations}
+
+A challenge in the research was to balance the number of data samples taken from each user, with the number of users to sample from, and the number of iterations to do on each sample. As we see in our results this can lead to long training times. A distinction between batch rows and samples per user was required for computational reasons to reduce the demand on RAM per mini-batch, vs. feeding in one large mini-batch per user.
+
+\subsubsection{Cost function and weighting}
+
+A weighted soft max cross entropy loss function was used to determine the cost (called in Tensorflow through the tf.losses.sparse\_softmax\_cross\_entropy function). 
+
+A fully worked out example of this is shown in fig \ref{fig19}. It highlights the importance of the weighting that was applied to class 1 (play events) and why choosing the right weight is crucial to prevent the model drifting to predicting all 0's over time. 
+ 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=9cm, keepaspectratio,]{fig019.jpg}
+	\caption{Softmax cross-entropy loss}
+	\label{fig19}
+\end{figure} 
+	
+The highlighted row is the only play event in the batch, which is not an atypical scenario. The logits pedict this row to be a non-play event. Without weighting, our cost for this row would be 0.85, but after a class 1 weighting multiplier of 6 is applied it becomes 5.096. 
+
+As we see in the next chapter, the weighting play a crucial role in getting good results, and too low or too high a weighting leads to predictions drifting in favour of no-plays to all-plays.
+
 \section{Evaluation critera}
 
-Deciding on an approporiate evaluation measure requires careful consideration to the costs attached to different predictions. In our case we assign a lower cost to predicting a non-play event, and being wrong, than predicting a play-event and being right (as the cost of suggesting music when the user is likely not interested is higher than not playing music when they likely not interested). 
+Deciding on an approporiate evaluation measure requires careful consideration to the costs attached to different predictions. In our case the cost of suggesting music when the user is likely not interested is higher than not playing music when they likely not interested. 
 
 We also wish to rate models higher if they manage to predict the first play of a listening session, as this is seen be harder than simply predicting a play event, when the last n events were also a play event.
 
@@ -206,7 +224,7 @@ Precision and recall in combination was therefore our chosen evaluation method. 
 
 We have described how our data was transformed to make it useful for our experiments. In particular how we had to convert our list of play events into a list of play and non-play events for every period. By doing this we are faced with an imbalance of data as non-play events make up ~91\% of the data and so we employ a weighting strategy to counteract this.
 
-We then described the methods we will be utilizing in our experiments, consisting of a Baseline model which is simply to assume $t =t-1$, a Bayesian model which build up a weekly profile of listening habits for each user, Logistic and SVM models that apply classical machine learning time-series prediction techniques to our problem, and finally a deep learning model in the form of an RNN-LSTM where we seek to utlize the capabilities for it to learn temporal patterns through a hidden memory state.
+We then described the methods we will be utilizing in our experiments, consisting of a Baseline model which is simply to assume $t =t-1$, a Bayesian model which build up a weekly profile of listening habits for each user, Logistic and SVM models that apply classical machine learning time-series prediction techniques to our problem, and finally a deep learning model in the form of an RNN-LSTM where we seek to utilize the capabilities for it to learn temporal patterns through a hidden memory state.
 
 Finally we looked at different ways for measuring the success of our problem, with precision and recall being the preferred choice.
 

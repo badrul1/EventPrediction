@@ -16,6 +16,66 @@
   {}
 \endgroup
 
+\entry{Borgan}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Andersen}{A.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Børgan}{B.}%
+     {O}{O}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{APBO1}
+  \strng{fullhash}{APBO1}
+  \field{sortinit}{A}
+  \field{title}{Statistical Models Based on Counting Processes}
+  \field{year}{1993}
+\endentry
+
+\entry{baddeley2014logistic}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Baddeley}{B.}%
+     {Adrian}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Coeurjolly}{C.}%
+     {Jean-Fran{\c{c}}ois}{J.-F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rubak}{R.}%
+     {Ege}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Waagepetersen}{W.}%
+     {Rasmus}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford University Press}%
+  }
+  \strng{namehash}{BA+1}
+  \strng{fullhash}{BACJFREWR1}
+  \field{sortinit}{B}
+  \field{number}{2}
+  \field{pages}{377\bibrangedash 392}
+  \field{title}{Logistic regression for spatial Gibbs point processes}
+  \field{volume}{101}
+  \field{journaltitle}{Biometrika}
+  \field{year}{2014}
+\endentry
+
 \entry{Brownlee}{misc}{}
   \name{author}{1}{}{%
     {{}%
@@ -36,24 +96,61 @@
   \field{year}{2015}
 \endentry
 
-\entry{DaleyJones}{book}{}
+\entry{chang2011libsvm}{article}{}
   \name{author}{2}{}{%
     {{}%
-     {Daley}{D.}%
-     {DJ}{D.}%
+     {Chang}{C.}%
+     {Chih-Chung}{C.-C.}%
      {}{}%
      {}{}}%
     {{}%
-     {Vere-Jones}{V.-J.}%
-     {D}{D}%
+     {Lin}{L.}%
+     {Chih-Jen}{C.-J.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{DDVJD1}
-  \strng{fullhash}{DDVJD1}
-  \field{sortinit}{D}
-  \field{title}{An introduction to the theory of point processes}
-  \field{year}{2003}
+  \list{publisher}{1}{%
+    {Acm}%
+  }
+  \strng{namehash}{CCCLCJ1}
+  \strng{fullhash}{CCCLCJ1}
+  \field{sortinit}{C}
+  \field{number}{3}
+  \field{pages}{27}
+  \field{title}{LIBSVM: a library for support vector machines}
+  \field{volume}{2}
+  \field{journaltitle}{ACM transactions on intelligent systems and technology
+  (TIST)}
+  \field{year}{2011}
+\endentry
+
+\entry{Nok}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Chiu}{C.}%
+     {Sung~Nok}{S.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stoyan}{S.}%
+     {Dietrich}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kendall}{K.}%
+     {Wilfrid~S.}{W.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{2}{%
+    {John Wiley}%
+    {Sons}%
+  }
+  \strng{namehash}{CSNSDKWS1}
+  \strng{fullhash}{CSNSDKWS1}
+  \field{sortinit}{C}
+  \field{title}{Stochastic Geometry and Its Applications}
+  \field{year}{2013}
 \endentry
 
 \entry{DuWang}{inproceedings}{}
@@ -118,6 +215,71 @@
   \field{year}{1996}
 \endentry
 
+\entry{gers1999learning}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Gers}{G.}%
+     {Felix~A}{F.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schmidhuber}{S.}%
+     {J{\"u}rgen}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cummins}{C.}%
+     {Fred}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IET}%
+  }
+  \strng{namehash}{GFASJCF1}
+  \strng{fullhash}{GFASJCF1}
+  \field{sortinit}{G}
+  \field{title}{Learning to forget: Continual prediction with LSTM}
+  \field{year}{1999}
+\endentry
+
+\entry{Heuer}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {{Heuer}}{H.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{M{\"u}ller}}{M.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{Rubner}}{R.}%
+     {O.}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HAMCRO1}
+  \strng{fullhash}{HAMCRO1}
+  \field{sortinit}{H}
+  \verb{doi}
+  \verb 10.1209/0295-5075/89/38007
+  \endverb
+  \verb{eprint}
+  \verb 1002.0797
+  \endverb
+  \field{pages}{38007}
+  \field{title}{{Soccer: Is scoring goals a predictable Poissonian process?}}
+  \field{volume}{89}
+  \field{journaltitle}{EPL (Europhysics Letters)}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.data-an}
+  \field{month}{02}
+  \field{year}{2010}
+\endentry
+
 \entry{Kingman}{book}{}
   \name{author}{1}{}{%
     {{}%
@@ -125,6 +287,9 @@
      {J.~F.~C.}{J.~F.~C.}%
      {}{}%
      {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Clarendon Press}%
   }
   \strng{namehash}{KJFC1}
   \strng{fullhash}{KJFC1}
@@ -310,6 +475,23 @@
   \field{year}{2017}
 \endentry
 
+\entry{rajala2014note}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Rajala}{R.}%
+     {Tuomas}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RT1}
+  \strng{fullhash}{RT1}
+  \field{sortinit}{R}
+  \field{title}{A note on Bayesian logistic regression for spatial exponential
+  family Gibbs point processes}
+  \field{journaltitle}{arXiv preprint arXiv:1411.0539}
+  \field{year}{2014}
+\endentry
+
 \entry{MLP}{inproceedings}{}
   \name{author}{3}{}{%
     {{}%
@@ -410,6 +592,9 @@
      {}{}%
      {}{}}%
   }
+  \list{publisher}{1}{%
+    {Springer-Verlag}%
+  }
   \strng{namehash}{VVN1}
   \strng{fullhash}{VVN1}
   \field{sortinit}{V}
@@ -446,6 +631,44 @@
     {Georgia Institute of Technology}%
   }
   \field{type}{phdthesis}
+  \field{year}{2017}
+\endentry
+
+\entry{xiao2017modeling}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Xiao}{X.}%
+     {Shuai}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yan}{Y.}%
+     {Junchi}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yang}{Y.}%
+     {Xiaokang}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zha}{Z.}%
+     {Hongyuan}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chu}{C.}%
+     {Stephen~M}{S.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{XS+1}
+  \strng{fullhash}{XSYJYXZHCSM1}
+  \field{sortinit}{X}
+  \field{booktitle}{AAAI}
+  \field{pages}{1597\bibrangedash 1603}
+  \field{title}{Modeling the Intensity Function of Point Process Via Recurrent
+  Neural Networks.}
   \field{year}{2017}
 \endentry
 

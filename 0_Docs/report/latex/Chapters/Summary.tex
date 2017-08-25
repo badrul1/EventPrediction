@@ -6,20 +6,28 @@
 
 \section{Conclusion}
 
-Predicting the propensity of a user to listen to music at a certain time, based on their recent listening history can be applied to a range of other areas such as the propensity to purchase, electricity usage, or the demands on a public transport system. In all these a good modeling of the temporal patterns helps with prediction.
+Predicting the propensity of a user to listen to music at a certain time, based on their recent listening history can be applied to a range of other areas such as the propensity to purchase products, electricity usage, or the demands on a public transport system. The ability to accurately model these patterns is therefore of great significance to industry. Traditional temporal point processes modeling requires making assumptions about the data in order to build a prediction model and struggle with capturing highly non-linear patterns in a scalable manner. 
 
-Within the literature modeling the problem as a temporal point process is one of the most common methods and this research did likewise in several of the machine learning algorithms that were evaluted.
+Within this research we applied a range of techniques to the task of modeling temporal point processes, within the context of modelling the times at which users listen to music. Our evaluation measures were precision and recall. 
 
-As music listening is typically long periods of non-play events, followed by sequential periods of play events, the problem becomes one of a balance between precision and recall. Improving recall requires predicting the start and end of a sequence while precision favours restricting predictions to when $t-1 = 1$. This effect is seen in our baseline model which scored 79\% on precision and 13\% on recall after 5-fold cross validation.
+As music listening is typically long periods of non-play events, followed by sequential periods of play events, the problem becomes that of a counter-balance between good precision and good recall. Improving recall requires predicting the start and end of a sequence while precision favours restricting predictions to when $t-1 = 1$. This effect is seen in our baseline model which scored 79\% on precision and 13\% on recall after 5-fold cross validation.
 
-It is also seen in the linear SVM models which is less impacted by cases that fall close to the decision boundary as the start of and end of a sequence are likely to be.
+It is also seen in the linear SVM models which is less impacted by cases that fall close to the decision boundary, as is the case with the start and of a sequence of play events. From a practical perspective, predicting the start and end of series of events is what is of most interest and harder to do. 
 
-From a practical perspective, predicting the start and end of series of events is what is of most interest. In this respect it seems non-linear models may perform better than linear ones with the RBF model achieving a 76\% recall score (while maintaining a high 77\% precision score), and the the RNN-LSTM model achiving 69\% and 70\% respectively.
+We found that while linear models are adept at a high precision score, they were poor at recall. Non-linear models performed much better on recall without comprimizing precision too much. An SVM model with an RBF kernel achieved a precision score of 77\% and a recall score of 76\%. However such a model is not deemed scalable to large datasets.
+
+We also examined an RNN-LSTM model. This method suffers from requiring a large number of hyper-parameter tuning which results in a long training time. However once these hyper-parameters have been settled upon (such as through analysis of a subset of data), the method can be applied to a much larger set of data than is possible with an SVM RBF model, although it is noted that better hardware can make the difference between hours, days, or weeks of training. Our RNN-LSTM model scored an average precision score of 70\% and 69\% based on a small subset of data. 
+
+As our literature review at the start of the report showed, the application of deep learning to temporal point processes is still in its infancy but shows promising signs. Our own research is inconclusive though positive enough to suggest further research would be worthwhile. Some caution for application in industry is raised, due to the time required for hyper-paramter turning on large datasets. If there is a lot of variance within a dataset, then the combination of multiple iterations and multiple hyper-parameter searches may make it an intractable solution. Nevertheless with processing power continually increasing there is the potential for deep learning to transform our approach to temporal point processes, and further investigation in this area is most welcome.
 
 \section{Future research}
 
-Future research into the matter temporal point proceses should investigate whether non-linear models are indeed better at detecting both the start of an event process as well as noiser data in which the patterns may not be as obvious.
-
-If non-linear models perform better at these problems, then, given the performance of RNN-LSTM models on a small set of data, they may be prove to perform exceptionally well in learning to model such temporal patterns with larger amounts of data and training. Currently the training time on an average laptop proved to be a bottleneck but with processing speeds constantly improving we may be entering an age where such models become practical in the commercial data science field. 
-
-Finally the research touched upon (see Appndices) but not fully investigated the time it takes for models to adapt to new users. Hybrid models or advanced Bayesian models, that balance the observations coming from the user with wider prior knowlege, may be the key to learning the behaviour of individuals. After all the best predictor for a users behaviour, is observing the user themselves.
+There are seveal directions fellow researchers could choose to take this problem.
+\begin{enumerate}
+	\item Methods of efficient searches of hyper-parameter tuning of RNN temporal point process models
+	\item Confirmation of the hypothesis that through further training RNNs can achieve a very high score on temporal point process problems
+	\item Evaluation of more sophisticated RNN structures such as that described in our literature review \parencite{xiao2017modeling}.
+	\item Evaluation of advanced Bayesian models such as Bayesian Logistic regression
+	\item Evaluation of Gaussian Point processes as an alternative to RNN models
+	\item Investigation into how quickly models can learn to model the behaviour of new users
+\end{enumerate}

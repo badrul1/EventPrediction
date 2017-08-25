@@ -21,59 +21,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
-I was expecting a `,' or a `}'---line 11 of file bibliography.bib
- :  
- :  publisher   ={Springer-Verlag}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 171 of file bibliography.bib
- :  
- :  publisher   ={Clarendon Press}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "NegLog"
 Biblatex version: 3.3
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 17 entries,
+You've used 24 entries,
             6047 wiz_defined-function locations,
-            1238 strings with 11236 characters,
-and the built_in function-call counts, 57425 in all, are:
-= -- 2554
-> -- 2038
-< -- 711
-+ -- 754
-- -- 698
-* -- 3919
-:= -- 3398
+            1287 strings with 12447 characters,
+and the built_in function-call counts, 82697 in all, are:
+= -- 3574
+> -- 2957
+< -- 994
++ -- 1078
+- -- 1041
+* -- 5949
+:= -- 4859
 add.period$ -- 0
-call.type$ -- 17
-change.case$ -- 411
-chr.to.int$ -- 44
-cite$ -- 32
-duplicate$ -- 6314
-empty$ -- 5684
-format.name$ -- 1141
-if$ -- 13261
+call.type$ -- 24
+change.case$ -- 566
+chr.to.int$ -- 50
+cite$ -- 46
+duplicate$ -- 9152
+empty$ -- 8198
+format.name$ -- 1715
+if$ -- 19008
 int.to.chr$ -- 0
-int.to.str$ -- 45
+int.to.str$ -- 66
 missing$ -- 0
-newline$ -- 440
-num.names$ -- 948
-pop$ -- 5251
+newline$ -- 660
+num.names$ -- 1338
+pop$ -- 7530
 preamble$ -- 1
-purify$ -- 460
+purify$ -- 643
 quote$ -- 0
-skip$ -- 3634
+skip$ -- 5154
 stack$ -- 0
-substring$ -- 1731
-swap$ -- 2042
-text.length$ -- 491
-text.prefix$ -- 17
+substring$ -- 2354
+swap$ -- 3012
+text.length$ -- 704
+text.prefix$ -- 24
 top$ -- 1
-type$ -- 629
+type$ -- 895
 warning$ -- 0
-while$ -- 337
+while$ -- 469
 width$ -- 0
-write$ -- 422
-(There were 2 error messages)
+write$ -- 635
+(There was 1 warning)

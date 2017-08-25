@@ -5,11 +5,11 @@
 
 \label{Chapter2} % 
 
-Within literature the problem of predicting the next occurence of an event is referred to as event prediction, sequence prediction, or point process modeling. Analyzing data of this sort presents its own unique challenges and questions. What are the ways to represent the data?  What types of stochastic 
+Analyzing event data presents its own unique challenges and questions. What are the ways to represent the data?  What types of stochastic 
 models  are  appropriate  for  explaining  the  structure  in  the  data? How  can  we  measure  
 how  well  the  data  is  described  by  a  particular  model?  
 
-Regarding the representation of the event data, there are three ways of doing this, event count, event times, and inter-event intervals (see figure \ref{fig:fig1}).
+Within literature the problem is referred to as event prediction, sequence prediction, or point process modeling. They represent event data in one of three ways: as event counts, as event times, and as inter-event intervals (fig. \ref{fig:fig1}).
 
 \begin{figure}[h!]
 	\includegraphics[width=7cm, keepaspectratio]{fig001.jpg}
@@ -17,36 +17,35 @@ Regarding the representation of the event data, there are three ways of doing th
 	\label{fig:fig1}
 \end{figure}
 
-Inter-event has traditionally been one of the most common ways od representing the data, for example in the times between financial transactions \parencite{EngleRusell}.
-
+Of these inter-event time is the most common form of representing the data, for example in the times between financial transactions \parencite{EngleRusell} while an example of the counting process is the socring of goals in soccer \parencite{Heuer}. 
+ 	
 \section{Poisson Point Process}
 
-Poisson processes \parencite{Kingman} are characterized by the fact that the probability of an event in a small time interval is independent of the event at all other times. 
+Poisson processes \parencite{Kingman} are characterized by the fact that the probability of an event in a small time interval is independent of the event at all other times, and their probability or conditional intensity function follows a Poisson distribution. More formally we describe a Poisson point process, $\xi$ as:
 
-By making use of this independence assumption one can make sure of models that construct a poisson distribution to describe the data. Due to their ease of use Poisson processes are often the first-order models used to  characterize  spiking  systems. However given the intercorrelation between time intervals they are not so useful for temporal point processes. However in some cases it is possible to aggregate temporal data into a form that removes the inter-dependence between occurrences. We see this in used in the Bayesian Inference model described in the next chapeter.
+$$\Pr[\xi (T_{i})=k_{i},1\leq i\leq n]=\prod _{i}e^{{-\lambda \|T_{i}\|}}{\frac  {(\lambda \|T_{i}\|)^{{k_{i}}}}{k_{i}!}}.$$
+
+where $\xi(T_1), ...\xi(T_n)$ are independent for separate subsets of $T_1,...T_n$
 
 \section{Temporal Point Processes}
 
-A temporal point process \parencite{DaleyJones} is a way of modeling event data as a sequence of a fixed period intervals. Temporal point processe models seek to estimate the probability of an event happening at time $t$, based on an event history upto, but not including, time $t$.  At its simplest it can be represented as:
-$${\xi =\sum _{i=1}^{n}\delta _{X_{i}},}$$
-
-where $\delta$ denotes the Dirac measure, a probability measure of whether a set contains point $X$ or not.
+A temporal point process is the modeling of event data as a sequence of a fixed period intervals. It can be characterized in three ways: as an ordered list of event times ${T_i,...T_n}$, as inter-event times $U_1,...U_n$ where $u+i = T_i-T_{i-1}$, or as a counting process where  $N(t)$ is a count of the number of events occuring before time $t$ \parencite{Borgan}.
 
 In the case of music listening we can model a sequence of events and non-events, where $t_i$ can either be 0 (did not play music) or 1 (played music). This is the form we use in all but the Bayesian model as described in the next chapter.
 
 \subsection{Conditional Intensity Function in Point Processes}
 
-The conditional intensity function is a key part of traditional point processes modeling in which the probability of an event $\lambda(t)$ is derived from a stochastic model of the inter-event time \parencite{DuWang}, for instance the Poisson process at time $t$.
+The conditional intensity function, $\lambda(t)$, represents the infinitesimal rate at which events are expected to occur around a particular time 
+$t$, conditional on the prior history of the point 
+process prior to time $t$. $\lambda$ may be estimated parametrically \parencite{DuWang} or via a parametric model. With the Poisson process, $\lambda$ depends only on $t$. In other point processes it also depends on the history preceding t. 
+ 
+If this conditional intensity remains constant over time it is referred to as a homogenous or stationary point process \parencite{Nok}. If however it can vary with time it is known as a inhomgenous point process, such as the self-exciting (Hawkes) process where the intensity is determined by previous events through the parametric form $\lambda(t) = \mu + \beta \sum_{t_i<t}g(t-t_i)$ and where $g$ is some non-negative kernel function.
 
-Conditional intensity functions can be inhomogenous such as with a Gaussian Kernel $\lambda(t) = \sum^k_{i=1}\alpha(2\pi \sigma^2_i)^{-1/2}exp(-(t-c_i)^2/\sigma^2_i)$
-, for $t \epsilon [0,T]$ where $c_i$ and $\sigma$ are fixed center and standard deviations, respectively, and $\alpha_i$ is the weight for kernel i.
+The logit function used in generalized linear model, can also be thought of a conditional intensity function and has been used to develop sophisticated models such as \parencite{baddeley2014logistic} and \parencite{rajala2014note}.
 
-Or they can vary in intensity, such as with the self-exciting (Hawkes) process where the intensity is determined by previous events through the parametric form $\lambda(t) = \mu + \beta \sum_{t_i<t}g(t-t_i)$ and where $g$ is some non-negative kernel function.
+However as noted by Wass et. al \parencite{Wass}, point process models using a condictional intensity function often make various parametric assumptions about the latent dynamics governing the generation of the observed point patterns. As a consequence, model misspecification can cause significantly degraded performance using point process models.
 
-However as noted by Wass et. al \parencite{Wass}, conventional point process models often make unrealistic assumptions about the generative processes of the event sequences. The conditional intensity function make various parametric assumptions about the latent dynamics governing the generation of the observed point patterns. As a consequence, model misspecification can cause significantly degraded performance using point process models.
-
-
-\section{Deep RNN Point Process Models}
+\section{Deep Learning Models}
 
 In recent years deep learning has demonstrated the power to learn hierarchical nonlinear patterns on large-scale datasets \parencite{DL} through multiple layers of abstraction (e.g. multi-layer feedforward neural networks). It has achieved state-of-the-art performances on a wide range of applications, such as computer vision \parencite{ImageNet}, natural language processing \parencite{Socher}, and protein structure prediction \parencite{Lena}.
 
@@ -54,8 +53,35 @@ However it has not been applied to temporal point processes until recently with 
 
 For measuring the loss between a generated and true sequence, the authors found the Wassertein-Distance \parencite{WassGAN} performed better than Maximum Likihood Estimate (MLE) which they remarked "may suffer from mode dropping or get stuck in an inferior local minimum".
 
-Their findings showed that where as parametric point process models work better with problems where a parametetric form exists, with real world data a GAN model with Wasserterin-Distance outperformed all other models (including an RNN model using MLE). This signals a promising new direction for temporal point process research.
+Their findings showed that where as parametric point process models work better with problems where a parametetric form exists, with real world data a GAN model with Wasserterin-Distance outperformed all other models. 
+
+\subsection{Recurrent Neural Networks (RNN)}
+
+Within this research we look at RNN models. RNNs are a type of artificial neural network designed to recognize patterns in sequences of data, such as text, genomes, handwriting, the spoken word, or numerical times series data emanating from sensors, stock markets and government agencies. Whilst a traditional Feed-Forward network \parencite{MLP} has input nodes, hidden layers, and an output layer, with data flowing in one direction only, RNNs allow for the hidden state from one timestep of the neural net to be an input into the next (see fig. \ref{RNN}).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=3cm, keepaspectratio,]{fig007.jpg}
+	\caption{RNN with 3 timesteps}
+	\label{RNN}
+\end{figure} 
+
+RNN models can employ different methods for the propogration of the hidden state over time. One such well known method is Long Short-Term memory (LSTM) \parencite{Olah}. Here the hidden state is the product of a further four layers that interact in a way as to learn what information to retain and what information to throw away. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5cm, keepaspectratio,]{fig008.png}
+	\caption{LSTM}
+	\label{fig:fig8}
+\end{figure} 
+
+Finally, as this report was being finalized, very recent research \parencite{xiao2017modeling} came to light that is worth mentioning. In this the authors view the conditional intensity function of a point process as a non-linear mapping between the predicted transient occurrence intensity of events with different types, and the  model  input  information  of  event  participators, event
+profile and the system history.
+
+They then go onto model this complex nonlinear mapping using recurrent neural networks, with logistic regression as a baseline model. Most interesting in their approach of utilizing two RNNs: one for modeling the time-series data and associated features (similar to the approach in our research) and a second to model long-range dependency over history with arbitary time intervals; specifically a sequence of event type and the time since the previous event. In this way they can capture both the temporal based patterns, as well as the non-temporal, event-correlation patterns; which approximates to a conditional intensity function based on inter-event time.
+
+The favoured evaluation metrics in the research were are precision, recall, f1 score, and confusion matrix.
 
 \section{Summary}
 
-While not an exhaustive review of techniques we have seen some of the ways in which point processes can be modelled both traditionally and more recent areas of experiments. Historically a lot of methods have focussed on modeling the data as inter-event times. In the next chapter we will lay out our own methodology for how to structure the data followed by a range methods we wish to assess for modeling the temporal patterns.
+While not an exhaustive review of techniques we have seen some of the ways in which point processes can be modelled using traditional conditional intensity based models, as well as more recent areas of experimentation using deep learning. In the next chapter we layout the approach and methods we wish to explore in the context of this research.
