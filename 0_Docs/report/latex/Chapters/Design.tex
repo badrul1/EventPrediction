@@ -183,20 +183,26 @@ A challenge in the research was to balance the number of data samples taken from
 
 \subsubsection{Cost function and weighting}
 
-A weighted soft max cross entropy loss function was used to determine the cost (called in Tensorflow through the tf.losses.sparse\_softmax\_cross\_entropy function). 
+Both the logistic loss and a weighted softmax cross entropy loss function were tried in the model, with logistic loss found to be the more effective of the two cost functions. 
 
-A fully worked out example of this is shown in fig \ref{fig19}. It highlights the importance of the weighting that was applied to class 1 (play events) and why choosing the right weight is crucial to prevent the model drifting to predicting all 0's over time. 
- 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=9cm, keepaspectratio,]{fig019.jpg}
-	\caption{Softmax cross-entropy loss}
-	\label{fig19}
-\end{figure} 
-	
-The highlighted row is the only play event in the batch, which is not an atypical scenario. The logits pedict this row to be a non-play event. Without weighting, our cost for this row would be 0.85, but after a class 1 weighting multiplier of 6 is applied it becomes 5.096. 
+Due to the imbalanced data, adding weighting to the costs of a Play event was found to be crucial in getting good results.
 
-As we see in the next chapter, the weighting play a crucial role in getting good results, and too low or too high a weighting leads to predictions drifting in favour of no-plays to all-plays.
+
+\begin{lstlisting}
+_logits = RNN(x, weights, biases,n_steps)
+
+_prob = tf.sigmoid(_logits)
+
+_weightstf.add(1,tf.multiply( _
+tf.cast(tf.equal(y,1),'int32'),n_weighting))
+
+_logloss =
+tf.losses.log_loss(predictions=_prob, _ labels=y,epsilon=0.00001, _ 
+weights=_weights)
+
+_cost = tf.reduce_mean(_logloss)
+\end{lstlisting}
+
 
 \section{Evaluation critera}
 

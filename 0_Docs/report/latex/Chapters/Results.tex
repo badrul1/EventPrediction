@@ -210,9 +210,9 @@ The RNN-LSTM model required a lot of hyper-parameter testing and as such the tra
 	\item class1Weighting = 8      \# Weighting to apply in the cost function for labels that are a play event
 \end{list}
 
-This scored an average precision of 70\% and an average recall of 66.5\% over two separate runs, with 1 run taking approximately 10 hours to complete. The original number of user iterations was 20 but a consisten pattern was that if a model runs for too long, the results swing in favour of all plays, or no plays, depending on the weighting used. Periodic testing during training and early stopping when good performance is achieved is recommended.
+This scored an average precision of 70\% and an average recall of 66.5\% over two separate runs, with 1 run taking approximately 10 hours to complete. 
 
-Fig \ref{fig15} shows the results of some of the other tests that were performed. The table has been shaded to aid understanding with darker shading what may be considered "better", whether this be more training data samples, a more complex model struture, or a better score.
+In total 50+ experiments were performed with different hyper-parameter settings of which a subset is shown here.
 
 \begin{figure}[h!]
 	\centering
@@ -221,52 +221,23 @@ Fig \ref{fig15} shows the results of some of the other tests that were performed
 	\label{fig15}
 \end{figure}
 
-Note that not all runs are shown - those that incorporated additional features beyond t-1 have been excluded.
+The following observations were made based on the results of all experiments.
+
+LIST
+
+\subsection{Early stopping}
+
+When going above 1 hidden layer, a consistent pattern emerged in that training for too long led to the models converging on either predicting all plays, or all non-plays, depending on how stong the weighting used was.
+Periodic testing on unseen data, during training and early stopping when good performance is achieved.
+
+Fig \ref{fig15} shows the results from a sample of others tests that were run. The table has been shaded to aid understanding with darker shading what may be considered "better", whether this be more training data samples, a more complex model struture, or a better score.
+
+
+
+Run number 14 \& 15 were ones where it converged to predicting all Play events due to the very strong weight used, while run number 12 \& 13 show it swinging the other way.
+
+Run 10 was our best score, in which the training was stopped after 8 users. Here we used 4 hidden layers. 
 
 \subsubsection{Hidden Layers}
 
-We see that the improvement in precision comes about most significantly through the use of 4 layers (see run no. 7) although a higher number of iterations of a mini-batch also seems to help improve precision (see run 2 vs. 3). 
-
-Yet too many iterations of a mini-batch adversely impacts recall. Good recall appears to be a product of a higher number of hidden units in a layer, a higher number of time steps being fed into the LSTM, and a higher number of layers. All these supports the idea that the ability to detect the start and end of a play session, requires a highly non-linear solution.
  
-\subsection{Declining scores}
-
-We also see a few results that stand out. They are runs 3, 12, and 13. Run 3 shows a reasonable score was achieved with just 1 hidden layer by performing fewer mini-batch iterations than run 2. While runs 12 and 13 showed a score of 0\% by the end of their runs.
-
-Both of these are attributed to an observation that the longer the model is trained the more likely it is to start predicting 'not a play event' for everything. We hypothesized that this is due to the data imbalance, which in over many training iterations leads the model to conclude getting the non-play events correct is more important than getting the play events correct.
-
-
-
-
-
-
-We see this better in fig \ref{fig18a} which shows the precision and recall of every minibatch sample. Note that in this chart, every 50 mini-batches represents the end of a random user, before another one is randomly selected. Fig. \ref{fig18a} shows us both the scores of each mini-batch training data (lighter colored markers), as well as the scores at the end of each random user, using randomly selected test data (darker symbols).
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=12cm, keepaspectratio,]{fig018a.jpg}
-	\caption{RNN results over multiple runs. Darker shading means better}
-	\label{fig18a}
-\end{figure}
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=12cm, keepaspectratio,]{fig018a.jpg}
-	\caption{RNN results over multiple runs. First 100 rows.}
-	\label{fig18b}
-\end{figure}
-
-Note that it is generally easier to achieve a high precision score by only guessing play events infrequntly, resulting in a lower recall score; and that in each mini-batch, less than 10\% of rows would be a 'play event'. 
-
-From loking at fig. \ref{fig18a} it is hard to discern whether there are any patterns. For this reason we also include fig. \ref{fig18b} showing just the first 100 rows.
-
-There are two insights we draw from these charts:
-\begin{enumerate}
-	\item It is hard to tell if results are improving with each mini-batch however we do see in fig. \ref{fig18b} that there are fewer scores of 0\% as training goes on.
-	\item After a certain point in training results fall off a cliff edge -- the model predicts 'No play' for every event
-\end{enumerate}
- 
-
-
-
-Finally, an RNN-LSTM model has a computational complexity of per time-step and weight of O(1) \parencite{gers1999learning}. While training still took some time, with better hardware applying the method to ever larger datasets is not intractable.
