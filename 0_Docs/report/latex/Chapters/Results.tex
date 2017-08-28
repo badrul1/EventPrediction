@@ -4,9 +4,7 @@
 
 \label{Chapter4}
 
-We begin our discussion of the results with preliminary analysis of the data that helped shape the experimental design. Here we seek to understand what are some of the overarching patterns in music listening habits and how these look at an individual level.
-
-After this we present a summary of our results followed by a discussion of the performance of each individual method.
+We begin our discussion of the results with preliminary analysis of the data. Here we seek to understand some of the overarching patterns in listening habits and how these look at an individual level. After this we present a summary of our results followed by a discussion of the performance of each individual method.
 
 \section{Preliminary analysis}
 
@@ -30,7 +28,7 @@ Zooming out to view the pattern across an entire week in figure \ref{3b}, we see
 	\label{3b}
 \end{figure} 
 
-At a high level therefore one can get good accuracy by simply anticipating music demand to peak at 5pm. However if we select two users at random, we see (see fig. \ref{3c}) that these daily patters are not as strongly discernable. This demonstrates why models modeling the high levels patterns is not enough for individual user prediction. 
+At an aggregate level therefore one can get good accuracy by simply anticipating music demand to peak at 5pm. However if we select two users at random (fig. \ref{3c}), we see that these daily patters are not as strongly discernable. As we see later this is likely impacting the Bayesian Inference model as it begins with using the population distribution as the prior. 
 
 \begin{figure}[h!]
 	\centering
@@ -39,43 +37,9 @@ At a high level therefore one can get good accuracy by simply anticipating music
 	\label{3c}
 \end{figure} 
 
-\subsection{Inter-event times}
+\subsection{Outlier analysis}
 
 The dataset contains a timestamp associated with each user. This does not necessarily mean the user played a song in its entirety. Analysis shows plenty of cases where the interval time between tracks was a few seconds suggesting the user skipped tracks. 
-
-Figure \ref{3d} shows a frequency plot of intervals. Intervals beyond 30 minutes continue the exponential decrease and are not shown. We see that while the mode is on par with a typical song length, there is a significant number of plays that lasted under 5 minutes. 
-
-\subsection{Time-series analysis}
-
-Here we examine our data once it has been transformed in a binary sequence of events (1) and non-events(0). We seek to understand better how an optimizer may perform based on traits of the data.
-
-We begin with assessing how well our baseline model may perform based on assuming $t = t-1$. Fig \ref{fig12} shows that the 76\% of Plays, also had a play in t-1. However simply using this as a rule would also capture 2.2\% of non-plays.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=7cm, keepaspectratio,]{fig012.jpg}
-	\caption{}
-	\label{fig12}
-\end{figure} 
-
-Furthermore the 23.8\% of Plays that did not have a Play in the prior period are harder to predict yet of more interest as they representthe beginning of the listneing period and therefore more useful to a music recommender system. 
-
-Given the daily patterns we have seen, it might be reasonable to assume that looking at the same period 24 hours prior may be a good indicator of whether t is a play event. However as we see from fig. \ref{fig12b} this is not a reliable indicator either.
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=7cm, keepaspectratio,]{fig012b.jpg}
-	\caption{}
-	\label{fig12b}
-\end{figure} 
-
-What both of these results tell us is that fairly high precision score of around 76\% ought ot be possible purely based on t-1 but going above this while having a good precision score on the non-play events will be harder.
-
-Finally it was found that of rows where all timelags had a non-play event, 0.62\% of rows had a play event. As this was a low number it was deemed safe to remove all such rows from the dataset in order to improve the speed and quality of analysis. 
-
-\subsection{Outliers}
-
-The data was checked for any unusual outliers that may impinge upon the goal of developing a model to predict user behaviour. An analysis of plays by user reveals a high amount of variance between users on how many tracks are played. 
 
 \begin{figure}[h!]
 	\centering
@@ -84,48 +48,55 @@ The data was checked for any unusual outliers that may impinge upon the goal of 
 	\label{3d}
 \end{figure} 
 
-For our purposes these are include as evidence that the user was interested in playing music at time $t$ and therefore treated as a Play event.
-
-We can also assume that the song plays are not independent of one another, in that the probability of a play event at time t+1 is significantly higher if there was an event at time t. 
-
-\newpage
+Figure \ref{3d} shows a frequency plot of intervals. Intervals beyond 30 minutes continue the exponential decrease and are not shown. We see that while the mode is on par with a typical song length, there is a significant number of plays that lasted under 5 minutes. For our purposes these are include as evidence that the user was interested in playing music at time $t$ and therefore treated as a Play event.
 
 Further analysis showed one user in particular with very high amount of plays, with very low durations, suggesting it was likely to have been generated by a bot, possibly a LastFM test. This was excluded from the dataset.
 
+\subsection{Time-series analysis}
+
+Here we examine our data once it has been transformed into a binary sequence of play events (1) and non-play events(0). We seek to understand better how an optimizer may perform based on traits of the data.
+
+We begin with assessing how well our baseline model may perform. Fig \ref{fig12} shows that the 76\% of Plays, also had a play in $t-1$. However this rule also captures 2.2\% of non-plays events.
+
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=7cm, keepaspectratio,]{fig002.jpg}
-	\caption{Total play count by user}
-	\label{fig2}
+	\includegraphics[width=7cm, keepaspectratio,]{fig012.jpg}
+	\caption{}
+	\label{fig12}
 \end{figure} 
 
+The 23.8\% of Plays that did not have a play in the prior period are harder to predict, yet are of more interest as they represent the beginning of a listneing period. 
+
+Given the daily patterns we have seen, it might be reasonable to assume that $t-24hrs$ may help us to determine the start of an session. However analysis shows that in only 34\% of play events was there also a play event in 24 hours prior.
+
+What both of these results tell us is that fairly high precision score of around 76\% ought ot be possible purely based on $t-1$ but going above this will be a lot harder.
 
 \section{Main results} % Methodology
 
 \subsection{Summary}
 
-Fig. \ref{fig13a} shows the results from our experiments. We see how that the baseline model scores highly on precision but low on recall. In other words assuming $t = t-1$ is often quite often correct given that a group of songs are often played consecutively, but it fails to pick up the start and end points of a sequence of song plays, hence the lower recall.
+Fig. \ref{fig13b} shows the results from across all experiments after 5-fold cross validation.
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=8cm, keepaspectratio,]{fig013b.jpg}
-	\caption{Summary of results. Note that both RNN models included non-time lag features (e.g. IsMon)}
+	\caption{Summary of results}
 	\label{fig13b}
 \end{figure}  
 
-The Bayesian Inference model performed poorly on both measures. This would suggest that the difference between the population patterns and what is observed at an individual level differs too much for the prior probability to be accurate for any one individual user. However this does not rule necessarily rule out the Bayesian approach. An improvement might be to apply a logistic regression model in which the weights are continually updated with each new observation from the user. However such as an approach was not looked at in this research.
+We see that none of the models score better than the Baseline model. The logistic regression model is able to match the Baseline model once we restrict the input to $t-1$. 
 
-Our remaining models exhibit the tension between achieving a good accuracy and achieving a good recall. The Logistic regression model performs below average on precision but is second highest on recall. The Linear SVM and RMF regression models are on par with one another with the former achieving the highest score on prevision, and the latter on recall. 
+It may be that $t = t-1$ is the only pattern that is consistently important across users, with all other time-lags having too much variance across users for them to be useful.
 
-The Linear SVM model ignores probabilities that fall within a margin of the decision boundary during its optimization process. That this translates into performing well on precision may be due to placing lesser emphasis on ad-hoc play events that aren't indicative of a users general behaviour, as these probablities would likely fall near the decision boundary. Alternatively it could be better at dealing with the first play of a sequence whereby if often, but not always occurs at the same time each day; again leading to probabilities nearer the decision boundary.
+In a similar vein, the Bayesian Inference model performed poorly on both measures, suggesting that that the difference between the population and what is observed at an individual level differs too much for the prior probability to be accurate for any one individual user, something we saw some indications for in our preliminary analysis. 
 
-The RBF model generally performs well on both metrics. Note that the RBF classifciation was restricted to 100k rows of training data as it was found the computational cost of 500k rows was too high so it had less training data to work with than the Linear SVM. The high recall rate of 68\% indicates that inputs have a non-linear relationship to the output and that this is especially helpful to predicting the start and end of a play sequence as seen by the high recall score. 
+Our remaining models exhibit the the tension between good accuracy and good recall, with only the RBF SVM model demonstrating the ability to reach a balance score across both. The Logistic regression and RNN models perform below average on precision but well on recall, while the Linear SVM model scores better on precision. We will discuss each one model in turn next.
  
-The RNN models were trained on 50k rows of data due to the computational cost of evaluating a large number of hyperparameters. Two types of models were tested - one with $t-1$ as the only time-lag information and one with all other time-lags included. Given the much smaller training set the results we obsertve are better than expected. Howver a strong caveat is that these results were hard to achieve and require a lot of hyper-parameter testing, which we discuss later in this chapter.
+\section{Bayesian Inference model}
 
-\section{Beta-Binomial analysis}
+We outline here how the model was derived in order to aid understanding of its performance. 
 
-We can plot the prior probability for any given time period as shown in fig \ref{fig10c}.
+We can plot the prior probability for any given time period, as shown in fig \ref{fig10c}.
 
 \begin{figure}[h!]
 	\centering
@@ -134,9 +105,9 @@ We can plot the prior probability for any given time period as shown in fig \ref
 	\label{fig10c}
 \end{figure} 
 
-Here we see that the $\theta$, which represents the prior probability of listening to music in the timeslot, is most likely to be less than 0.1 for this timeslot. Note that this timeslot is for hour 17 (i.e. 5pm) which from our prelinary analysis we  know is the peak listening time. The fact that the probablity is so low suggests that users may often have weeks in which no music was played, and hence the prior probability for a timeslot is dragged down. 
+Here we see that $\theta$, which represents the prior probability of listening to music in the specified timeslot, is likely to be less than 0.1. Notice that this timeslot is for hour 17 (i.e. 5pm) which, from our preliminary analysis, we  know is the peak listening time at an aggregate level. The fact that the probablity is so low for this timeslot would likely be due to the presence of lots of 5pm periods in which music was not listened to at the individual user level. For instance - if our dataset contains large gaps between weeks in which music was listened to. 
 
-For our posterior function, the threshold at which we determine a Play event was determined by comparing the false positive rates with the true positive rates using a ROC curve (\ref{fig10d}). From this, 0.4 was selected as the optimal threshold at which to determine a Play event across all users.
+For our posterior function, the threshold at which we determine a play event was determined by comparing the false positive rates with the true positive rates using a ROC curve (\ref{fig10d}). From this, 0.4 was selected as the optimal threshold at which to determine a Play event across all users.
 
 \begin{figure}[h!]
 	\centering
@@ -145,18 +116,18 @@ For our posterior function, the threshold at which we determine a Play event was
 	\label{fig10d}
 \end{figure} 
 
-The results from the model are shown in figure \ref{fig10e}. We see that the recall and precision of play events (as denoted by 1) is very low suggesting that relying on a Bayesian approach centered around a weekly profile of each users habits is not an effective method for predicting a play event for a new time period.
+The results from the model are shown in figure \ref{fig10e}. We see that the recall and precision of play events (as denoted by 1) is very low. Clearly the approach of building up a weekly profile based on the population then updating it with individual observations is not very effective. This does not however rule some other form of Bayesian modeling such as Bayesian Logistic Regression.
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=7cm, keepaspectratio,]{fig010e.jpg}
-	\caption{Beta-Bionmial Model Results}
+	\caption{Beta-Binomial Model Results}
 	\label{fig10e}
 \end{figure} 
 
 \section{Logistic regression analysis}
 
-An advantage of logistic regression over non-linear models is that the coefficients are easily interpretable. While feature engoneering was not the focus of this research an examination of these can yield insight into which features may be unecessary. 
+For logistic regression we are able to examine the co-efficients to understnd how the model is making use of the input data.
 
 \begin{figure}[h!]
 	\centering
@@ -165,11 +136,9 @@ An advantage of logistic regression over non-linear models is that the coefficie
 	\label{fig14}
 \end{figure} 
 
-Fig \ref{fig14} shows that $t-1$ was by far the most important feature. This is expcted and it's importance crowds out the other features.
+Fig \ref{fig14} shows that $t-1$ was by far the most important feature and its importance crowds out the other features. Interestingly $t-23.5$ is the second strongest time-lag and more significant than t-24hrs. As t-23.5 would be 24 hours prior to $t-1$, it suggests that having a consistent $t-1$ is more important than simply knowing what $t$ was 24 hours prior; which we know from our preliminary analysis is not very effective anyway.
 
-Interestingly t-23.5 is the second strongest time-lag and more significant than t-24hrs. This likely reflects the fact that having a consistent $t-1$ is more important than simply knowing what $t$ was 24 hours prior.
-
-The non-time lag features seem to have very little effect, which was also see in fig \ref{fig16} where we do a forward stepwise regression are barely impacted by these features.
+The non-time lag features seem to have very little effect. We see this in the forward stepwise regressoin chart in fig \ref{fig16}which shows that the inclusion of addiitional features barely impacts the results.
 
 \begin{figure}[h!]
 	\centering
@@ -180,7 +149,11 @@ The non-time lag features seem to have very little effect, which was also see in
 
 \section{SVM analysis}
 
-Of the two SVM models, the RBF model was selected for more in-depth analysis due to its ability to better capture recall without too detrimental a loss in precision. An RBF kernel has two hyper-paramters that can significantly impact the results. The $C$ parameter and the $gamma$. Intuitively, the gamma parameter defines how far the influence of a single training example reaches, with low values meaning ‘far’ and high values meaning ‘close’. The C parameter trades off misclassification of training examples against simplicity of the decision surface. A low C makes the decision surface smooth, while a high C aims at classifying all training examples correctly by giving the model freedom to select more samples as support vectors.
+That the Linear SVM performs well on precision but not recall may be due to it ignoring probabilities that fall within the margin of the decision boundary during optimization, such as the start of a play sequence or ad-hoc plays by a user that do not fit their regular listening pattern. Hence the model is more likely to only predict a play event when the probability is sufficiently high.
+
+The RBF model on the other hand performs well on both metrics. Note that the RBF classifciation was restricted to 100k rows of training data as it was found the computational cost of 500k rows was too high. 
+
+An RBF kernel has two hyper-paramters that can significantly impact the results. The $C$ parameter and the $gamma$. Intuitively, the gamma parameter defines how far the influence of a single training example reaches, with low values meaning ‘far’ and high values meaning ‘close’. A low C makes the decision surface smooth, while a high C aims at classifying all training examples correctly by giving the model freedom to select more samples as support vectors.
 
 In order to determine optimal gamma and C values, a grid search was carried out with precision and recall of the test dataset plotted on a heatmap. In order to get through the many iterations of the data, the input data was reduced to 30,000 training samples. Fig \ref{fig17b} shows the final heatmap, after multiple iterations to home in on the optimal values, with precision on the left and recall on the right. The optimal values are deemed to be 0.6 for C and 0.76 for Gamma, although as the charts show there is some scope for movement around those values.
 
@@ -191,53 +164,43 @@ In order to determine optimal gamma and C values, a grid search was carried out 
 	\label{fig17b}
 \end{figure} 
 
-Finally, a note on the computational complexity of the RBF model. We used Scikit Learn's implementation of the RBF kernel which is based on libsvm. The fit time complexity of this approach is more than quadratic with the number of samples, making it hard to scale to datasets with more than a couple of 10,000 samples \parencite{chang2011libsvm}.
-While we managed to get as high as 100,000 samples in our training it was not considered a practical to go any higher thereby limiting the scalability of this approach and our ability to potentially obtain higher scores than what we already had.
+The final results for the RBF model (precision of 77\%, recall of 76\%) was about the same when only $t-1$ was provided as an input, suggesting the RBF model is likely approximating to the $t=t-1$ rule used in the baseline model.
 
-\section{RNN analysis}
+Finally, a note on the computational complexity of the RBF model. The Scikit-Learn implementation of the RBF kernel is based on libsvm. The fit time complexity of this is more than quadratic to the number of samples, making it hard to scale to datasets with more than 10,000 samples \parencite{chang2011libsvm}.
+While we managed to get as high as 100,000 in our training it was not considered a practical to go any higher thereby limiting the scalability of this approach and our ability to potentially obtain higher scores than what we already had.
 
-The RNN-LSTM model required a lot of hyper-parameter testing and as such the training dataset ended up being narrowed down to no more than 50k random samples and often as low as 20k. The eventual set of hyper-parameters that was found to work well \textit{with early stopping} were:
+\newpage
 
-\begin{list}{-}{spacing}
-	\item user iteration: 10 (How many random users to select for training)
-	\item samplesPerUser = 20      \# How many mini-batches to select for each user
-	\item batchRows = 50           \# How many random periods to select in each mini-batch (=batch height)
-	\item batch iterations = 10    \# How many iterations to perform on one batch
-	\item steps = 672              \# How many time steps to use (= batch depth)
-	\item learning rate = 0.001    \# Learning rate of backprop algorithm
-	\item Hidden units = 250       \# Number of units per hidden layer
-	\item layers = 4			   \# Number of hidden layers
-	\item class1Weighting = 8      \# Weighting to apply in the cost function for labels that are a play event
-\end{list}
+\section{RNN-LSTM analysis}
 
-This scored an average precision of 70\% and an average recall of 66.5\% over two separate runs, with 1 run taking approximately 10 hours to complete. 
-
-In total 50+ experiments were performed with different hyper-parameter settings of which a subset is shown here.
+The RNN model had a large number of hyper-parameters to search through resulting in significantly more time required to train than the other models. Fig \ref{fig20} shows details of a few of these runs, including the model that gave the best set of results (run num. 4). Key differences between the runs are shaded in grey.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=12cm, keepaspectratio,]{fig015.jpg}
-	\caption{RNN results over multiple runs. Darker shading means better}
-	\label{fig15}
-\end{figure}
-
-The following observations were made based on the results of all experiments.
-
-LIST
-
-\subsection{Early stopping}
-
-When going above 1 hidden layer, a consistent pattern emerged in that training for too long led to the models converging on either predicting all plays, or all non-plays, depending on how stong the weighting used was.
-Periodic testing on unseen data, during training and early stopping when good performance is achieved.
-
-Fig \ref{fig15} shows the results from a sample of others tests that were run. The table has been shaded to aid understanding with darker shading what may be considered "better", whether this be more training data samples, a more complex model struture, or a better score.
+	\includegraphics[width=12cm, keepaspectratio,]{fig020.jpg}
+	\caption{Example of hyper-parameter search. Key settings shaded.}
+	\label{fig20}
+\end{figure} 
 
 
+In total 50+ experiments were performed with different hyper-parameter settings. The following observations were made based on the results of all experiments.
 
-Run number 14 \& 15 were ones where it converged to predicting all Play events due to the very strong weight used, while run number 12 \& 13 show it swinging the other way.
+\subsubsection{Early stopping}
 
-Run 10 was our best score, in which the training was stopped after 8 users. Here we used 4 hidden layers. 
+Continued training of models eventually led to performance decrease, with predictions becoming either all play events or all non-play events depending on the weighting used. Possible measures to counteract this may be to use drop-outs, a form of regularization in neural networks. However this was not investigated. Instead models were trained upto around 15,000 rows of data.
 
-\subsubsection{Hidden Layers}
+\subsubsection{More layers or units did not improve performance}
 
+Moving up from 1 hidden unit and 1 hidden layer did not result in performance improvement, and performance started to drop if it increased too high (10 units or 3+ layers). It appears that this was due to the model over-fitting the data.
  
+\subsubsection{The ideal sample weigh was 8}
+
+The amount of weighting required to deal with the data imbalance varies depending on how many rows of training data there are, but generally 8 was found to be the level at which precision and recall remained high across a training set of 15,000 rows.
+
+\subsubsection{Going beyond a 24hour timestep did not improve performance}
+
+Moving beyond a time-step of 48 (i.e. 24 hours) to 336 (1 week) or more led to a decrease in performance. This matches what we saw in the logistic regression model where periods beyond the 24 hour period had little impact in predicting outcome.
+
+\section{Summary}
+
+None of our models beat the baseline model. Furthermore from our examination of the co-efficients and experiments with the RNN model, it did not appear that time-lags beyond 24 hours were a useful predictor. Indeed logistic regression performed best, and on-par with the baseline, when $t-1$ was the only input feature. These results suggests that additional features make it harder for the models to attribute the right level of importance to $t-1$. 
