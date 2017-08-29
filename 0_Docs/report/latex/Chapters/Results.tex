@@ -193,9 +193,9 @@ Continued training of models eventually led to performance decrease, with predic
 
 Moving up from 1 hidden unit and 1 hidden layer did not result in performance improvement, and performance started to drop if it increased too high (10 units or 3+ layers). It appears that this was due to the model over-fitting the data.
  
-\subsubsection{The ideal sample weigh was 8}
+\subsubsection{The sample weighting was critical}
 
-The amount of weighting required to deal with the data imbalance varies depending on how many rows of training data there are, but generally 8 was found to be the level at which precision and recall remained high across a training set of 15,000 rows.
+The amount of weighting required to deal with the data imbalance varies depending on how many rows of training data there are, and the level of imbalance. In our case 8 was found to be the level at which precision and recall remained high across a training set of 15,000 rows. Lower than this and all predictions soon converge to non-play events; higher than this they all become play events (and hence low precision, high recall).
 
 \subsubsection{Going beyond a 24hour timestep did not improve performance}
 

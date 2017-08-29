@@ -1,0 +1,650 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Borgan}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Andersen}{A.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Børgan}{B.}%
+     {O}{O}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{APBO1}
+  \strng{fullhash}{APBO1}
+  \field{sortinit}{A}
+  \field{title}{Statistical Models Based on Counting Processes}
+  \field{year}{1993}
+\endentry
+
+\entry{baddeley2014logistic}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Baddeley}{B.}%
+     {Adrian}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Coeurjolly}{C.}%
+     {Jean-Fran{\c{c}}ois}{J.-F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rubak}{R.}%
+     {Ege}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Waagepetersen}{W.}%
+     {Rasmus}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oxford University Press}%
+  }
+  \strng{namehash}{BA+1}
+  \strng{fullhash}{BACJFREWR1}
+  \field{sortinit}{B}
+  \field{number}{2}
+  \field{pages}{377\bibrangedash 392}
+  \field{title}{Logistic regression for spatial Gibbs point processes}
+  \field{volume}{101}
+  \field{journaltitle}{Biometrika}
+  \field{year}{2014}
+\endentry
+
+\entry{Brownlee}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Brownlee}{B.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BJ1}
+  \strng{fullhash}{BJ1}
+  \field{sortinit}{B}
+  \field{title}{8 tactics to combat imbalanced classes in your machine learning
+  dataset}
+  \verb{url}
+  \verb http://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-
+  \verb in-your-machine-learning-dataset/
+  \endverb
+  \field{year}{2015}
+\endentry
+
+\entry{chang2011libsvm}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Chang}{C.}%
+     {Chih-Chung}{C.-C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lin}{L.}%
+     {Chih-Jen}{C.-J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Acm}%
+  }
+  \strng{namehash}{CCCLCJ1}
+  \strng{fullhash}{CCCLCJ1}
+  \field{sortinit}{C}
+  \field{number}{3}
+  \field{pages}{27}
+  \field{title}{LIBSVM: a library for support vector machines}
+  \field{volume}{2}
+  \field{journaltitle}{ACM transactions on intelligent systems and technology
+  (TIST)}
+  \field{year}{2011}
+\endentry
+
+\entry{Nok}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Chiu}{C.}%
+     {Sung~Nok}{S.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stoyan}{S.}%
+     {Dietrich}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kendall}{K.}%
+     {Wilfrid~S.}{W.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{2}{%
+    {John Wiley}%
+    {Sons}%
+  }
+  \strng{namehash}{CSNSDKWS1}
+  \strng{fullhash}{CSNSDKWS1}
+  \field{sortinit}{C}
+  \field{title}{Stochastic Geometry and Its Applications}
+  \field{year}{2013}
+\endentry
+
+\entry{DuWang}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Du}{D.}%
+     {Nan}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Yichen}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {He}{H.}%
+     {Naio}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Song}{S.}%
+     {}{}%
+     {le}{l.}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {NIPS}%
+  }
+  \strng{namehash}{DN+1}
+  \strng{fullhash}{DNWYHNSl1}
+  \field{sortinit}{D}
+  \field{booktitle}{Advances in Neural Information Processing}
+  \field{title}{Time-sensitive recommendations from recurrent user activities}
+  \field{year}{2015}
+\endentry
+
+\entry{EngleRusell}{thesis}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Engle}{E.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Russell}{R.}%
+     {Jeffrey~R.}{J.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ProQuest Dissertations Publishing}%
+  }
+  \strng{namehash}{ERRJR1}
+  \strng{fullhash}{ERRJR1}
+  \field{sortinit}{E}
+  \field{title}{Autoregressive Conditional Duration: A New Model for
+  Irregularly Spaced Transaction Data}
+  \list{institution}{1}{%
+    {University of California}%
+  }
+  \field{type}{phdthesis}
+  \field{year}{1996}
+\endentry
+
+\entry{Heuer}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {{Heuer}}{H.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{M{\"u}ller}}{M.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{Rubner}}{R.}%
+     {O.}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HAMCRO1}
+  \strng{fullhash}{HAMCRO1}
+  \field{sortinit}{H}
+  \verb{doi}
+  \verb 10.1209/0295-5075/89/38007
+  \endverb
+  \verb{eprint}
+  \verb 1002.0797
+  \endverb
+  \field{pages}{38007}
+  \field{title}{{Soccer: Is scoring goals a predictable Poissonian process?}}
+  \field{volume}{89}
+  \field{journaltitle}{EPL (Europhysics Letters)}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{physics.data-an}
+  \field{month}{02}
+  \field{year}{2010}
+\endentry
+
+\entry{Kingman}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Kingman}{K.}%
+     {J.~F.~C.}{J.~F.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Clarendon Press}%
+  }
+  \strng{namehash}{KJFC1}
+  \strng{fullhash}{KJFC1}
+  \field{sortinit}{K}
+  \field{title}{Poisson Processes}
+  \field{year}{1992}
+\endentry
+
+\entry{ImageNet}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Krizhevsky}{K.}%
+     {Alex}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sutskever}{S.}%
+     {Ilya}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hinton}{H.}%
+     {Geoffrey~E.}{G.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {NIPS}%
+  }
+  \strng{namehash}{KASIHGE1}
+  \strng{fullhash}{KASIHGE1}
+  \field{sortinit}{K}
+  \field{booktitle}{Advances in Neural Information Processing}
+  \field{title}{ImageNet Classification with Deep Convolutional Neural
+  Networks}
+  \field{year}{2012}
+\endentry
+
+\entry{DL}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {LeCun}{L.}%
+     {Yann}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bengio}{B.}%
+     {Yoshua}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hinton}{H.}%
+     {Geoffrey}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LYBYHG1}
+  \strng{fullhash}{LYBYHG1}
+  \field{sortinit}{L}
+  \field{abstract}{%
+  Deep learning allows computational models that are composed of multiple
+  processing layers to learn representations of data with multiple levels of
+  abstraction. These methods have dramatically improved the state-of-the-art in
+  speech rec- ognition, visual object recognition, object detection and many
+  other domains such as drug discovery and genomics. Deep learning discovers
+  intricate structure in large data sets by using the backpropagation algorithm
+  to indicate how a machine should change its internal parameters that are used
+  to compute the representation in each layer from the representation in the
+  previous layer.%
+  }
+  \field{title}{Deep Learning}
+  \field{volume}{521}
+  \field{journaltitle}{Nature}
+  \field{month}{05}
+  \field{year}{2015}
+\endentry
+
+\entry{Lena}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Lena}{L.}%
+     {Pietro~Di}{P.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nagata}{N.}%
+     {Ken}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Baldi}{B.}%
+     {Pierre}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LPDNKBP1}
+  \strng{fullhash}{LPDNKBP1}
+  \field{sortinit}{L}
+  \field{issue}{19}
+  \field{title}{Deep architectures for protein contact map prediction}
+  \field{volume}{28}
+  \field{journaltitle}{Bioinformatics}
+  \field{month}{10}
+  \field{year}{2012}
+\endentry
+
+\entry{Olly}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Ltd.}{L.}%
+     {Emotech}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LE1}
+  \strng{fullhash}{LE1}
+  \field{sortinit}{L}
+  \field{title}{Your robot with personality}
+  \verb{url}
+  \verb https://www.heyolly.com/
+  \endverb
+\endentry
+
+\entry{WassGAN}{thesis}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Martin~Arjovsky}{M.~A.}%
+     {Léon~Bottou}{L.~B.}%
+     {}{}%
+     {Soumith~Chintala}{S.~C.}}%
+  }
+  \list{publisher}{1}{%
+    {arXiv:1701.07875}%
+  }
+  \strng{namehash}{MASCLB1}
+  \strng{fullhash}{MASCLB1}
+  \field{sortinit}{M}
+  \field{title}{Wasserstein GAN}
+  \list{institution}{1}{%
+    {Facebook AI Research}%
+  }
+  \field{type}{phdthesis}
+  \field{year}{2017}
+\endentry
+
+\entry{TFCookbook}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Mclure}{M.}%
+     {Nick}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Packt}%
+  }
+  \strng{namehash}{MN1}
+  \strng{fullhash}{MN1}
+  \field{sortinit}{M}
+  \field{title}{Tensorflow Cookbook}
+  \verb{url}
+  \verb https://github.com/nfmcclure/tensorflow_cookbook/blob/master/04_Support
+  \verb _Vector_Machines/04_Working_with_Kernels/04_svm_kernels.ipynb
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{Olah}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Olah}{O.}%
+     {Christopher}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{OC1}
+  \strng{fullhash}{OC1}
+  \field{sortinit}{O}
+  \field{title}{Understanding LSTMs}
+  \verb{url}
+  \verb http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+  \endverb
+  \field{year}{2017}
+\endentry
+
+\entry{rajala2014note}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Rajala}{R.}%
+     {Tuomas}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RT1}
+  \strng{fullhash}{RT1}
+  \field{sortinit}{R}
+  \field{title}{A note on Bayesian logistic regression for spatial exponential
+  family Gibbs point processes}
+  \field{journaltitle}{arXiv preprint arXiv:1411.0539}
+  \field{year}{2014}
+\endentry
+
+\entry{MLP}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Rumelhart}{R.}%
+     {D.~E.}{D.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hinton}{H.}%
+     {G.~E.}{G.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Williams}{W.}%
+     {R.~J.}{R.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Association for Computational Linguistics}%
+  }
+  \strng{namehash}{RDEHGEWRJ1}
+  \strng{fullhash}{RDEHGEWRJ1}
+  \field{sortinit}{R}
+  \field{booktitle}{Parallel distributed processing: explorations in the
+  microstructure of cognition}
+  \field{pages}{1631\bibrangedash 1642}
+  \field{title}{Learning internal representations by error propagation}
+  \list{location}{1}{%
+    {Cambridge, MA}%
+  }
+  \field{year}{1986}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Socher}{inproceedings}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Socher}{S.}%
+     {Richard}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Perelygin}{P.}%
+     {Alex}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wu}{W.}%
+     {Jean}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chuang}{C.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Manning}{M.}%
+     {Christopher~D.}{C.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ng}{N.}%
+     {Andrew~Y.}{A.~Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Potts}{P.}%
+     {Christopher}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Association for Computational Linguistics}%
+  }
+  \strng{namehash}{SR+1}
+  \strng{fullhash}{SRPAWJCJMCDNAYPC1}
+  \field{sortinit}{S}
+  \field{booktitle}{Proceedings of the 2013 Conference on {E}mpirical {M}ethods
+  in {N}atural {L}anguage {P}rocessing}
+  \field{pages}{1631\bibrangedash 1642}
+  \field{title}{Recursive Deep Models for Semantic Compositionality Over a
+  Sentiment Treebank}
+  \list{location}{1}{%
+    {Seattle, WA}%
+  }
+  \field{year}{2013}
+  \warn{\item Can't use 'location' + 'address' \item Invalid format of field
+  'month'}
+\endentry
+
+\entry{Vapnik}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Vapnik}{V.}%
+     {Vladimir~N.}{V.~N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer-Verlag}%
+  }
+  \strng{namehash}{VVN1}
+  \strng{fullhash}{VVN1}
+  \field{sortinit}{V}
+  \field{title}{The nature of statistical learning theory}
+  \field{year}{1995}
+\endentry
+
+\entry{Wass}{thesis}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Xiao}{X.}%
+     {Shuai}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Farajtabar}{F.}%
+     {Mehrdad}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ye}{Y.}%
+     {Xiaojing}{X.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {arXiv:1705.08051}%
+  }
+  \strng{namehash}{XSFMYX1}
+  \strng{fullhash}{XSFMYX1}
+  \field{sortinit}{X}
+  \field{title}{Wasserstein Learning of Deep Generative Point Process Models}
+  \list{institution}{1}{%
+    {Georgia Institute of Technology}%
+  }
+  \field{type}{phdthesis}
+  \field{year}{2017}
+\endentry
+
+\entry{xiao2017modeling}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Xiao}{X.}%
+     {Shuai}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yan}{Y.}%
+     {Junchi}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yang}{Y.}%
+     {Xiaokang}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zha}{Z.}%
+     {Hongyuan}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chu}{C.}%
+     {Stephen~M}{S.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{XS+1}
+  \strng{fullhash}{XSYJYXZHCSM1}
+  \field{sortinit}{X}
+  \field{booktitle}{AAAI}
+  \field{pages}{1597\bibrangedash 1603}
+  \field{title}{Modeling the Intensity Function of Point Process Via Recurrent
+  Neural Networks.}
+  \field{year}{2017}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  28 AUG 2017 07:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  28 AUG 2017 07:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**COMPGI99-Alom-Badrul.tex
+(./COMPGI99-Alom-Badrul.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
 (./MastersDoctoralThesis.cls
@@ -136,8 +136,8 @@ Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
-File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count108
 \c@chapter=\count109
@@ -1508,14 +1508,14 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./main.aux
-(./Chapters/Intro.aux) (./Chapters/LitReview.aux) (./Chapters/Design.aux)
-(./Chapters/Results.aux
+
+(./COMPGI99-Alom-Badrul.aux (./Chapters/Intro.aux) (./Chapters/LitReview.aux)
+(./Chapters/Design.aux) (./Chapters/Results.aux
 
 LaTeX Warning: Label `Chapter4' multiply defined.
 
 ) (./Chapters/Summary.aux))
-\openout1 = `main.aux'.
+\openout1 = `COMPGI99-Alom-Badrul.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
 LaTeX Font Info:    ... okay on input line 91.
@@ -1667,18 +1667,18 @@ Package caption Info: End \AtBeginDocument code.
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=404.02908pt
-* \textheight=693.49821pt
+* \textheight=689.15318pt
 * \oddsidemargin=13.08826pt
 * \evensidemargin=35.85056pt
 * \topmargin=-29.59087pt
-* \headheight=18.85364pt
+* \headheight=20.66162pt
 * \headsep=19.8738pt
-* \topskip=11.0pt
-* \footskip=27.46295pt
-* \marginparwidth=116.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=98.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1706,11 +1706,11 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Warning: Data encoding is 'utf8'.
 (biblatex)                Use backend=biber.
 
-\openout3 = `main-blx.bib'.
+\openout3 = `COMPGI99-Alom-Badrul-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
-(./main.bbl
+Package biblatex Info: ... file 'COMPGI99-Alom-Badrul.bbl' found.
+(./COMPGI99-Alom-Badrul.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'MLP':
@@ -1752,13 +1752,13 @@ LaTeX Info: Redefining \ref on input line 91.
 LaTeX Info: Redefining \pageref on input line 91.
 LaTeX Info: Redefining \nameref on input line 91.
 
-(./main.out) (./main.out)
+(./COMPGI99-Alom-Badrul.out) (./COMPGI99-Alom-Badrul.out)
 \@outlinefile=\write4
-\openout4 = `main.out'.
+\openout4 = `COMPGI99-Alom-Badrul.out'.
 
 \c__siunitx_mathsf_int=\count361
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 91.
+(Font)              <12> on input line 91.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 91.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1766,8 +1766,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \c__siunitx_mathtt_int=\count362
 
 1: section
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 109.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 105.
 [1
 
 
@@ -1776,31 +1776,12 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
 
 ]
 --------------------
- Declaration of Authorship
---------------------
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 155.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
-
- []
-
-1: section
-[3] [4
-
-]
---------------------
  Abstract
 --------------------
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 175.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 144.
 1: section
-[5] [6
+[3] [4
 
 ]
 1: section
@@ -1808,31 +1789,37 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 
 (./Chapters/Intro.tex
 Chapter 1.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 23.
 1: section
 [1
 
 
-]) [2]
+]
+Overfull \hbox (3.71445pt too wide) in paragraph at lines 31--32
+\T1/ppl/m/n/12 freely avail-able on-line and con-tains the lis-ten-ing his-tory
+ of a thou-sand LastFM
+ []
+
+) [2]
 \openout2 = `Chapters/LitReview.aux'.
 
  (./Chapters/LitReview.tex
 Chapter 2.
-<Figures/fig001.jpg, id=253, 420.57124pt x 528.97626pt>
+
+Overfull \hbox (4.33862pt too wide) in paragraph at lines 8--11
+\T1/ppl/m/n/12 Analyzing event data presents its own unique chal-lenges and que
+s-tions. What
+ []
+
+<Figures/fig001.jpg, id=239, 420.57124pt x 528.97626pt>
 File: Figures/fig001.jpg Graphic file (type jpg)
 
 <use Figures/fig001.jpg>
 Package pdftex.def Info: Figures/fig001.jpg used on input line 15.
 (pdftex.def)             Requested size: 199.16928pt x 250.5076pt.
-
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 22.
 
 1: section
 [3
@@ -1841,10 +1828,20 @@ Package hyperref Warning: Difference (3) between bookmark levels is greater
 
  <./Figures/fig001.jpg>]
 
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 22.
+
+
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 32.
 
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+[4]
+Overfull \hbox (6.9301pt too wide) in paragraph at lines 36--37
+\T1/ppl/m/n/12 cently with Xiao et. al [[][]21[][]] ap-ply-ing Gen-er-a-tive Ad
+-ver-sar-ial Net-works (GANS)
+ []
+
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 42.
 <Figures/fig007.jpg, id=281, 361.35pt x 337.26pt>
 File: Figures/fig007.jpg Graphic file (type jpg)
@@ -1852,125 +1849,154 @@ File: Figures/fig007.jpg Graphic file (type jpg)
 Package pdftex.def Info: Figures/fig007.jpg used on input line 48.
 (pdftex.def)             Requested size: 85.35826pt x 79.6678pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4] <Figures/fig008.png, id=302, 806.89455pt x 303.17265pt>
+<Figures/fig008.png, id=283, 806.89455pt x 303.17265pt>
 File: Figures/fig008.png Graphic file (type png)
 
 <use Figures/fig008.png>
 Package pdftex.def Info: Figures/fig008.png used on input line 57.
 (pdftex.def)             Requested size: 142.26378pt x 53.44922pt.
-) [5 <./Figures/fig007.jpg> <./Figures/fig008.png>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <./Figures/fig007.jpg>]) [6 <./Figures/fig008.png>]
 \openout2 = `Chapters/Design.aux'.
 
-
-(./Chapters/Design.tex [6
+ (./Chapters/Design.tex
+Chapter 3.
+1: section
+[7
 
 
 
 ]
-Chapter 3.
-1: section
-[7]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 42.
 
-[8]
-Overfull \hbox (1.68538pt too wide) in paragraph at lines 63--64
-\T1/ppl/m/n/10.95 Here we em-ploy a sim-ple Bayesian In-fer-ence ap-proach by u
-ti-liz-ing the Beta-Binomial
- []
-
-
-Overfull \hbox (14.3272pt too wide) in paragraph at lines 65--66
-[]\T1/ppl/m/n/10.95 Prior prob-a-bil-i-ties were cal-cu-lated for each half-hou
-rly pe-riod in a week (24*2*7=336
- []
-
-<Figures/fig010b.jpg, id=335, 286.06876pt x 159.59625pt>
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 47.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+ [8]
+<Figures/fig010b.jpg, id=320, 286.06876pt x 159.59625pt>
 File: Figures/fig010b.jpg Graphic file (type jpg)
 
 <use Figures/fig010b.jpg>
 Package pdftex.def Info: Figures/fig010b.jpg used on input line 69.
 (pdftex.def)             Requested size: 142.26378pt x 79.36931pt.
 
-<Figures/fig021.jpg, id=337, 712.6625pt x 79.29625pt>
-File: Figures/fig021.jpg Graphic file (type jpg)
- <use Figures/fig021.jpg>
-Package pdftex.def Info: Figures/fig021.jpg used on input line 91.
-(pdftex.def)             Requested size: 341.43306pt x 37.99036pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9 <./Figures/fig010b.jpg>] [10 <./Figures/fig021.jpg>] [11]
-Overfull \hbox (36.16447pt too wide) in paragraph at lines 176--177
+[9] <Figures/fig021.jpg, id=329, 712.6625pt x 79.29625pt>
+File: Figures/fig021.jpg Graphic file (type jpg)
+
+<use Figures/fig021.jpg>
+Package pdftex.def Info: Figures/fig021.jpg used on input line 91.
+(pdftex.def)             Requested size: 341.43306pt x 37.99036pt.
+ [10 <./Figures/fig010b.jpg> <./Figures/fig021.jpg>]
+Overfull \hbox (1.34752pt too wide) in paragraph at lines 103--104
+[]\T1/ppl/m/n/12 Determining the op-ti-mal weights and con-stant can be de-ter-
+mined by max-
+ []
+
+
+Overfull \hbox (9.07762pt too wide) in paragraph at lines 103--104
+\T1/ppl/m/n/12 i-miza-tion of the log-liklihood or the min-i-miza-tion of the n
+eg-a-tive log-liklihood. 
+ []
+
+[11]
+Overfull \hbox (2.41508pt too wide) in paragraph at lines 147--148
+[]\T1/ppl/m/n/12 Practically speak-ing this meant feed-ing in the data with in-
+put shape (batch
+ []
+
+[12]
+Overfull \hbox (2.00963pt too wide) in paragraph at lines 156--157
+\T1/ppl/m/n/12 sig-nif-i-cant speed up was ob-served in Python when us-ing a pr
+e-allocated
+ []
+
+
+Overfull \hbox (78.37582pt too wide) in paragraph at lines 176--177
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[12]) [13]
+[13]
+Overfull \hbox (2.69029pt too wide) in paragraph at lines 187--188
+[]\T1/ppl/m/n/12 A num-ber of pos-si-ble eval-u-a-tion cri-te-ria were looked a
+t. The most-straight
+ []
+
+[14]) [15]
 \openout2 = `Chapters/Results.aux'.
 
- (./Chapters/Results.tex [14
+ (./Chapters/Results.tex [16
 
 
 
 ]
 Chapter 4.
-<Figures/fig004.jpg, id=386, 397.485pt x 263.98625pt>
+<Figures/fig004.jpg, id=381, 397.485pt x 263.98625pt>
 File: Figures/fig004.jpg Graphic file (type jpg)
  <use Figures/fig004.jpg>
 Package pdftex.def Info: Figures/fig004.jpg used on input line 17.
 (pdftex.def)             Requested size: 199.16928pt x 132.27878pt.
 
-<Figures/fig005.jpg, id=388, 625.33624pt x 221.82875pt>
+<Figures/fig005.jpg, id=383, 625.33624pt x 221.82875pt>
 File: Figures/fig005.jpg Graphic file (type jpg)
 
 <use Figures/fig005.jpg>
 Package pdftex.def Info: Figures/fig005.jpg used on input line 26.
 (pdftex.def)             Requested size: 199.16928pt x 70.65154pt.
- <Figures/fig006.jpg, id=390, 902.37125pt x 469.755pt>
-File: Figures/fig006.jpg Graphic file (type jpg)
 
-<use Figures/fig006.jpg>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+1: section
+[17 <./Figures/fig004.jpg>]
+<Figures/fig006.jpg, id=391, 902.37125pt x 469.755pt>
+File: Figures/fig006.jpg Graphic file (type jpg)
+ <use Figures/fig006.jpg>
 Package pdftex.def Info: Figures/fig006.jpg used on input line 35.
 (pdftex.def)             Requested size: 199.16928pt x 103.6833pt.
 
-1: section
-[15 <./Figures/fig004.jpg> <./Figures/fig005.jpg>]
-<Figures/fig003.jpg, id=398, 418.56375pt x 283.0575pt>
+<Figures/fig003.jpg, id=392, 418.56375pt x 283.0575pt>
 File: Figures/fig003.jpg Graphic file (type jpg)
 
 <use Figures/fig003.jpg>
 Package pdftex.def Info: Figures/fig003.jpg used on input line 46.
 (pdftex.def)             Requested size: 199.16928pt x 134.68694pt.
- <Figures/fig012.jpg, id=401, 500.87125pt x 216.81pt>
+ [18 <./Figures/fig005.jpg> <./Figures/fig006.jpg> <./Figures/fig003.jpg>] <Fig
+ures/fig012.jpg, id=401, 500.87125pt x 216.81pt>
 File: Figures/fig012.jpg Graphic file (type jpg)
 
 <use Figures/fig012.jpg>
 Package pdftex.def Info: Figures/fig012.jpg used on input line 63.
 (pdftex.def)             Requested size: 199.16928pt x 86.21298pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[16 <./Figures/fig006.jpg> <./Figures/fig003.jpg>]
-<Figures/fig013b.jpg, id=409, 462.72874pt x 169.63374pt>
+<Figures/fig013b.jpg, id=403, 462.72874pt x 169.63374pt>
 File: Figures/fig013b.jpg Graphic file (type jpg)
 
 <use Figures/fig013b.jpg>
 Package pdftex.def Info: Figures/fig013b.jpg used on input line 82.
 (pdftex.def)             Requested size: 227.62204pt x 83.4448pt.
- [17 <./Figures/fig012.jpg> <./Figures/fig013b.jpg>]
-<Figures/fig010c.jpg, id=416, 362.35374pt x 259.97125pt>
+ [19 <./Figures/fig012.jpg>]
+<Figures/fig010c.jpg, id=410, 362.35374pt x 259.97125pt>
 File: Figures/fig010c.jpg Graphic file (type jpg)
 
 <use Figures/fig010c.jpg>
 Package pdftex.def Info: Figures/fig010c.jpg used on input line 103.
 (pdftex.def)             Requested size: 142.26378pt x 102.0667pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20 <./Figures/fig013b.jpg>]
 <Figures/fig010d.jpg, id=418, 573.14125pt x 376.40625pt>
 File: Figures/fig010d.jpg Graphic file (type jpg)
 
@@ -1984,28 +2010,34 @@ File: Figures/fig010e.jpg Graphic file (type jpg)
 Package pdftex.def Info: Figures/fig010e.jpg used on input line 123.
 (pdftex.def)             Requested size: 199.16928pt x 46.4912pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <Figures/fig014.jpg, id=421, 236.885pt x 380.42125pt>
 File: Figures/fig014.jpg Graphic file (type jpg)
  <use Figures/fig014.jpg>
 Package pdftex.def Info: Figures/fig014.jpg used on input line 134.
 (pdftex.def)             Requested size: 113.81102pt x 182.76845pt.
 
-[18 <./Figures/fig010c.jpg> <./Figures/fig010d.jpg> <./Figures/fig010e.jpg>]
+[21 <./Figures/fig010c.jpg> <./Figures/fig010d.jpg>]
 <Figures/fig016.jpg, id=431, 508.90125pt x 281.05pt>
 File: Figures/fig016.jpg Graphic file (type jpg)
  <use Figures/fig016.jpg>
 Package pdftex.def Info: Figures/fig016.jpg used on input line 145.
 (pdftex.def)             Requested size: 199.16928pt x 109.99501pt.
 
-[19 <./Figures/fig014.jpg> <./Figures/fig016.jpg>]
-<Figures/fig017b.jpg, id=440, 729.72626pt x 249.93375pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[22 <./Figures/fig010e.jpg> <./Figures/fig014.jpg>]
+<Figures/fig017b.jpg, id=439, 729.72626pt x 249.93375pt>
 File: Figures/fig017b.jpg Graphic file (type jpg)
 
 <use Figures/fig017b.jpg>
 Package pdftex.def Info: Figures/fig017b.jpg used on input line 162.
 (pdftex.def)             Requested size: 199.16928pt x 68.21524pt.
- [20 <./Figures/fig017b.jpg>]
-<Figures/fig020.jpg, id=449, 645.41125pt x 448.67625pt>
+ [23 <./Figures/fig016.jpg> <./Figures/fig017b.jpg>]
+[24] <Figures/fig020.jpg, id=453, 645.41125pt x 448.67625pt>
 File: Figures/fig020.jpg Graphic file (type jpg)
 
 <use Figures/fig020.jpg>
@@ -2016,90 +2048,95 @@ Package pdftex.def Info: Figures/fig020.jpg used on input line 180.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 188.
 
-[21 <./Figures/fig020.jpg>]) [22]
+[25 <./Figures/fig020.jpg>]) [26]
 \openout2 = `Chapters/Summary.aux'.
 
  (./Chapters/Summary.tex
 Chapter 5.
 1: section
-[23
+[27
 
-
-
-]) [24]
-Overfull \hbox (12.77596pt too wide) in paragraph at lines 217--217
-[]\T1/ppl/m/n/10.95 P. An-der-sen and O Bør-gan. \T1/ppl/m/it/10.95 Sta-tis-ti-
-cal Mod-els Based on Count-ing Pro-cesses\T1/ppl/m/n/10.95 . Springer,
- []
-
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 217.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Overfull \hbox (8.24098pt too wide) in paragraph at lines 217--217
-[][]$\T1/pcr/m/n/10.95 10 . 1209 / 0295 -[] 5075 / 89 / 38007$[][]\T1/ppl/m/n/1
-0.95 . arXiv: [][]$\T1/pcr/m/n/10.95 1002 . 0797$ [physics.data-an][][]\T1/ppl/
-m/n/10.95 . 
- []
-
-
-Overfull \hbox (27.78543pt too wide) in paragraph at lines 217--217
-[]\T1/ppl/m/n/10.95 Nick Mclure. \T1/ppl/m/it/10.95 Ten-sor-flow Cook-book\T1/p
-pl/m/n/10.95 . 2016. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/pcr/m/n
-/10.95 https : / / github . com / nfmcclure /
- []
-
-
-Overfull \hbox (12.79305pt too wide) in paragraph at lines 217--217
-\T1/pcr/m/n/10.95 tensorflow _ cookbook / blob / master / 04 _ Support _ Vector
- _ Machines /
- []
-
-
-Overfull \hbox (4.56036pt too wide) in paragraph at lines 217--217
-[]\T1/ppl/m/n/10.95 Christopher Olah. \T1/ppl/m/it/10.95 Un-der-stand-ing LSTMs
-\T1/ppl/m/n/10.95 . 2017. \T1/ppl/m/sc/10.95 url\T1/ppl/m/n/10.95 : [][]$\T1/pc
-r/m/n/10.95 http : / / colah . github .
- []
-
-1: section
-[25
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
- [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
- (./main.aux (./Chapters/Intro.aux) (./Chapters/LitReview.aux)
-(./Chapters/Design.aux) (./Chapters/Results.aux) (./Chapters/Summary.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F2F9515BC03A811D81A7D71A470C58BC;7368.
+Overfull \hbox (0.40086pt too wide) in paragraph at lines 32--33
+[]\T1/ppl/m/n/12 Evaluation of more so-phis-ti-cated RNN struc-tures such as th
+at de-scribed
+ []
+
+
+Overfull \hbox (0.97726pt too wide) in paragraph at lines 35--36
+[]\T1/ppl/m/n/12 Investigation into how quickly mod-els can learn to model the 
+be-haviour
+ []
+
+) [28]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 186.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Overfull \hbox (3.60802pt too wide) in paragraph at lines 186--186
+\T1/ppl/m/n/12 dictable Pois-so-nian pro-cess?^^Q In: \T1/ppl/m/it/12 EPL (Eu-r
+o-physics Let-ters) \T1/ppl/m/n/12 89 (Feb. 2010),
+ []
+
+
+Overfull \hbox (3.59247pt too wide) in paragraph at lines 186--186
+\T1/ppl/m/n/12 Clas-si-fi-ca-tion with Deep Con-vo-lu-tional Neu-ral Net-works^
+^Q. In: \T1/ppl/m/it/12 Ad-vances
+ []
+
+1: section
+[29
+
+
+]
+Overfull \hbox (7.23428pt too wide) in paragraph at lines 186--186
+[]\T1/ppl/m/n/12 Emotech Ltd. \T1/ppl/m/it/12 Your robot with per-son-al-ity\T1
+/ppl/m/n/12 . \T1/ppl/m/sc/12 url\T1/ppl/m/n/12 : [][]$\T1/pcr/m/n/12 https : /
+ / www . heyolly .
+ []
+
+
+Overfull \hbox (9.31255pt too wide) in paragraph at lines 186--186
+\T1/pcr/m/n/12 nfmcclure / tensorflow _ cookbook / blob / master / 04 _ Support
+ _
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
+[30]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
+ (./COMPGI99-Alom-Badrul.aux (./Chapters/Intro.aux)
+(./Chapters/LitReview.aux) (./Chapters/Design.aux) (./Chapters/Results.aux)
+(./Chapters/Summary.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
+Package rerunfilecheck Info: File `COMPGI99-Alom-Badrul.out' has not changed.
+(rerunfilecheck)             Checksum: 750D18AACA53DED6305E31022C17BC8C;7211.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
+Package logreq Info: Writing requests to 'COMPGI99-Alom-Badrul.run.xml'.
+\openout1 = `COMPGI99-Alom-Badrul.run.xml'.
 
  )
 (\end occurred when \iftrue on line 91 was incomplete) 
 Here is how much of TeX's memory you used:
- 32527 strings out of 494910
- 642067 string characters out of 6179836
- 742453 words of memory out of 5000000
- 35325 multiletter control sequences out of 15000+600000
- 46279 words of font info for 77 fonts, out of 8000000 for 9000
+ 32517 strings out of 494910
+ 642265 string characters out of 6179836
+ 741508 words of memory out of 5000000
+ 35318 multiletter control sequences out of 15000+600000
+ 38043 words of font info for 68 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 58i,20n,79p,10377b,1766s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,20n,77p,10393b,1814s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf
 -dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+blic/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+s/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-
@@ -2107,10 +2144,10 @@ dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (32 pages, 1071772 bytes).
+Output written on COMPGI99-Alom-Badrul.pdf (34 pages, 1071862 bytes).
 PDF statistics:
- 581 PDF objects out of 1000 (max. 8388607)
- 508 compressed objects within 6 object streams
+ 585 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
  152 named destinations out of 1000 (max. 500000)
- 491 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 483 words of extra memory for PDF output out of 10000 (max. 10000000)
 
