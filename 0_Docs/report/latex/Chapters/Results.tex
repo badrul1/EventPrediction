@@ -204,3 +204,7 @@ Moving beyond a time-step of 48 (i.e. 24 hours) to 336 (1 week) or more led to a
 \section{Summary}
 
 None of our models beat the baseline model. Furthermore from our examination of the co-efficients and experiments with the RNN model, it did not appear that time-lags beyond 24 hours were a useful predictor. Indeed logistic regression performed best, and on-par with the baseline, when $t-1$ was the only input feature. These results suggests that additional features make it harder for the models to attribute the right level of importance to $t-1$. 
+
+As an addendum to our initial research, a quick analysis was performed on first play event data only. This dataset was constructed by removing all rows where there was a play event in periods $t-1$ to $t-5$, leaving behind rows where the user had not listened to music in the past 2.5 hours. We were interested in seeing how are our models performed without any tuning.
+
+We found that all models performed poorly including the baseline (as would be expected), with precision and recall both at 0\% for all but the logistic regression model which had a precision of 0.7\% and a recall of 0.3\% This result raises questions as to the suitability of the dataset to this trype of modeling.

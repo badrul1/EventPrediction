@@ -8,7 +8,10 @@
 
 Predicting the propensity of a user to listen to music at a certain time, based on their recent listening history can be applied to a range of other areas such as the propensity to purchase products, electricity usage, or the demands on a public transport system. The ability to accurately model these patterns is therefore of great significance to industry. Traditional temporal point processes modeling requires making assumptions about the data, such as the feature engineering done in this research, in order to build a prediction model and struggle with capturing highly non-linear patterns in a scalable manner. 
 
-We applied a range of techniques to the task of modeling temporal point processes and used precision and recall as our evaluation measure. Our Baseline model which simply assumes $t = t-1$ performed the best, with a precision of 76\% and a recall of 80\%. As music listening is typically long periods of non-play events, followed by consequtive periods of play events, it is easy to achieve high scores using this heuristic. No models were able to exceed the baseline model. This points to the need to change the the problem definition. Rather than trying predict all Play events, it may be better to try and predict the start of a play sequence instead. Alternatively we may wish to predict the probability $n$ steps into the future.
+We applied a range of techniques to the task of modeling temporal point processes and used precision and recall as our evaluation measure. Our Baseline model which simply assumes $t = t-1$ performed the best, with a precision of 76\% and a recall of 80\%. As music listening is typically long periods of non-play events, followed by consequtive periods of play events, it is easy to achieve high scores using this heuristic. No models were able to exceed the baseline model.  
+
+Rather than trying predict all play events, it may be better to try and predict the probability $n$ steps into the future, or alternatively,
+the start of a play sequence instead; something which was briefly tried at the end of the previous chapter. All of the models performed poorly in this case, suggesting our dataset may not be suitble for this type of analysis.
 
 Secondly, achieving a good balance between precision and recall is a challenge, and the RBF SVM model was the only one of our initial model that achieved this.
 
