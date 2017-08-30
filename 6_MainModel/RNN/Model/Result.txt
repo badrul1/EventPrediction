@@ -1,0 +1,315 @@
+
+Features len: 1 User Iteration 10 Samples per user: 5 Batch iterations: 7 Batch size 30 N_steps 672 Units 250 Layers 4 Weighting 10
+08/24/17 17:42:00 User 0 UserID 89 (Total plays [10284])
+08/24/17 17:45:52 Sample 0 of 5 Precision 0.333 Recall 1.0
+
+08/24/17 17:49:21 Sample 1 of 5 Precision 0.5 Recall 1.0
+
+08/24/17 17:54:19 Sample 2 of 5 Precision 0.375 Recall 1.0
+
+08/24/17 17:57:38 Sample 3 of 5 Precision 0.4 Recall 1.0
+
+08/24/17 18:00:56 Sample 4 of 5 Precision 0.167 Recall 1.0
+
+08/24/17 18:01:10 UserID 89 Test: Precision 0.2 Recall 1.0
+
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00        24
+        1.0       0.20      1.00      0.33         6
+
+avg / total       0.04      0.20      0.07        30
+
+08/24/17 18:01:10 User 1 UserID 65 (Total plays [950])
+08/24/17 18:04:25 Sample 0 of 5 Precision 0.167 Recall 0.5
+
+08/24/17 18:07:39 Sample 1 of 5 Precision 0.267 Recall 1.0
+
+08/24/17 18:10:57 Sample 2 of 5 Precision 0.179 Recall 1.0
+
+08/24/17 18:14:16 Sample 3 of 5 Precision 0.292 Recall 1.0
+
+08/24/17 18:17:33 Sample 4 of 5 Precision 1.0 Recall 1.0
+
+08/24/17 18:17:47 UserID 65 Test: Precision 0.0 Recall 0.0
+
+             precision    recall  f1-score   support
+
+        0.0       0.89      0.93      0.91        27
+        1.0       0.00      0.00      0.00         3
+
+avg / total       0.80      0.83      0.82        30
+
+08/24/17 18:17:48 User 2 UserID 64 (Total plays [5655])
+08/24/17 18:21:05 Sample 0 of 5 Precision 0.2 Recall 1.0
+
+08/24/17 18:24:24 Sample 1 of 5 Precision 0.2 Recall 1.0
+
+08/24/17 18:27:40 Sample 2 of 5 Precision 0.214 Recall 1.0
+
+08/24/17 18:30:56 Sample 3 of 5 Precision 0.083 Recall 1.0
+
+08/24/17 18:34:12 Sample 4 of 5 Precision 0.6 Recall 1.0
+
+08/24/17 18:34:27 UserID 64 Test: Precision 0.0 Recall 0.0
+
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.87      0.93        30
+        1.0       0.00      0.00      0.00         0
+
+avg / total       1.00      0.87      0.93        30
+
+08/24/17 18:34:28 User 3 UserID 9 (Total plays [1648])
+08/24/17 18:37:43 Sample 0 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 18:40:53 Sample 1 of 5 Precision 0.4 Recall 1.0
+
+08/24/17 18:44:09 Sample 2 of 5 Precision 0.5 Recall 0.333
+
+08/24/17 18:47:23 Sample 3 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 18:50:43 Sample 4 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 18:50:56 UserID 9 Test: Precision 0.0 Recall 0.0
+
+             precision    recall  f1-score   support
+
+        0.0       0.87      1.00      0.93        26
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.75      0.87      0.80        30
+
+08/24/17 18:50:57 User 4 UserID 43 (Total plays [1118])
+08/24/17 18:54:13 Sample 0 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 18:57:28 Sample 1 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 19:00:44 Sample 2 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 19:04:01 Sample 3 of 5 Precision 1.0 Recall 1.0
+
+08/24/17 19:07:19 Sample 4 of 5 Precision 0.5 Recall 0.5
+
+08/24/17 19:07:33 UserID 43 Test: Precision 0.667 Recall 0.5
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      0.96      0.94        26
+        1.0       0.67      0.50      0.57         4
+
+avg / total       0.89      0.90      0.89        30
+
+08/24/17 19:07:33 User 5 UserID 71 (Total plays [655])
+08/24/17 19:10:52 Sample 0 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 19:14:05 Sample 1 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 19:17:10 Sample 2 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 19:22:14 Sample 3 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 19:25:26 Sample 4 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 19:25:40 UserID 71 Test: Precision 0.0 Recall 0.0
+
+             precision    recall  f1-score   support
+
+        0.0       1.00      1.00      1.00        30
+
+avg / total       1.00      1.00      1.00        30
+
+Skipping user 8 as not enough periods (4862)
+08/24/17 19:25:41 User 7 UserID 22 (Total plays [6571])
+08/24/17 19:28:57 Sample 0 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 19:32:13 Sample 1 of 5 Precision 0.267 Recall 1.0
+
+08/24/17 19:35:34 Sample 2 of 5 Precision 0.167 Recall 1.0
+
+08/24/17 19:38:38 Sample 3 of 5 Precision 0.167 Recall 1.0
+
+08/24/17 19:43:48 Sample 4 of 5 Precision 0.233 Recall 1.0
+
+08/24/17 19:44:03 UserID 22 Test: Precision 0.3 Recall 1.0
+
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00        21
+        1.0       0.30      1.00      0.46         9
+
+avg / total       0.09      0.30      0.14        30
+
+08/24/17 19:44:04 User 8 UserID 90 (Total plays [2568])
+08/24/17 19:47:22 Sample 0 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 19:50:40 Sample 1 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 19:53:59 Sample 2 of 5 Precision 0.133 Recall 1.0
+
+08/24/17 19:57:11 Sample 3 of 5 Precision 0.167 Recall 1.0
+
+08/24/17 20:00:22 Sample 4 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 20:00:36 UserID 90 Test: Precision 0.0 Recall 0.0
+
+             precision    recall  f1-score   support
+
+        0.0       0.87      1.00      0.93        26
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.75      0.87      0.80        30
+
+08/24/17 20:00:37 User 9 UserID 96 (Total plays [2199])
+08/24/17 20:03:47 Sample 0 of 5 Precision 0.133 Recall 1.0
+
+08/24/17 20:06:59 Sample 1 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 20:10:14 Sample 2 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 20:13:30 Sample 3 of 5 Precision 0.0 Recall 0.0
+
+08/24/17 20:16:44 Sample 4 of 5 Precision 0.067 Recall 1.0
+
+08/24/17 20:16:57 UserID 96 Test: Precision 0.0 Recall 0.0
+
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00        30
+        1.0       0.00      0.00      0.00         0
+
+avg / total       0.00      0.00      0.00        30
+
+Testing held out users
+Num of play events in batch: 4.0
+Num of play events in batch: 2.0
+Num of play events in batch: 3.0
+Num of play events in batch: 1.0
+Num of play events in batch: 2.0
+Num of play events in batch: 4.0
+Num of play events in batch: 2.0
+Num of play events in batch: 3.0
+Num of play events in batch: 2.0
+Num of play events in batch: 2.0
+User 0 of 10 Av loss 1.273 Av acc 0.083
+User 0 of 10 Precision 0.083 Recall 1.0
+Num of play events in batch: 1.0
+Num of play events in batch: 0.0
+Num of play events in batch: 2.0
+Num of play events in batch: 1.0
+Num of play events in batch: 3.0
+Num of play events in batch: 5.0
+Num of play events in batch: 3.0
+Num of play events in batch: 4.0
+Num of play events in batch: 3.0
+Num of play events in batch: 3.0
+User 1 of 10 Av loss 1.273 Av acc 0.083
+User 1 of 10 Precision 0.083 Recall 1.0
+Num of play events in batch: 0.0
+Num of play events in batch: 0.0
+Num of play events in batch: 2.0
+Num of play events in batch: 1.0
+Num of play events in batch: 2.0
+Num of play events in batch: 4.0
+Num of play events in batch: 3.0
+Num of play events in batch: 0.0
+Num of play events in batch: 0.0
+Num of play events in batch: 2.0
+User 2 of 10 Av loss 1.039 Av acc 0.047
+User 2 of 10 Precision 0.071 Recall 1.0
+Num of play events in batch: 5.0
+Num of play events in batch: 6.0
+Num of play events in batch: 7.0
+Num of play events in batch: 6.0
+Num of play events in batch: 2.0
+Num of play events in batch: 7.0
+Num of play events in batch: 5.0
+Num of play events in batch: 4.0
+Num of play events in batch: 5.0
+Num of play events in batch: 5.0
+User 3 of 10 Av loss 1.847 Av acc 0.173
+User 3 of 10 Precision 0.097 Recall 1.0
+Num of play events in batch: 1.0
+Num of play events in batch: 2.0
+Num of play events in batch: 2.0
+Num of play events in batch: 1.0
+Num of play events in batch: 0.0
+Num of play events in batch: 2.0
+Num of play events in batch: 2.0
+Num of play events in batch: 0.0
+Num of play events in batch: 1.0
+Num of play events in batch: 1.0
+User 4 of 10 Av loss 0.996 Av acc 0.04
+User 4 of 10 Precision 0.085 Recall 1.0
+Num of play events in batch: 0.0
+Num of play events in batch: 7.0
+Num of play events in batch: 3.0
+Num of play events in batch: 4.0
+Num of play events in batch: 3.0
+Num of play events in batch: 1.0
+Num of play events in batch: 1.0
+Num of play events in batch: 6.0
+Num of play events in batch: 3.0
+Num of play events in batch: 4.0
+User 5 of 10 Av loss 1.422 Av acc 0.107
+User 5 of 10 Precision 0.089 Recall 1.0
+
+Num of play events in batch: 0.0
+Num of play events in batch: 1.0
+Num of play events in batch: 2.0
+Num of play events in batch: 3.0
+Num of play events in batch: 4.0
+Num of play events in batch: 2.0
+Num of play events in batch: 1.0
+Num of play events in batch: 2.0
+Num of play events in batch: 3.0
+Num of play events in batch: 0.0
+User 6 of 10 Av loss 1.124 Av acc 0.06
+User 6 of 10 Precision 0.085 Recall 1.0
+Num of play events in batch: 1.0
+Num of play events in batch: 1.0
+Num of play events in batch: 0.0
+Num of play events in batch: 0.0
+Num of play events in batch: 2.0
+Num of play events in batch: 1.0
+Num of play events in batch: 0.0
+Num of play events in batch: 1.0
+Num of play events in batch: 2.0
+Num of play events in batch: 1.0
+User 7 of 10 Av loss 0.932 Av acc 0.03
+User 7 of 10 Precision 0.078 Recall 1.0
+Num of play events in batch: 13.0
+Num of play events in batch: 17.0
+Num of play events in batch: 12.0
+Num of play events in batch: 14.0
+Num of play events in batch: 13.0
+Num of play events in batch: 16.0
+Num of play events in batch: 12.0
+Num of play events in batch: 13.0
+Num of play events in batch: 9.0
+Num of play events in batch: 15.0
+User 8 of 10 Av loss 3.593 Av acc 0.447
+User 8 of 10 Precision 0.119 Recall 1.0
+Num of play events in batch: 2.0
+Num of play events in batch: 4.0
+Num of play events in batch: 2.0
+Num of play events in batch: 3.0
+Num of play events in batch: 3.0
+Num of play events in batch: 4.0
+Num of play events in batch: 3.0
+Num of play events in batch: 1.0
+Num of play events in batch: 2.0
+Num of play events in batch: 7.0
+User 9 of 10 Av loss 1.4 Av acc 0.103
+User 9 of 10 Precision 0.117 Recall 1.0
+Overall results:
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00     14919
+        1.0       0.10      1.00      0.17      1581
+
+avg / total       0.01      0.10      0.02     16500
+
+Av. precision 0.091 +/- 0.015, Av. recall 1.0+/0.0,
+Testing complete
+

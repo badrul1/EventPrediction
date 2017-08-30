@@ -10,7 +10,7 @@ from pathlib import Path
 
 def loadSettings():
 
-    with open('2_settings/settings.json') as json_data:
+    with open('2_Settings/settings.json') as json_data:
         s = json.load(json_data)
         return s
 
@@ -108,20 +108,23 @@ def _getTrainTestData(dbPath,tblName, fieldList, userIDs=None, periodGranularity
         SqlStr = "SELECT {} from {} where UserID = {}".format(fieldList, tblName, u)
         df = pd.read_sql_query(SqlStr, con)
 
-        if len(df) > int(periodsInAMonth * 3):  # user must have at least 3 months worth of data
+        if len(df) > int(periodsInAMonth * 4):  # user must have at least 4 months worth of data
             totalRows += len(df)
 
             # Cut-off 1
             k = random.randint(periodsInAMonth, len(df))
-
             testDf = testDf.append(df.iloc[k:k + periodsInAMonth])[df.columns.tolist()]
-
             tmp = df.drop(df.index[k:k + periodsInAMonth])
 
             # Cut-off 2
             k = random.randint(periodsInAMonth, len(tmp))
             testDf = testDf.append(tmp.iloc[k:k + periodsInAMonth])[df.columns.tolist()]
-            trainDf = trainDf.append(tmp.drop(tmp.index[k:k + periodsInAMonth]))[df.columns.tolist()]
+            tmp2 = trainDf.append(tmp.drop(tmp.index[k:k + periodsInAMonth]))[df.columns.tolist()]
+
+	    # Cut-off 3
+            k = random.randint(periodsInAMonth, len(tmp2))
+            testDf = testDf.append(tmp2.iloc[k:k + periodsInAMonth])[df.columns.tolist()]
+            trainDf = trainDf.append(tmp2.drop(tmp2.index[k:k + periodsInAMonth]))[df.columns.tolist()]
         else:
             if displayWarnings: print('Skipping user {} as not enough periods ({})'.format(u, len(df)))
 
