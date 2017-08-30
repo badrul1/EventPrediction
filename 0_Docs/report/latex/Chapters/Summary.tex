@@ -6,18 +6,15 @@
 
 \section{Conclusion}
 
-Predicting the propensity of a user to listen to music at a certain time, based on their recent listening history can be applied to a range of other areas such as the propensity to purchase products, electricity usage, or the demands on a public transport system. The ability to accurately model these patterns is therefore of great significance to industry. Traditional temporal point processes modeling requires making assumptions about the data, such as the feature engineering done in this research, in order to build a prediction model and struggle with capturing highly non-linear patterns in a scalable manner. 
+Predicting the propensity of a user to listen to music at a certain time, based on their recent listening history can be applied to a range of other areas such as the propensity to purchase products, electricity usage, or the demands on a public transport system. The ability to accurately model these patterns is therefore of great significance to industry. Traditional temporal point processes modelling requires making assumptions about the data, such as the feature engineering done in this research, in order to build a prediction model and struggle with capturing highly non-linear patterns in a scalable manner. 
 
-We applied a range of techniques to the task of modeling temporal point processes and used precision and recall as our evaluation measure. Our Baseline model which simply assumes $t = t-1$ performed the best, with a precision of 76\% and a recall of 80\%. As music listening is typically long periods of non-play events, followed by consequtive periods of play events, it is easy to achieve high scores using this heuristic. No models were able to exceed the baseline model.  
+We applied a range of techniques to the task of modelling temporal point processes and used precision and recall as our evaluation measure. Our Baseline model which assumed event at time $t$ = event at time $t-1$ performed the best overall, with a precision of 76\% and a recall of 80\%. As music listening is typically long periods of non-play events, followed by consecutive periods of play events, it is easy to achieve high scores using this heuristic. Notable results were the Linear SVM achieving a higher precision score of 80\% making it suitable for cases where precision is of importance, and the RBF model which demonstrated an ability to evenly balance precision and recall.
 
-Rather than trying predict all play events, it may be better to try and predict the probability $n$ steps into the future, or alternatively,
-the start of a play sequence instead; something which was briefly tried at the end of the previous chapter. All of the models performed poorly in this case, suggesting our dataset may not be suitble for this type of analysis.
-
-Secondly, achieving a good balance between precision and recall is a challenge, and the RBF SVM model was the only one of our initial model that achieved this.
+The results could raise the questions of whether rather than trying predict all play events, it is better to try and predict the probability $n$ steps into the future, or the inter-event time, the start of a play sequence instead. This last idea is something which was briefly tried at the end of our experiments. All of the models performed poorly in this case.
 
 Finally we experimented with an RNN-LSTM model. As our literature review showed, the application of deep learning to temporal point processes is still in its infancy but shows promising signs. Our own research is inconclusive though positive enough to warrant further research. As mentioned, careful thought needs to be given to the problem definition in order to perform a reasonable assessment. 
 
-Our take-away for the modeling of temporal processes in general, is to consider the following:
+Our take-away for the modelling of temporal processes in general, is to consider the following:
 \begin{itemize}
 	\item How much does the data differ at the macro vs. micro level?
 	\item Are events singular events or occur in clumps?
@@ -27,7 +24,7 @@ Our take-away for the modeling of temporal processes in general, is to consider 
 
 \section{Future research}
 
-There are seveal directions one could follow to take this research forward.
+There are several directions one could follow to take this research forward.
 \begin{enumerate}
 	\item Attempt to predict the start of a play sequence
 	\item Attempt to predict events $n$ steps into the future, where $t-1$ to $t-5$ are not available

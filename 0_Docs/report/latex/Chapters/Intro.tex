@@ -14,27 +14,32 @@
 \newcommand{\option}[1]{\texttt{\itshape#1}}
 
 %----------------------------------------------------------
-The modeling of events is useful across industries. For instance the times at which a customer makes an online purchase can help determine the optimal periods for target marketing. The times at which public transport users tend to travel can help better manage resources to meet demand. The times at which a medical illness re-occurs can help predict future episodes. In all these cases modeling the temporal behaviour of the system is important in predicting the occurence of the next event. 
+Within the field of recommender systems, the area of predicting \textit{what} a user would be interested in has received extensive attention in recent years, but \textit{when} they would be interested in it, less so.  The modelling of temporal patterns is useful across industries. For instance the times at which a customer makes an online purchase can help determine the optimal periods for target marketing. The times at which public transport users tend to travel can help better manage resources to meet demand. The times at which a medical illness re-occurs can help predict future episodes. In all these cases modelling the temporal behaviour of the system is important in predicting the occurrence of the next event. 
 
-Within the field of recommender systems, the area of predicting \textit{what} a user would be interested in has received extensive attention in recent years, but \textit{when} they would be interested in it, less so. In this research we look at how we can model the temporal behaviour of users, in order to help guage their interest in an event at current time $t$, conditional on their history, $h$. More formally this is known as a temporal point process and we examine the existing methods for modeling such problems as well as recent experimentations with applying deep learning to the problem.
+In this research we look at how we can model the temporal behaviour of users, in order to help gauge their interest in an event at current time $t$, conditional on their history, $h$. More formally this is known as a temporal point process and we examine the existing methods for modelling such problems as well as recent experimentations with applying deep learning to the problem.
 
-We compare various classicial linear and non-linear techniques, but find they struggle to exceed our simplistic baseline model, suggesting a need to reframe the problem being solved. The research also suggests achieving a high precision and recall score on temporal point process problems requires a non-linear model with an RBF SVM model performing well. Our experiments with an RNN-LSTM model were inconclusive. Further investigation with additional features such as introducing a dropout may help the model to generalize better across more iterations.
+We compare various classical linear and non-linear techniques, as well as a baseline model in which we assume the event at time $t$ matches the event in the prior period, time $t-1$. Our methods are as follows:
+\begin{itemize}
+	\item Beta-Binomial - a simple application of Bayesian Inference
+	\item Logistic Regression
+	\item SVM with a Linear Kernel
+	\item SVM with an RBF Kernel
+	\item Recurrent Neural Network with LSTM
+\end{itemize}
+
+One challenge in modelling events is the sparsity of the data. Depending on your interval range, events can occur 1 in every 10 intervals, 100 intervals, or 1000 intervals. This leads to an imbalanced data set, which has to be dealt with in order to ensure effective modelling.  
+
+Another challenge is the scale of the data. Temporal data is often collected these days through computer log files. Such automatic collection means the amount of data available in a temporal point process problem is likely to be high. The scalability of any method to large amounts of data is therefore also of importance.
 
 \section{Context}
 
-We take as our context for this research, the goal of estimating the probability that a user of a home-audio device would like to listen to music at a time period $t$, given their play history $h$. One application of this research would be to allow home audio devices to recommend music to a user at an ooportune time. It could then also be extended for other activities.
+We take as our context for this research, the goal of estimating the probability that a user of a home-audio device would like to listen to music at a time period $t$, given their play history $h$. One application of this research would be to allow home audio devices to recommend music to a user at an opportune time. It could then also be extended for other activities.
 
 The goal was to evaluate the effectiveness of several different machine learning methods. The research was guided by Emotech Ltd., a home audio hardware and software company and the creators of Olly \parencite{Olly}.
 
-\section{Data}
-
-The dataset being used in this analysis is the LastFM1k dataset, which is freely available online and contains the listening history of a thousand LastFM listeners. It consists of a series of timestamps denoting when a user started playing a song. We wish to learn the temporal patterns of a user's behaviour in order to predict the next item in the sequence - a play or non-play event. 
-
-The dataset contains the timestamp, user ID, and track ID of users listening habits over a number of years (2005-2009).
-
 \section{Structure of the report}
 
-In the next chapter we perform a brief review of existing methods of modeling temporal point processes. In Chapter 3 we detail the design of the experiments performed. Chapter 4 then presents the results of the preliminary analysis that helped shape the experimental design, before presenting the main results themselves and discussing each model in turn. Chatper 5 then concludes the report with a summary of insights and suggestions for how the research could be progressed.
+In the next chapter we perform a brief review of existing methods of modelling temporal point processes. In Chapter 3 we detail the design of the experiments performed. Chapter 4 then presents the results of the preliminary analysis that helped shape the experimental design, before presenting the main results themselves and discussing each model in turn. Chapter 5 then concludes the report with a summary of insights and suggestions for how the research could be progressed.
 
 \section{Code}
 

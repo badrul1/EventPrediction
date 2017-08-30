@@ -5,11 +5,13 @@
 
 \label{Chapter2} % 
 
-Analyzing event data presents its own unique challenges and questions. What are the ways to represent the data?  What types of stochastic 
+Analysing event data presents its own unique challenges and questions. What are the ways to represent the data?  What types of stochastic 
 models  are  appropriate  for  explaining  the  structure  in  the  data? How  can  we  measure  
-how  well  the  data  is  described  by  a  particular  model?  Within literature the problem is referred to as event prediction, sequence prediction, or temporal point process modeling.
+how  well  the  data  is  described  by  a  particular  model?  Within literature the problem is referred to as event prediction, sequence prediction, or temporal point process modelling.
 
-When modelled as a temporal point process, the data can be represented as a sequence of fixed period intervals in one of three ways: as an ordered list of event times ${T_i,...T_n}$, as inter-event times $U_1,...U_n$ where $u+i = T_i-T_{i-1}$, or as a counting process where  $N(t)$ is a count of the number of events occuring before time $t$ \parencite{Borgan}.
+\section{Modelling temporal point processes}
+
+When modelled as a temporal point process, the data can be represented as a sequence of fixed period intervals in one of three ways: as an ordered list of event times ${T_i,...T_n}$, as inter-event times $U_i,...U_n$ where $U_i = T_i-T_{i-1}$, or as a counting process where  $N(t)$ is a count of the number of events occurring before time $t$ \parencite{Borgan}.
 
 \begin{figure}[h!]
 	\includegraphics[width=7cm, keepaspectratio]{fig001.jpg}
@@ -17,19 +19,37 @@ When modelled as a temporal point process, the data can be represented as a sequ
 	\label{fig:fig1}
 \end{figure}
 
-Of these, inter-event time is the most commonly used, for example in the times between financial transactions \parencite{EngleRusell}. An example of the counting process is the socring of goals in soccer \parencite{Heuer}. In the case of music listening, we can model a sequence of events and non-events, where $t_i$ can either be 0 (did not play music) or 1 (played music). This is the form we use in all but the Bayesian model as described in the next chapter.
+Of these, inter-event time is the most commonly used, for example in the times between financial transactions \parencite{EngleRusell}. An example of the counting process is the scoring of goals in soccer \parencite{Heuer}. In the case of music listening, we can model a sequence of events and non-events, where $t_i$ can either be 0 (did not play music) or 1 (played music). This is the form we use in all but the Bayesian model as described in the next chapter.
+
+\newpage
+
+\subsection{Poisson Process}
+The Poisson process \parencite{Kingman} is one of the most widely used counting processes. It is a simple point process in which the probability of an event at time $t$ is assumed to be independent from all other times, and where the probability function follows a Poisson distribution with parameter $\lambda$. 
+
+The Poisson process has been used to model:
+
+\begin{itemize}
+	\item the number of car accidents at a site or in an area \parencite{venezian};
+	\item the location of users in a wireless network \parencite{blaszczyszyn}
+	\item customer purchases \parencite{Ehrenberg}
+	\item jumps in asset prices  \parencite{kirch}
+\end{itemize}
+
+\subsection{Hawkes Process}
+In the Poisson process the probability at time $t$ is dependent on time $t$ only. In other types of point process models the probability is dependent on periods prior to $t$ as well, such as the self-exciting (Hawkes) process where the intensity is determined by previous events through the parametric form $\lambda(t) = \mu + \beta \sum_{t_i<t}g(t-t_i)$ and where $g$ is a non-negative kernel function.
+
+The Hawkes process is particularly useful in systems with rapid changes to rate of events and is used a lot in finance to model the intensity of the arrival of trades \parencite{hardiman2013critical}
 
 \subsubsection{Conditional Intensity Function}
-
-The conditional intensity function, $\lambda(t)$, represents the infinitesimal rate at which events are expected to occur around a particular time 
-$t$, conditional on the prior history of the point 
-process prior to time $t$. A Poisson process \parencite{Kingman} is a simple point process in which the probability of an event at time $t$ is assumed to be independent from all other times, and where the conditional intensity function follows a Poisson distribution based on $\lambda$. $\lambda$ may be estimated parametrically \parencite{DuWang} or via a parametric model. With the Poisson process, $\lambda$ depends only on $t$, where as in other point process models it would depends on the history preceding $t$. 
+The probability function used in a temporal point process is more formally known as a conditional intensity function. It represents the infinitesimal rate at which events are expected to occur around a particular time $t$, conditional on the prior history of the point process prior to time $t$. 
  
-If the conditional intensity remains constant over time it is referred to as a homogenous or stationary point process \parencite{Nok}. If however it can vary with time it is inhomgenous, such as the self-exciting (Hawkes) process where the intensity is determined by previous events through the parametric form $\lambda(t) = \mu + \beta \sum_{t_i<t}g(t-t_i)$ and where $g$ is a non-negative kernel function. Note that the logit function used in generalized linear model, can also be thought of a conditional intensity function and has been used to develop sophisticated models such as \parencite{baddeley2014logistic} and \parencite{rajala2014note}.
+If the conditional intensity remains constant over time it is referred to as a homogeneous or stationary point process \parencite{Nok}. If however it can vary with time it is inhomogeneous. 
 
-However, as noted by Wass et. al \parencite{Wass}, point process models using a condictional intensity function often make various parametric assumptions about the latent dynamics governing the generation of the observed point patterns. As a consequence, model mis-specification can cause significantly degraded performance in point process models.
+Note that the logit function used in generalized linear model, can also be thought of a conditional intensity function and has been used to develop sophisticated models such as \parencite{baddeley2014logistic} and \parencite{rajala2014note}.
 
-\subsubsection{Deep Learning}
+However, as noted by Wass et. al \parencite{Wass}, point process models using a conditional intensity function often make various parametric assumptions about the latent dynamics governing the generation of the observed point patterns. As a consequence, model misspecification can cause significantly degraded performance in point process models.
+
+\section{Deep Learning}
 
 In recent years deep learning has demonstrated the power to learn hierarchical non-linear patterns on large-scale datasets \parencite{DL} through multiple layers of abstraction (e.g. multi-layer feedforward neural networks). It has achieved state-of-the-art performances on a wide range of applications, such as computer vision \parencite{ImageNet}, natural language processing \parencite{Socher}, and protein structure prediction \parencite{Lena}.
 
@@ -45,24 +65,25 @@ RNNs are a type of artificial neural network designed to recognize patterns in s
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=3cm, keepaspectratio,]{fig007.jpg}
+	\includegraphics[width=5cm, keepaspectratio,]{fig007.jpg}
 	\caption{RNN with 3 timesteps}
 	\label{RNN}
 \end{figure} 
 
+\subsubsection{LSTM}
 RNN models can employ different methods for the propogration of the hidden state over time. One such well known method is Long Short-Term memory (LSTM) \parencite{Olah}. Here the hidden state is the product of a further four layers that interact in a way as to learn what information to retain and what information to throw away. 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=5cm, keepaspectratio,]{fig008.png}
+	\includegraphics[width=12cm, keepaspectratio,]{fig008.png}
 	\caption{LSTM}
 	\label{fig:fig8}
 \end{figure} 
 
-Recently \parencite{xiao2017modeling} attempts have been made to combine concepts of temporal point processes with that of an RNN. The authors viewed the conditional intensity function of a point process as a non-linear mapping between the predicted transient occurrence intensity of events with different types, and the  model  input  information  of  event  participators, event
+Malhotra  \parencite{malhotra2015long} demonstrates that LSTMs with 2 layers can learn higher level temporal patterns without prior knowledge of the pattern duration, while more recently \parencite{xiao2017modeling} attempts have been made to combine concepts of temporal point processes with that of an RNN. Here the authors viewed the conditional intensity function of a point process as a non-linear mapping between the predicted transient occurrence intensity of events with different types, and the  model  input  information  of  event  participators, event
 profile and the system history.
 
-They model this non-linear mapping by utilizing two RNNs: one for modeling the time-series data and associated features and a second to model long-range dependency over history with arbitary time intervals; specifically a sequence of event type and the time since the previous event. In this way they can capture both the temporal based patterns, as well as the non-temporal, event-correlations which approximates to a conditional intensity function based on inter-event time.
+They model this non-linear mapping by utilizing two RNNs: one for modelling the time-series data and associated features and a second to model long-range dependency over history with arbitrary time intervals; specifically a sequence of event type and the time since the previous event. In this way they can capture both the temporal based patterns, as well as the non-temporal, event-correlations which approximates to a conditional intensity function based on inter-event time.
 
 The favoured evaluation metrics in their research were precision, recall, f1 score, and a confusion matrix, with a logistic regression model used as a baseline to compare against.
 
